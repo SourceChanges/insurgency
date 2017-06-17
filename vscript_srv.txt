@@ -1,0 +1,2938 @@
+U abort@@GLIBC_2.0
+U __acosf_finite@@GLIBC_2.15
+U __acos_finite@@GLIBC_2.15
+t add_fdes
+d adds.7230
+U __asinf_finite@@GLIBC_2.15
+U __asin_finite@@GLIBC_2.15
+U __atan2f_finite@@GLIBC_2.15
+U __atan2_finite@@GLIBC_2.15
+U atanf@@GLIBC_2.0
+U atan@@GLIBC_2.0
+t base_from_cb_data
+t base_from_object
+U bind@@GLIBC_2.0
+A __bss_start
+t _calloc_dbg
+U cbrtf@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+t classify_object_over_fdes
+U close@@GLIBC_2.0
+b colorcorrection
+U CommandLine
+b completed.5517
+U cosf@@GLIBC_2.0
+U cos@@GLIBC_2.0
+T CreateInterface
+r CSWTCH.133
+r CSWTCH.170
+r CSWTCH.389
+d __CTOR_END__
+d __CTOR_LIST__
+b cvar
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+t __cxa_pure_virtual
+U __cxa_rethrow@@CXXABI_1.3
+t __deregister_frame
+t __deregister_frame_info
+t __deregister_frame_info_bases
+t __divdi3
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+t __do_global_ctors_aux
+t __do_global_dtors_aux
+d __dso_handle
+d __DTOR_END__
+b dtor_idx.5519
+d __DTOR_LIST__
+b dwarf_reg_size_table
+d DW.ref.__gxx_personality_v0
+a _DYNAMIC
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U Error
+t execute_cfa_program
+t execute_stack_op
+t _expand_dbg
+U __expf_finite@@GLIBC_2.15
+t fde_mixed_encoding_compare
+t fde_single_encoding_compare
+t fde_unencoded_compare
+T _fini
+r Four_2ToThe21s
+r Four_2ToThe22s
+r Four_2ToThe23s
+r Four_2ToThe24s
+r Four_DegToRad
+r Four_Epsilons
+r Four_FLT_MAX
+r Four_Fours
+r Four_GammaToLinearCoefficients_A
+r Four_GammaToLinearCoefficients_B
+r Four_GammaToLinearCoefficients_C
+r Four_GammaToLinearCoefficients_D
+r Four_LinearToGammaCoefficients_A
+r Four_LinearToGammaCoefficients_B
+r Four_LinearToGammaCoefficients_C
+r Four_LinearToGammaCoefficients_D
+r Four_LinearToGammaCoefficients_E
+r Four_Negative_FLT_MAX
+r Four_NegativeOnes
+r Four_Ones
+r Four_Origin
+r Four_Point225s
+r Four_PointFives
+r Four_Thirds
+r Four_Threes
+r Four_Twos
+r Four_TwoThirds
+r Four_Zeros
+t frame_downheap
+t frame_dummy
+r __FRAME_END__
+b frame_hdr_cache
+b frame_hdr_cache_head
+t frame_heapsort
+t __frame_state_for
+t _free_dbg
+U free@@GLIBC_2.0
+b g_bSqDbgTerminateScript
+d g_escapes
+t get_cie_encoding
+U GetCPUInformation
+U getcwd@@GLIBC_2.0
+t get_fde_encoding
+a _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_color_conversion.cpp
+t _GLOBAL__sub_I_convar.cpp
+t _GLOBAL__sub_I_generichash.cpp
+t _GLOBAL__sub_I_interface.cpp
+t _GLOBAL__sub_I_interfaces.cpp
+t _GLOBAL__sub_I_mathlib_base.cpp
+t _GLOBAL__sub_I_memoverride.cpp
+t _GLOBAL__sub_I_randsse.cpp
+t _GLOBAL__sub_I_sqapi.cpp
+t _GLOBAL__sub_I_sqbaselib.cpp
+t _GLOBAL__sub_I_sqclass.cpp
+t _GLOBAL__sub_I_sqcompiler.cpp
+t _GLOBAL__sub_I_sqdbgserver.cpp
+t _GLOBAL__sub_I_sqdebug.cpp
+t _GLOBAL__sub_I_sqfuncstate.cpp
+t _GLOBAL__sub_I_sqlexer.cpp
+t _GLOBAL__sub_I_sqmem.cpp
+t _GLOBAL__sub_I_sqobject.cpp
+t _GLOBAL__sub_I_sqqangle.cpp
+t _GLOBAL__sub_I_sqquaternion.cpp
+t _GLOBAL__sub_I_sqrdbg.cpp
+t _GLOBAL__sub_I_sqstate.cpp
+t _GLOBAL__sub_I_sqstdaux.cpp
+t _GLOBAL__sub_I_sqstdblob.cpp
+t _GLOBAL__sub_I_sqstdmath.cpp
+t _GLOBAL__sub_I_sqstdrex.cpp
+t _GLOBAL__sub_I_sqstdstream.cpp
+t _GLOBAL__sub_I_sqstdstring.cpp
+t _GLOBAL__sub_I_sqtable.cpp
+t _GLOBAL__sub_I_sqvector2d.cpp
+t _GLOBAL__sub_I_sqvector4d.cpp
+t _GLOBAL__sub_I_sqvector.cpp
+t _GLOBAL__sub_I_sqvm.cpp
+t _GLOBAL__sub_I_sseconst.cpp
+t _GLOBAL__sub_I_strtools.cpp
+t _GLOBAL__sub_I_tier1.cpp
+t _GLOBAL__sub_I_utlbuffer.cpp
+t _GLOBAL__sub_I_utlstring.cpp
+t _GLOBAL__sub_I_utlsymbol.cpp
+t _GLOBAL__sub_I_vmatrix.cpp
+t _GLOBAL__sub_I_vscript.cpp
+t _GLOBAL__sub_I_vsquirrel3.cpp
+t _GLOBAL__sub_I_vsquirrel_test.cpp
+b g_MatrixIdentity
+w __gmon_start__
+b g_pAsyncFileSystem
+b g_pAVI
+b g_pBIK
+b g_pCVar
+b g_pDataCache
+b g_pDmeMakefileUtils
+b g_pEventSystem
+b g_pFullFileSystem
+b g_pGameUISystemMgr
+b g_pInputStackSystem
+b g_pInputSystem
+b g_pLocalize
+b g_pMatchFramework
+b g_pMaterialSystem
+b g_pMaterialSystem2
+b g_pMaterialSystemDebugTextureInfo
+b g_pMaterialSystemHardwareConfig
+b g_pMatSystemSurface
+b g_pMDLCache
+U g_pMemAlloc
+b g_pMeshSystem
+b g_pNetworkSystem
+b g_pPhysics2
+b g_pPhysics2ActorManager
+b g_pPhysics2ResourceManager
+b g_pPhysicsCollision
+b g_pPrecacheSystem
+b g_pProcessUtils
+b g_pQueuedLoader
+b g_pRenderDevice
+b g_pRenderDeviceMgr
+b g_pRenderHardwareConfig
+b g_pResourceAccessControl
+b g_pResourceSystem
+b g_pSceneSystem
+b g_pSoundEmitterSystem
+b g_pSoundSystem
+b g_pStudioRender
+d g_pszModule
+b g_pUtlSortVectorQSortContext
+b g_pVGui
+b g_pVGuiInput
+b g_pVGuiLocalize
+b g_pVGuiPanel
+b g_pVGuiRenderSurface
+b g_pVGuiSchemeManager
+b g_pVGuiSurface
+b g_pVGuiSystem
+b g_pWorldRendererMgr
+d g_QAngleFuncs
+d g_QuatFuncs
+b g_ScriptManager
+r g_SIMD_0123
+r g_SIMD_AllOnesMask
+r g_SIMD_clear_signmask
+r g_SIMD_clear_wmask
+r g_SIMD_ComponentMask
+r g_SIMD_EveryOtherMask
+r g_SIMD_Identity
+r g_SIMD_Low16BitsMask
+r g_SIMD_lsbmask
+r g_SIMD_signmask
+r g_SIMD_SkipTailMask
+b g_VBAllocTracker
+d g_Vector2DFuncs
+d g_Vector4DFuncs
+d g_VectorFuncs
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+t __i686.get_pc_thunk.bx
+t __i686.get_pc_thunk.cx
+T _init
+t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U isalpha@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U islower@@GLIBC_2.0
+U isprint@@GLIBC_2.0
+U ispunct@@GLIBC_2.0
+U isspace@@GLIBC_2.0
+U isupper@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+U isxdigit@@GLIBC_2.0
+d __JCR_END__
+d __JCR_LIST__
+w _Jv_RegisterClasses
+t .L10
+t .L100
+t .L1000
+t .L1001
+t .L1002
+t .L1003
+t .L11
+t .L12
+t .L13
+t .L131
+t .L132
+t .L133
+t .L134
+t .L135
+t .L136
+t .L1366
+t .L1367
+t .L1368
+t .L1369
+t .L137
+t .L1370
+t .L138
+t .L138
+t .L1388
+t .L139
+t .L14
+t .L140
+t .L141
+t .L142
+t .L1425
+t .L1426
+t .L1427
+t .L1428
+t .L1429
+t .L143
+t .L144
+t .L1441
+t .L1442
+t .L1443
+t .L1444
+t .L1445
+t .L145
+t .L1456
+t .L1457
+t .L15
+t .L16
+t .L165
+t .L166
+t .L167
+t .L168
+t .L169
+t .L17
+t .L17
+t .L170
+t .L18
+t .L19
+t .L19
+t .L20
+t .L20
+t .L21
+t .L214
+t .L215
+t .L216
+t .L217
+t .L218
+t .L219
+t .L22
+t .L220
+t .L221
+t .L222
+t .L223
+t .L224
+t .L225
+t .L226
+t .L227
+t .L228
+t .L229
+t .L23
+t .L23
+t .L230
+t .L24
+t .L24
+t .L244
+t .L25
+t .L25
+t .L25
+t .L26
+t .L26
+t .L262
+t .L263
+t .L264
+t .L265
+t .L266
+t .L27
+t .L27
+t .L271
+t .L272
+t .L273
+t .L274
+t .L275
+t .L28
+t .L29
+t .L291
+t .L298
+t .L299
+t .L30
+t .L30
+t .L300
+t .L301
+t .L302
+t .L303
+t .L304
+t .L305
+t .L306
+t .L31
+t .L31
+t .L32
+t .L32
+t .L33
+t .L33
+t .L339
+t .L34
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L35
+t .L350
+t .L351
+t .L36
+t .L36
+t .L367
+t .L368
+t .L369
+t .L37
+t .L37
+t .L370
+t .L371
+t .L372
+t .L373
+t .L374
+t .L376
+t .L377
+t .L378
+t .L379
+t .L38
+t .L38
+t .L380
+t .L382
+t .L39
+t .L39
+t .L40
+t .L41
+t .L42
+t .L43
+t .L43
+t .L44
+t .L45
+t .L45
+t .L46
+t .L47
+t .L47
+t .L48
+t .L48
+t .L49
+t .L49
+t .L50
+t .L50
+t .L509
+t .L51
+t .L51
+t .L51
+t .L510
+t .L511
+t .L512
+t .L513
+t .L514
+t .L515
+t .L516
+t .L517
+t .L517
+t .L518
+t .L519
+t .L52
+t .L52
+t .L52
+t .L520
+t .L521
+t .L522
+t .L523
+t .L524
+t .L525
+t .L526
+t .L526
+t .L527
+t .L527
+t .L528
+t .L528
+t .L529
+t .L529
+t .L53
+t .L53
+t .L53
+t .L530
+t .L531
+t .L532
+t .L533
+t .L534
+t .L535
+t .L536
+t .L537
+t .L538
+t .L539
+t .L54
+t .L54
+t .L54
+t .L54
+t .L540
+t .L541
+t .L542
+t .L543
+t .L544
+t .L545
+t .L546
+t .L547
+t .L548
+t .L549
+t .L55
+t .L55
+t .L550
+t .L551
+t .L552
+t .L553
+t .L554
+t .L555
+t .L556
+t .L557
+t .L558
+t .L559
+t .L56
+t .L560
+t .L561
+t .L562
+t .L563
+t .L564
+t .L565
+t .L566
+t .L567
+t .L568
+t .L569
+t .L57
+t .L57
+t .L570
+t .L571
+t .L572
+t .L573
+t .L574
+t .L575
+t .L576
+t .L577
+t .L577
+t .L578
+t .L579
+t .L58
+t .L580
+t .L581
+t .L582
+t .L583
+t .L584
+t .L585
+t .L59
+t .L59
+t .L593
+t .L596
+t .L597
+t .L598
+t .L599
+t .L60
+t .L60
+t .L600
+t .L600
+t .L601
+t .L601
+t .L602
+t .L602
+t .L603
+t .L603
+t .L604
+t .L605
+t .L606
+t .L61
+t .L61
+t .L61
+t .L611
+t .L616
+t .L62
+t .L62
+t .L63
+t .L64
+t .L65
+t .L66
+t .L67
+t .L68
+t .L69
+t .L70
+t .L71
+t .L742
+t .L744
+t .L745
+t .L746
+t .L747
+t .L749
+t .L750
+t .L751
+t .L752
+t .L753
+t .L754
+t .L755
+t .L756
+t .L757
+t .L758
+t .L759
+t .L760
+t .L761
+t .L762
+t .L767
+t .L77
+t .L773
+t .L774
+t .L775
+t .L776
+t .L777
+t .L78
+t .L79
+t .L80
+t .L802
+t .L81
+t .L82
+t .L83
+t .L84
+t .L84
+t .L840
+t .L841
+t .L842
+t .L843
+t .L844
+t .L845
+t .L85
+t .L85
+t .L86
+t .L86
+t .L86
+t .L87
+t .L87
+t .L88
+t .L90
+t .L92
+t .L925
+t .L926
+t .L927
+t .L928
+t .L929
+t .L930
+t .L931
+t .L932
+t .L933
+t .L934
+t .L935
+t .L936
+t .L937
+t .L938
+t .L94
+t .L96
+t .L98
+t .L982
+t .L983
+t .L984
+t .L985
+t .L986
+t .L987
+t .L988
+t .L989
+t .L990
+t .L991
+t .L992
+t .L993
+t .L998
+t .L999
+t linear_search_fdes
+b lineartolightmap
+b lineartovertex
+U __log10f_finite@@GLIBC_2.15
+U __logf_finite@@GLIBC_2.15
+U __log_finite@@GLIBC_2.15
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
+U LoggingSystem_RegisterLoggingChannel
+b LOG_VSCRIPT
+U longjmp@@GLIBC_2.0
+t _malloc_dbg
+U malloc@@GLIBC_2.0
+b marker.6968
+b materials
+U mbstowcs@@GLIBC_2.0
+b mdlcache
+b mdllib
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+t __moddi3
+U Msg
+t _msize_dbg
+r nanmask
+t _nh_malloc_dbg
+b object_mutex
+b once_regsizes.7403
+b p4
+d pfVectorNormalizeFast
+U Plat_ExitProcess
+U Plat_FloatTime
+U Plat_IsInDebugSession
+d power2_n
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U puts@@GLIBC_2.0
+b quat_identity
+U rand@@GLIBC_2.0
+U RandomFloat
+U RandomInt
+U RandomSeed
+t read_encoded_value
+t read_encoded_value_with_base
+t read_sleb128
+t read_sleb128
+t read_uleb128
+t read_uleb128
+t _realloc_dbg
+U recv@@GLIBC_2.0
+t __register_frame
+t __register_frame_info
+t __register_frame_info_bases
+t __register_frame_info_table
+t __register_frame_info_table_bases
+t __register_frame_table
+b s_bMathlibInitialized
+b ScriptMsgColor
+t search_object
+b seen_objects
+U select@@GLIBC_2.0
+U send@@GLIBC_2.0
+t set_fast_math
+U _setjmp@@GLIBC_2.0
+U sincosf@@GLIBC_2.1
+b SinCosTable
+U sinf@@GLIBC_2.0
+U sin@@GLIBC_2.0
+t size_of_encoded_value
+b s_NoEscConversion
+U socket@@GLIBC_2.0
+B s_pInterfaceRegs
+U sprintf@@GLIBC_2.0
+t sq_addref
+t sq_arrayappend
+t sq_arrayinsert
+t sq_arraypop
+t sq_arrayremove
+t sq_arrayresize
+t sq_arrayreverse
+t sq_bindenv
+t sq_call
+t sq_clear
+t sq_clone
+t sq_close
+t sq_cmp
+t sq_collectgarbage
+t sq_compile
+t sq_compilebuffer
+t sq_createinstance
+t sq_deleteslot
+t sq_enabledebuginfo
+t sq_get
+t sq_getattributes
+t sq_getbase
+t sq_getbool
+t sq_getbyhandle
+t sq_getcallee
+t sq_getclass
+t sq_getclosureinfo
+t sq_getclosurename
+t sq_getdefaultdelegate
+t sq_getdelegate
+t sq_getehandle
+t sq_geterrorfunc
+t sq_getfloat
+t sq_getforeignptr
+t sq_getfreevariable
+t sq_getfunctioninfo
+t sq_gethash
+t sq_getinstanceup
+t sq_getinteger
+t sq_getlasterror
+t sq_getlocal
+t sq_getmemberhandle
+t sq_getobjtypetag
+t sq_getprintfunc
+t sq_getrefcount
+t sq_getscratchpad
+t sq_getsize
+t sq_getstackobj
+t sq_getstring
+t sq_getthread
+t sq_gettop
+t sq_gettype
+t sq_gettypetag
+t sq_getuserdata
+t sq_getuserpointer
+t sq_getutlstringtoken
+t sq_getversion
+t sq_getvmstate
+t sq_getweakrefval
+t sq_instanceof
+t sq_move
+t sq_newarray
+t sq_newclass
+t sq_newclosure
+t sq_newmember
+t sq_newslot
+t sq_newtable
+t sq_newtableex
+t sq_newthread
+t sq_newuserdata
+t sq_next
+t sq_notifyallexceptions
+b SQ_NULL
+t sq_objtobool
+t sq_objtofloat
+t sq_objtointeger
+t sq_objtostring
+t sq_objtouserpointer
+t sq_open
+t sq_pop
+t sq_poptop
+t sq_push
+t sq_pushbool
+t sq_pushconsttable
+t sq_pushehandle
+t sq_pushfloat
+t sq_pushinteger
+t sq_pushnull
+t sq_pushobject
+t sq_pushregistrytable
+t sq_pushroottable
+t sq_pushstring
+t sq_pushuserpointer
+t sq_pushutlstringtoken
+t sq_rawdeleteslot
+t sq_rawget
+t sq_rawnewmember
+t sq_rawset
+t sq_rdbg_init
+t sq_rdbg_shutdown
+t sq_rdbg_update
+t sq_rdbg_waitforconnections
+t sq_readclosure
+t sq_release
+t sq_remove
+t sq_reservestack
+t sq_reseterror
+t sq_resetobject
+t sq_resume
+t sq_resurrectunreachable
+t sq_set
+t sq_setattributes
+t sq_setbyhandle
+t sq_setclassudsize
+t sq_setcompilererrorhandler
+t sq_setconsttable
+t sq_setdebughook
+t sq_setdelegate
+t sq_seterrorhandler
+t sq_setforeignptr
+t sq_setfreevariable
+t sq_setinstanceup
+t sq_setnativeclosurename
+t sq_setnativedebughook
+t sq_setparamscheck
+t sq_setprintfunc
+t sq_setreleasehook
+t sq_setroottable
+t sq_settop
+t sq_settypetag
+t sq_stackinfos
+t sqstd_createblob
+t sqstd_format
+t sqstd_getblob
+t sqstd_getblobsize
+t sqstd_loadfile
+t sqstd_printcallstack
+t sqstd_register_bloblib
+t sqstd_register_iolib
+t sqstd_register_mathlib
+t sqstd_register_stringlib
+t sqstd_rex_compile
+t sqstd_rex_free
+t sqstd_rex_getsubexp
+t sqstd_rex_getsubexpcount
+t sqstd_rex_match
+t sqstd_rex_search
+t sqstd_rex_searchrange
+t sqstd_seterrorhandlers
+t sq_suspendvm
+t sq_throwerror
+t sq_throwobject
+t sq_tobool
+t sq_tostring
+t sq_typeof
+t sq_wakeupvm
+t sq_weakref
+t sq_writeclosure
+U srand@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+b s_StringCharConversion
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtok@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+b studiorender
+b subs.7231
+U tanf@@GLIBC_2.0
+U tan@@GLIBC_2.0
+b terminator.7074
+U ThreadGetCurrentId
+U ThreadSleep
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+b unseen_objects
+t _Unwind_Backtrace
+t _Unwind_DebugHook
+t _Unwind_DeleteException
+t _Unwind_FindEnclosingFunction
+t _Unwind_Find_FDE
+t _Unwind_ForcedUnwind
+t _Unwind_ForcedUnwind_Phase2
+t _Unwind_GetCFA
+t _Unwind_GetDataRelBase
+t _Unwind_GetGR
+t _Unwind_GetIP
+t _Unwind_GetIPInfo
+t _Unwind_GetLanguageSpecificData
+t _Unwind_GetRegionStart
+t _Unwind_GetTextRelBase
+t _Unwind_IteratePhdrCallback
+t _Unwind_RaiseException
+t _Unwind_RaiseException_Phase2
+t _Unwind_Resume
+t _Unwind_Resume_or_Rethrow
+t _Unwind_SetGR
+t _Unwind_SetIP
+t _Unwind_SetSpColumn
+t uw_frame_state_for
+t uw_init_context_1
+t uw_install_context_1
+t uw_update_context
+t uw_update_context_1
+b vec3_angle
+b vec3_invalid
+b vec3_origin
+U vsnprintf@@GLIBC_2.0
+U vsprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+U WriteMiniDump
+t debug_hook(SQVM*)
+U DevWarning(char const*, ...)
+t endelement(SQVM*)
+t HashString(char const*)
+t HexToValue(char)
+t IsDenormal(float const&)
+t isexponent(int)
+t LexInteger(char const*, unsigned int*)
+t MatrixCopy(matrix3x4_t const&, matrix3x4_t&)
+t MatrixCopy(VMatrix const&, VMatrix&)
+t QAngleLeft(SQVM*)
+t QAngleRoll(SQVM*)
+t QuatInvert(SQVM*)
+t QuatTypeOf(SQVM*)
+t ReadObject(SQVM*, void*, int (*)(void*, void*, int), SQObjectPtr&)
+t RotateAABB(matrix3x4_t const&, Vector const&, Vector const&, Vector&, Vector&)
+t scisodigit(int)
+t VectorNorm(SQVM*)
+t V_FileBase(char const*, char*, int)
+t _V_memmove(void*, void const*, int)
+t V_snprintf(char*, int, char const*, ...)
+t _V_stricmp(char const*, char const*)
+t V_strnicmp(char const*, char const*, int)
+t V_strnistr(char const*, char const*, int)
+t _V_strrchr(char const*, char)
+t V_StrRight(char const*, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtowcs(char const*, int, wchar_t*, int)
+t V_wcstostr(wchar_t const*, int, char*, int)
+t AllocString(char const*, int)
+t AngleMatrix(RadianEuler const&, matrix3x4_t&)
+t AngleMatrix(RadianEuler const&, Vector const&, matrix3x4_t&)
+t AngleMatrix(QAngle const&, matrix3x4_t&)
+t AngleMatrix(QAngle const&, Vector const&, matrix3x4_t&)
+t buf_lexfeed(void*)
+t ClearBounds(Vector&, Vector&)
+t CubicBasis0(float)
+t CubicBasis1(float)
+t CubicBasis2(float)
+t CubicBasis3(float)
+t DumpLiteral(SQObjectPtr&)
+t FloorDivMod(double, double, int*, int*)
+t GetTypeName(SQObjectPtr const&)
+t IdType2Name(tagSQObjectType)
+t IntToString(int)
+t IRotateAABB(matrix3x4_t const&, Vector const&, Vector const&, Vector&, Vector&)
+t MurmurHash2(void const*, int, unsigned int)
+t QAnglePitch(SQVM*)
+t QAngleScale(SQVM*)
+t QuatIterate(SQVM*)
+t QuatRelease(void*, int)
+t Q_URLDecode(char*, int, char const*, int)
+t Q_URLEncode(char*, int, char const*, int)
+t SmoothCurve(float)
+t _stream_eos(SQVM*)
+t _stream_len(SQVM*)
+t Vector2DAdd(SQVM*)
+t Vector2DDot(SQVM*)
+t Vector2DGet(SQVM*)
+t Vector2DSet(SQVM*)
+t Vector4DAdd(SQVM*)
+t Vector4DDot(SQVM*)
+t Vector4DGet(SQVM*)
+t Vector4DSet(SQVM*)
+t VectorCross(SQVM*)
+t VectorScale(SQVM*)
+t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t _V_strlower(char*)
+t V_vsnprintf(char*, int, char const*, char*)
+t _V_wcslower(wchar_t*)
+t WriteObject(SQVM*, void*, int (*)(void*, void*, int), SQObjectPtr&)
+t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
+t AngleIMatrix(QAngle const&, matrix3x4_t&)
+t AngleIMatrix(QAngle const&, Vector const&, matrix3x4_t&)
+t AngleVectors(QAngle const&, Vector*)
+t AngleVectors(QAngle const&, Vector*, Vector*, Vector*)
+t beginelement(SQVM*)
+t CopyMemory3D(void*, void const*, int, int, int, int, int, int, int)
+t CrossProduct(float const*, float const*, float*)
+t Cubic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t _InvRSquared(float const*)
+t MathLib_Init(float, float, float, int, bool, bool, bool, bool)
+t MatrixAngles(matrix3x4_t const&, float*)
+t MatrixAngles(matrix3x4_t const&, Quaternion&, Vector&)
+t MatrixAngles(matrix3x4_t const&, RadianEuler&, Vector&)
+t MatrixInvert(matrix3x4_t const&, matrix3x4_t&)
+t MurmurHash64(void const*, int, unsigned int)
+t QAngleToQuat(SQVM*)
+t QAngleTypeOf(SQVM*)
+t QuaternionLn(Quaternion const&, Quaternion&)
+t QuatSubtract(SQVM*)
+t QuatToQAngle(SQVM*)
+t QuatToString(SQVM*)
+t RegisterQuat(SQVM*)
+t SeedRandSIMD(unsigned int)
+t _stream_seek(SQVM*)
+t _stream_tell(SQVM*)
+t TriangleArea(Vector const&, Vector const&, Vector const&)
+t Vector2DNorm(SQVM*)
+t Vector4DNorm(SQVM*)
+t VectorAngles(float const*, float*)
+t VectorAngles(Vector const&, QAngle&)
+t VectorAngles(Vector const&, Vector const&, QAngle&)
+t VectorLength(SQVM*)
+t VectorMatrix(Vector const&, matrix3x4_t&)
+t VectorRotate(float const*, matrix3x4_t const&, float*)
+t VectorRotate(Vector const&, Quaternion const&, Vector&)
+t VectorRotate(Vector const&, QAngle const&, Vector&)
+t VectorsEqual(float const*, float const*)
+t VectorTypeOf(SQVM*)
+t V_FixSlashes(char*, char)
+t V_pretifymem(float, int, bool)
+t V_pretifynum(long long)
+t V_strcasecmp(char const*, char const*)
+t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
+t AngleDistance(float, float)
+t ApproachAngle(float, float, float)
+t error_handler(SQVM*)
+t GammaToLinear(float)
+t iHexCharToInt(char)
+t LinearToGamma(float)
+t MatrixVectors(matrix3x4_t const&, Vector*, Vector*, Vector*)
+t PointsFromBox(Vector const&, Vector const&, Vector*)
+t PolyFromPlane(Vector*, Vector const&, float, float)
+t QAngleForward(SQVM*)
+t QAngleIterate(SQVM*)
+t QAngleRelease(void*, int)
+t QuatConstruct(SQVM*)
+t QuaternionAdd(Quaternion const&, Quaternion const&, Quaternion&)
+t QuaternionExp(Quaternion const&, Quaternion&)
+t RotateBetween(Vector const&, Vector const&)
+t RotationDelta(QAngle const&, QAngle const&, QAngle*)
+t _sort_compare(SQVM*, SQObjectPtr&, SQObjectPtr&, int, int&)
+t _stream_flush(SQVM*)
+t _stream_readn(SQVM*)
+t TransformAABB(matrix3x4_t const&, Vector const&, Vector const&, Vector&, Vector&)
+t V_AppendSlash(char*, int)
+t V_binarytohex(unsigned char const*, int, char*, int)
+t V_BinToString(char*, void*, unsigned int)
+t Vector2DScale(SQVM*)
+t Vector4DScale(SQVM*)
+t VectorCompare(float const*, float const*)
+t VectorIRotate(float const*, matrix3x4_t const&, float*)
+t VectorIterate(SQVM*)
+t VectorRelease(void*, int)
+t VectorVectors(Vector const&, Vector&, Vector&)
+t V_GetFileName(char const*)
+t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_StringToBin(char const*, void*, unsigned int)
+t V_strncasecmp(char const*, char const*, int)
+t AngleNormalize(float)
+t AnglesAreEqual(float, float, float)
+t AreBoundsValid(Vector const&, Vector const&)
+t BoxOnPlaneSide(float const*, float const*, cplane_t const*)
+t cIntToHexDigit(int)
+t declare_stream(SQVM*, char const*, void*, char const*, tagSQRegFunction*, tagSQRegFunction*)
+t Hermite_Spline(float, float, float, float)
+t Hermite_Spline(float, float, float, float, float)
+t Hermite_Spline(Quaternion const&, Quaternion const&, Quaternion const&, float, Quaternion&)
+t Hermite_Spline(Vector const&, Vector const&, Vector const&, float, Vector&)
+t Hermite_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t ITransformAABB(matrix3x4_t const&, Vector const&, Vector const&, Vector&, Vector&)
+t LexHexadecimal(char const*, unsigned int*)
+t MatrixMultiply(VMatrix const&, VMatrix const&, VMatrix&)
+t MatrixToAngles(VMatrix const&, QAngle&)
+t QAngleSubtract(SQVM*)
+t QAngleToString(SQVM*)
+t QuaternionMult(Quaternion const&, Quaternion const&, Quaternion&)
+t Q_URLDecodeRaw(char*, int, char const*, int)
+t Q_URLEncodeRaw(char*, int, char const*, int)
+t RegisterQAngle(SQVM*)
+t RegisterVector(SQVM*)
+t SetScaleMatrix(float, float, float, matrix3x4_t&)
+t SolveQuadratic(float, float, float, float&, float&)
+t SQTypeToString(tagSQObjectType)
+t _stream_writen(SQVM*)
+t Sys_GetFactory(CSysModule*)
+t Sys_GetFactory(char const*)
+t Sys_LoadModule(char const*)
+t TranslateIndex(SQObjectPtr const&)
+t Vector2DLength(SQVM*)
+t Vector2DTypeOf(SQVM*)
+t Vector4DLength(SQVM*)
+t Vector4DTypeOf(SQVM*)
+t VectorLength2D(SQVM*)
+t VectorSubtract(SQVM*)
+t VectorToString(SQVM*)
+t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_StripLastDir(char*, int)
+t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+t AngleQuaternion(RadianEuler const&, Quaternion&)
+t AngleQuaternion(QAngle const&, Quaternion&)
+t AngleVectorsFLU(QAngle const&, Vector*, Vector*, Vector*)
+t BuildGammaTable(float, float, float, int)
+t ClipPolyToPlane(Vector*, int, Vector*, Vector const&, float, float)
+t CompileTypemask(sqvector<int>&, char const*)
+t ConcatRotations(float const (*) [3], float const (*) [3], float (*) [3])
+t ConVar_Register(int, IConCommandBaseAccessor*)
+t EscapeXMLString(SQVM*, char const*)
+t GetModuleHandle(char const*)
+t InitSinCosTable()
+t IsPointInBounds(Vector const&, Vector const&, Vector const&)
+t LinearToTexture(float)
+t MatrixGetColumn(matrix3x4_t const&, int, Vector&)
+t MatrixInverseTR(VMatrix const&, VMatrix&)
+t MatrixNormalize(matrix3x4_t const&, matrix3x4_t&)
+t MatrixSetColumn(Vector const&, int, matrix3x4_t&)
+t MatrixTranspose(matrix3x4_t&)
+t MatrixTranspose(matrix3x4_t const&, matrix3x4_t&)
+t MatrixTranspose(VMatrix const&, VMatrix&)
+t QAngleConstruct(SQVM*)
+t QuaternionAlign(Quaternion const&, Quaternion const&, Quaternion&)
+t QuaternionBlend(Quaternion const&, Quaternion const&, float, Quaternion&)
+t QuaternionScale(Quaternion const&, float, Quaternion&)
+t QuaternionSlerp(Quaternion const&, Quaternion const&, float, Quaternion&)
+t RangeCompressor(float, float, float, float)
+t _stream__cloned(SQVM*)
+t TextureToLinear(int)
+t Vector2DIterate(SQVM*)
+t Vector2DRelease(void*, int)
+t Vector4DIterate(SQVM*)
+t Vector4DRelease(void*, int)
+t VectorConstruct(SQVM*)
+t VectorLengthSqr(SQVM*)
+t VectorNormalize(Vector&)
+t VectorTransform(float const*, matrix3x4_t const&, float*)
+t VectorYawRotate(Vector const&, float, Vector&)
+t V_FixupPathName(char*, unsigned int, char const*)
+t V_StripFilename(char*)
+t AddPointToBounds(Vector const&, Vector&, Vector&)
+t ConcatTransforms(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
+t _hsort_sift_down(SQVM*, SQArray*, int, int, int)
+t init_streamclass(SQVM*)
+t MatricesAreEqual(matrix3x4_t const&, matrix3x4_t const&, float)
+t MatrixBuildOrtho(VMatrix&, double, double, double, double, double, double)
+t MatrixBuildScale(VMatrix&, float, float, float)
+t MatrixBuildScale(VMatrix&, Vector const&)
+t MatrixFromAngles(QAngle const&, VMatrix&)
+t MatrixInitialize(matrix3x4_t&, Vector const&, Vector const&, Vector const&, Vector const&)
+t MatrixQuaternion(matrix3x4_t const&, Quaternion&)
+t MatrixVectorsFLU(matrix3x4_t const&, Vector*, Vector*, Vector*)
+t Parabolic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t QuaternionAngles(Quaternion const&, RadianEuler&)
+t QuaternionAngles(Quaternion const&, QAngle&)
+t QuaternionInvert(Quaternion const&, Quaternion&)
+t QuaternionLookAt(Vector const&, Vector const&, Quaternion&)
+t QuaternionMatrix(Quaternion const&, matrix3x4_t&)
+t QuaternionMatrix(Quaternion const&, Vector const&, matrix3x4_t&)
+t QuaternionMatrix(Quaternion const&, Vector const&, Vector const&, matrix3x4_t&)
+t RandomQuaternion(IUniformRandomStream*)
+t RandomQuaternion()
+t RegisterVector2D(SQVM*)
+t RegisterVector4D(SQVM*)
+t SetupMatrixScale(Vector const&)
+t SignbitsForPlane(cplane_t*)
+t Spline_Normalize(Vector const&, Vector const&, Vector const&, Vector const&, Vector&, Vector&)
+t sq_base_register(SQVM*)
+t _stream_readblob(SQVM*)
+t Sys_UnloadModule(CSysModule*)
+t Vector2DSubtract(SQVM*)
+t Vector2DToString(SQVM*)
+t Vector3DMultiply(VMatrix const&, Vector const&, Vector&)
+t Vector4DMultiply(VMatrix const&, Vector4D const&, Vector4D&)
+t Vector4DSubtract(SQVM*)
+t Vector4DToString(SQVM*)
+t VectorITransform(float const*, matrix3x4_t const&, float*)
+t V_IsAbsolutePath(char const*)
+t V_StripExtension(char const*, char*, int)
+t BasisToQuaternion(Vector const&, Vector const&, Vector const&, Quaternion&)
+t CharacterSetBuild(characterset_t*, char const*)
+t ConnectInterfaces(void* (**)(char const*, int*), int)
+t ConVar_Unregister()
+t FieldTypeToString(int)
+t isbreakablewspace(wchar_t)
+U LoggingSystem_Log(int, LoggingSeverity_t, Color, char const*, ...)
+t MatrixSetIdentity(VMatrix&)
+t PlaneIntersection(VPlane const&, VPlane const&, VPlane const&, Vector&)
+t RegisterInterface(void* (*)(char const*, int*), char const*, void**)
+t SetIdentityMatrix(matrix3x4_t&)
+t SetupMatrixAngles(QAngle const&)
+t SmoothCurve_Tweak(float, float, float)
+t SrgbGammaToLinear(float)
+t SrgbLinearToGamma(float)
+t _stream_writeblob(SQVM*)
+t StringAfterPrefix(char const*, char const*)
+t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
+t TetrahedronVolume(Vector const&, Vector const&, Vector const&, Vector const&)
+t UnitTestVectorFLU()
+t V_ComposeFileName(char const*, char const*, char*, int)
+t Vector2DConstruct(SQVM*)
+t Vector2DLengthSqr(SQVM*)
+t Vector4DConstruct(SQVM*)
+t Vector4DLengthSqr(SQVM*)
+t VectorLength2DSqr(SQVM*)
+t V_ExtractFilePath(char const*, char*, int)
+t V_StringToColor32(color32_s*, char const*)
+t X360GammaToLinear(float)
+t X360LinearToGamma(float)
+t BSpline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t CalcDistanceToLine(Vector const&, Vector const&, Vector const&, float*)
+t Catmull_Rom_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t ConVar_AppendFlags(ConCommandBase const*, char*, unsigned int)
+t _getmemberbyhandle(SQVM*, SQObjectPtr&, tagSQMemberHandle const*, SQObjectPtr*&)
+t GetSIMDRandContext()
+t HashStringCaseless(char const*)
+t MathLib_MMXEnabled()
+t MathLib_SSEEnabled()
+t MatrixBuildRotateZ(VMatrix&, float)
+t PolyFromPlane_SIMD(float __vector(4)*, float __vector(4) const&, float)
+t PolyFromPlane_SIMD(float __vector*, float __vector const&, float)
+t QuaternionMultiply(Quaternion const&, Vector const&, Vector&)
+t ReconnectInterface(void* (*)(char const*, int*), char const*)
+t ReconnectInterface(void* (*)(char const*, int*), char const*, void**)
+t SetupMatrixAxisRot(Vector const&, float)
+t sq_aux_gettypedarg(SQVM*, int, tagSQObjectType, SQObjectPtr**)
+t sq_aux_invalidtype(SQVM*, tagSQObjectType)
+t Sys_GetFactoryThis()
+t UnitTestQuatExpLog()
+t V_DefaultExtension(char*, char const*, int)
+t V_FixDoubleSlashes(char*)
+t V_GetFileExtension(char const*)
+t V_MakeAbsolutePath(char*, int, char const*, char const*)
+t V_MakeRelativePath(char const*, char const*, char*, int)
+t V_RemoveDotSlashes(char*, char, bool)
+t V_StringToIntArray(int*, int, char const*)
+t AxisAngleQuaternion(Vector const&, float, Quaternion&)
+t BuildTransformedBox(Vector*, Vector const&, Vector const&, matrix3x4_t const&)
+t Hermite_SplineBasis(float, float*)
+t LinearToScreenGamma(float)
+t MathLib_SSE2Enabled()
+t MatrixBuildRotation(VMatrix&, Vector const&, Vector const&)
+t QuaternionAngleDiff(Quaternion const&, Quaternion const&)
+t QuaternionAxisAngle(Quaternion const&, Vector&, float&)
+t QuaternionConjugate(Quaternion const&, Quaternion&)
+t QuaternionionGetYaw(Quaternion const&)
+t QuaternionNormalize(Quaternion&)
+t QuatSetPitchYawRoll(SQVM*)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t SetupMatrixIdentity()
+t SrgbGammaTo360Gamma(float)
+t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
+t ClipPolyToPlane_SIMD(float __vector(4)*, int, float __vector(4)*, float __vector(4) const&, float)
+t ClipPolyToPlane_SIMD(float __vector*, int, float __vector*, float __vector const&, float)
+t ComputeTrianglePlane(Vector const&, Vector const&, Vector const&, Vector&, float&)
+t DisconnectInterfaces()
+t GenerateOrthoFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, float, float, VPlane*)
+t GetInterpolationData(float const*, float const*, int, int, float, bool, float*, float*, float*)
+t MatrixInverseGeneral(VMatrix const&, VMatrix&)
+t MatrixQuaternionFast(matrix3x4_t const&, Quaternion&)
+t MatrixQuaternionTest(unsigned int)
+t MatrixTransformPlane(VMatrix const&, cplane_t const&, cplane_t&)
+t MurmurHash2LowerCase(char const*, unsigned int)
+t QuaternionDotProduct(Quaternion const&, Quaternion const&)
+t QuaternionionGetRoll(Quaternion const&)
+t QuaternionVectorsFLU(Quaternion const&, Vector*, Vector*, Vector*)
+t QuatToKeyValueString(SQVM*)
+t SetupMatrixOrgAngles(Vector const&, QAngle const&)
+t _VectorNormalizeFast(Vector&)
+t V_StripTrailingSlash(char*)
+t AngleVectorsTranspose(QAngle const&, Vector*, Vector*, Vector*)
+t CalcDistanceSqrToLine(Vector const&, Vector const&, Vector const&, float*)
+t CalcSqrDistanceToAABB(Vector const&, Vector const&, Vector const&)
+t ColorRGBExp32ToVector(ColorRGBExp32 const&, Vector&)
+t ConnectTier1Libraries(void* (**)(char const*, int*), int)
+t CreateDefaultDelegate(SQSharedState*, tagSQRegFunction*)
+t DefaultCompletionFunc(char const*, char (*) [64])
+t GreatestCommonDivisor(int, int)
+t MatrixQuaternionTest2(unsigned int)
+t QuaternionionGetPitch(Quaternion const&)
+t SetupMatrixProjection(Vector const&, VPlane const&)
+t SetupMatrixReflection(VPlane const&)
+t SolveInverseQuadratic(float, float, float, float, float, float, float&, float&, float&)
+t _sqstd_compiler_error(SQVM*, char const*, char const*, int, int)
+t Sys_IsDebuggerPresent()
+t UnitTestRotateBetween()
+t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
+t V_GetCurrentDirectory(char*, int)
+t V_SetCurrentDirectory(char const*)
+t V_UnqualifiedFileName(char const*)
+t AngleNormalizePositive(float)
+t CalcClosestPointOnAABB(Vector const&, Vector const&, Vector const&, Vector&)
+t CalcClosestPointOnLine(Vector const&, Vector const&, Vector const&, Vector&, float*)
+t ClipLineSegmentToPlane(Vector const&, Vector const&, Vector*, Vector*, float)
+t GammaToLinearFullRange(float)
+t GetNoEscCharConversion()
+t LinearToGammaFullRange(float)
+t MatrixBuildPerspective(VMatrix&, float, float, float, float)
+t MatrixBuildTranslation(VMatrix&, float, float, float)
+t MatrixBuildTranslation(VMatrix&, Vector const&)
+t MatrixInverseTranspose(matrix3x4_t const&, matrix3x4_t&)
+t MatrixInverseTranspose(VMatrix const&, VMatrix&)
+t QAngleToKeyValueString(SQVM*)
+t QuaternionBlendNoAlign(Quaternion const&, Quaternion const&, float, Quaternion&)
+t QuaternionSlerpNoAlign(Quaternion const&, Quaternion const&, float, Quaternion&)
+t ReleaseSIMDRandContext(int)
+t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
+t ScriptCreateSquirrelVM()
+t SetupMatrixTranslation(Vector const&)
+t VectorToKeyValueString(SQVM*)
+t V_ExtractFileExtension(char const*, char*, int)
+t V_normalizeFloatString(char*)
+t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
+t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
+t ClipPolyToPlane_Precise(double*, int, double*, double const*, double, double)
+t ConVar_PrintDescription(ConCommandBase const*)
+t CreateInterfaceInternal(char const*, int*)
+t Cubic_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t FrustumPlanesFromMatrix(VMatrix const&, Frustum_t&)
+t GenerateOrthoFrustumFLU(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, float, float, VPlane*)
+t Kochanek_Bartels_Spline(float, float, float, Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t MatrixBuildPerspectiveX(VMatrix&, double, double, double, double)
+t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
+t ScriptDestroySquirrelVM(IScriptVM*)
+t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
+t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
+t ConcatTransforms_Aligned(matrix3x4a_t const&, matrix3x4a_t const&, matrix3x4a_t&)
+t DisconnectTier1Libraries()
+t GetCStringCharConversion()
+t MatrixQuaternionFastTest(unsigned int)
+t QuaternionVectorsForward(Quaternion const&, Vector*)
+t RandomVectorInUnitCircle(Vector2D*)
+t RandomVectorInUnitSphere(IUniformRandomStream*)
+t RandomVectorInUnitSphere(Vector*)
+t RandomVectorInUnitSphere()
+t RandomVectorOnUnitSphere(IUniformRandomStream*)
+t RandomVectorOnUnitSphere()
+t SetupMatrixAxisToAxisRot(Vector const&, Vector const&)
+t Vector2DToKeyValueString(SQVM*)
+t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
+t Vector4DToKeyValueString(SQVM*)
+t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
+t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
+t Vector3DMultiplyTranspose(VMatrix const&, Vector const&, Vector&)
+t Vector4DMultiplyTranspose(VMatrix const&, Vector4D const&, Vector4D&)
+t Catmull_Rom_Spline_Tangent(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, float, Frustum_t&)
+t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, VPlane*)
+t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
+t V_TranslateLineFeedsToUnix(char*)
+t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
+t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
+t Parabolic_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t Sys_RunningWithDebugModules()
+t TransformAnglesToLocalSpace(QAngle const&, matrix3x4_t const&)
+t TransformAnglesToWorldSpace(QAngle const&, matrix3x4_t const&)
+t VectorPerpendicularToVector(Vector const&, Vector*)
+t CalcDistanceSqrToLineSegment(Vector const&, Vector const&, Vector const&, float*)
+t Catmull_Rom_Spline_Normalize(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t MatrixBuildRotationAboutAxis(VMatrix&, Vector const&, float)
+t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
+t QuaternionAverageExponential(Quaternion&, int, Quaternion const*, float const*)
+t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
+t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t GeneratePerspectiveFrustumFLU(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, VPlane*)
+t _V_stricmp_NegativeForUnequal(char const*, char const*)
+t CalcDistanceSqrToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
+t HashStringCaselessConventional(char const*)
+t SolveInverseQuadraticMonotonic(float, float, float, float, float, float, float&, float&, float&)
+t StringAfterPrefixCaseSensitive(char const*, char const*)
+t V_AddBackSlashesToSpecialChars(char const*)
+t CalcClosestPointOnLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
+t SolveInverseReciprocalQuadratic(float, float, float, float, float, float, float&, float&, float&)
+t CalcSqrDistAndClosestPointOnAABB(Vector const&, Vector const&, Vector const&, Vector&, float&)
+t MatrixBuildPerspectiveOffCenterX(VMatrix&, double, double, double, double, double, double, double, double)
+t CalcLineToLineIntersectionSegment(Vector const&, Vector const&, Vector const&, Vector const&, Vector*, Vector*, float*, float*)
+t CalculateAABBFromProjectionMatrix(VMatrix const&, Vector*, Vector*)
+t Kochanek_Bartels_Spline_NormalizeX(float, float, float, Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t Vector3DMultiplyPositionProjective(VMatrix const&, Vector const&, Vector&)
+t CalculateSphereFromProjectionMatrix(VMatrix const&, Vector*, float*)
+t Catmull_Rom_Spline_Integral_Normalize(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t CalculateAABBFromProjectionMatrixInverse(VMatrix const&, Vector*, Vector*)
+t ExtractClipPlanesFromNonTransposedMatrix(VMatrix const&, VPlane*, bool)
+t CalculateSphereFromProjectionMatrixInverse(VMatrix const&, Vector*, float*)
+t Bias(float, float)
+t Gain(float, float)
+t Hash4(void const*)
+t Hash8(void const*)
+t Experimental_SearchFunctionProtoForAllSubProtosMatchingSourceAndLine(SQFunctionProto*, sqvector<SQFunctionProto*>&, char const*, int)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+t Hash12(void const*)
+t Hash16(void const*)
+t _hsort(SQVM*, SQObjectPtr&, int, int, int)
+t Q_log2(unsigned int)
+t _sqrtf(float)
+t V_atof(char const*)
+t V_atoi(char const*)
+t BSpline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t Compile(SQVM*, int (*)(void*), void*, char const*, SQObjectPtr&, bool, bool)
+t HashInt(int)
+t QuatAdd(SQVM*)
+t QuatDot(SQVM*)
+t QuatGet(SQVM*)
+t QuatSet(SQVM*)
+t _rsqrtf(float)
+t str2num(char const*, SQObjectPtr&)
+t CalcFovX(float, float)
+t CalcFovY(float, float)
+t CeilPow2(int)
+t CheckTag(SQVM*, int (*)(void*, void*, int), void*, unsigned int)
+t HSVtoRGB(Vector const&, Vector&)
+t LexOctal(char const*, unsigned int*)
+t QAngleUp(SQVM*)
+t QuatNorm(SQVM*)
+t RandSIMD(int)
+t RandSIMD()
+t RGBtoHSV(Vector const&, Vector&)
+t SafeRead(SQVM*, int (*)(void*, void*, int), void*, void*, int)
+t V_atoi64(char const*)
+t V_nibble(char)
+t WriteTag(SQVM*, int (*)(void*, void*, int), void*, unsigned int)
+t AngleDiff(float, float)
+t attribute(SQVM*)
+t FloorPow2(int)
+t HashBlock(void const*, unsigned int)
+t QAngleAdd(SQVM*)
+t QAngleGet(SQVM*)
+t QAngleSet(SQVM*)
+t QAngleYaw(SQVM*)
+t QuatScale(SQVM*)
+t SafeWrite(SQVM*, int (*)(void*, void*, int), void*, void*, int)
+t V_atoui64(char const*)
+t VectorAdd(SQVM*)
+t VectorDot(SQVM*)
+t VectorGet(SQVM*)
+t VectorSet(SQVM*)
+t _V_memcmp(void const*, void const*, int)
+t _V_memcpy(void*, void const*, int)
+t _V_memset(void*, int, int)
+t _V_strcmp(char const*, char const*)
+t _V_strcpy(char*, char const*)
+t V_stristr(char*, char const*)
+t V_stristr(char const*, char const*)
+t V_StrLeft(char const*, int, char*, int)
+t _V_strlen(char const*)
+t V_strncat(char*, char const*, unsigned int, int)
+t V_strnchr(char const*, char, int)
+t V_strncmp(char const*, char const*, int)
+t V_strncpy(char*, char const*, int)
+t V_strnlwr(char*, unsigned int)
+t _V_strstr(char const*, char const*)
+t _V_strupr(char*)
+t _V_wcscmp(wchar_t const*, wchar_t const*)
+t _V_wcslen(wchar_t const*)
+t V_wcsncat(wchar_t*, wchar_t const*, int, int)
+t V_wcsncpy(wchar_t*, wchar_t const*, int)
+t _V_wcsupr(wchar_t*)
+t operator delete[](void*)
+t operator delete(void*)
+b guard variable for SQDbgServer::SuperVerbose()::s_bVerbose
+b guard variable for CScriptManager::CreateVM(ScriptLanguage_t)::binding
+b guard variable for CScriptManager::CreateVM(ScriptLanguage_t)::binding
+b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+b guard variable for CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+t array_find(SQVM*)
+t array_sort(SQVM*)
+t base_array(SQVM*)
+t base_dummy(SQVM*)
+t base_error(SQVM*)
+d base_funcs
+t base_print(SQVM*)
+t _blob__get(SQVM*)
+t _blob__set(SQVM*)
+t math_atan2(SQVM*)
+t math_floor(SQVM*)
+t math_log10(SQVM*)
+t math_srand(SQVM*)
+b s_BreakSet
+t array_apply(SQVM*)
+t array_slice(SQVM*)
+t base_assert(SQVM*)
+t base_callee(SQVM*)
+t _blob_swap2(SQVM*)
+t _blob_swap4(SQVM*)
+t __map_array(SQArray*, SQArray*, SQVM*)
+b s_nCVarFlag
+t string_find(SQVM*)
+t thread_call(SQVM*)
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec4_origin
+b vec4_origin
+b vec4_origin
+t weakref_ref(SQVM*)
+t _addrexmatch(SQVM*, char const*, char const*, char const*)
+t AppendPrintf(char*, unsigned int, char const*, ...)
+t array_append(SQVM*)
+t array_extend(SQVM*)
+t array_filter(SQVM*)
+t array_insert(SQVM*)
+t array_reduce(SQVM*)
+t array_remove(SQVM*)
+t array_resize(SQVM*)
+t base_suspend(SQVM*)
+t _blob__nexti(SQVM*)
+t _blob_resize(SQVM*)
+t closure_call(SQVM*)
+d rexobj_funcs
+t string_slice(SQVM*)
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec4_invalid
+b vec4_invalid
+b vec4_invalid
+t array_reverse(SQVM*)
+t _blob__cloned(SQVM*)
+d bloblib_funcs
+d _blob_methods
+t _blob__typeof(SQVM*)
+t class_getbase(SQVM*)
+t closure_acall(SQVM*)
+t closure_pcall(SQVM*)
+t _g_blob_swap2(SQVM*)
+t _g_blob_swap4(SQVM*)
+d g_Script_init
+d mathlib_funcs
+t _regexp_match(SQVM*)
+b s_bRegistered
+b s_EmptyConVar
+t _string_split(SQVM*)
+t _string_strip(SQVM*)
+b texgammatable
+t thread_wakeup(SQVM*)
+t base_newthread(SQVM*)
+t class_instance(SQVM*)
+t _closure_acall(SQVM*, unsigned int)
+t closure_pacall(SQVM*)
+b lineartoscreen
+t _regexp_search(SQVM*)
+d s_BackSlashMap
+t sqstd_rex_list(SQRex*)
+t _string_format(SQVM*)
+t _string_lstrip(SQVM*)
+t _string_rstrip(SQVM*)
+t string_tolower(SQVM*)
+t string_toupper(SQVM*)
+r wszCantEndLine
+t class_newmember(SQVM*)
+t closure_bindenv(SQVM*)
+t _g_blob_castf2i(SQVM*)
+t _g_blob_casti2f(SQVM*)
+r g_nRandomValues
+b lineartotexture
+t _regexp_capture(SQVM*)
+t _regexp__typeof(SQVM*)
+t sqstd_rex_error(SQRex*, char const*) [clone .isra.1]
+d _stream_methods
+d stringlib_funcs
+t Sys_LoadLibrary(char const*)
+t table_rawdelete(SQVM*)
+b texturetolinear
+t closure_getinfos(SQVM*)
+t container_rawget(SQVM*)
+t container_rawset(SQVM*)
+t get_slice_params(SQVM*, int&, int&, SQObjectPtr&) [clone .constprop.30]
+b s_bBuiltBreakSet
+d s_nDLLIdentifier
+t sqstd_rex_expect(SQRex*, int)
+t thread_getstatus(SQVM*)
+r wszCantBeginLine
+t base_getroottable(SQVM*)
+t base_setdebughook(SQVM*)
+t base_setroottable(SQVM*)
+t _blob_constructor(SQVM*)
+t _blob_releasehook(void*, int)
+t _g_blob_swapfloat(SQVM*)
+t instance_getclass(SQVM*)
+d s_DefaultAccessor
+t sqstd_rex_element(SQRex*)
+t sqstd_rex_newnode(SQRex*, int)
+t table_getdelegate(SQVM*)
+t table_setdelegate(SQVM*)
+t base_compilestring(SQVM*)
+t base_getconsttable(SQVM*)
+t base_getstackinfos(SQVM*)
+t base_setconsttable(SQVM*)
+t class_rawnewmember(SQVM*)
+d g_PrintConVarFlags
+b s_nConnectionCount
+t sqstd_rex_charnode(SQRex*, unsigned int)
+b s_SIMDRandContexts
+t base_collectgarbage(SQVM*)
+t class_getattributes(SQVM*)
+t class_setattributes(SQVM*)
+t container_rawexists(SQVM*)
+t generator_getstatus(SQVM*)
+t __getcallstackinfos(SQVM*, int)
+d g_pInterfaceGlobals
+t _regexp_constructor(SQVM*)
+t _regexp_subexpcount(SQVM*)
+t _rexobj_releasehook(void*, int)
+t sqstd_rex_matchnode(SQRex*, tagSQRexNode*, char const*, tagSQRexNode*)
+t Sys_LoadLibraryGuts(char const*)
+t base_enabledebuginfo(SQVM*)
+t base_seterrorhandler(SQVM*)
+t default_delegate_len(SQVM*)
+b g_CleanupSymbolTable
+t obj_delegate_weakref(SQVM*)
+b s_nRandContextsInUse
+b s_nRegistrationCount
+t thread_getstackinfos(SQVM*)
+t _sqstd_aux_printerror(SQVM*)
+t sqstd_rex_matchcclass(int, char)
+t sqstd_rex_parsenumber(SQRex*)
+t number_delegate_tochar(SQVM*)
+t base_resurectureachable(SQVM*)
+b g_Mathlib_GammaToLinear
+b g_Mathlib_LinearToGamma
+t default_delegate_tofloat(SQVM*)
+t default_delegate_tostring(SQVM*)
+b s_pConnectionRegistration
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+t default_delegate_tointeger(SQVM*)
+d s_pConversionArrays_NoEscConversion
+d s_pConversionArrays_StringCharConversion
+b __g_CreateCScriptManagerIScriptManager_reg
+t __CreateCScriptManagerIScriptManager_interface()
+r s_hex
+t math_abs(SQVM*)
+t math_cos(SQVM*)
+t math_exp(SQVM*)
+t math_log(SQVM*)
+t math_pow(SQVM*)
+t math_sin(SQVM*)
+t math_tan(SQVM*)
+t array_map(SQVM*)
+t array_pop(SQVM*)
+t array_top(SQVM*)
+t base_type(SQVM*)
+t math_acos(SQVM*)
+t math_asin(SQVM*)
+t math_atan(SQVM*)
+t math_ceil(SQVM*)
+t math_fabs(SQVM*)
+t math_rand(SQVM*)
+t math_sqrt(SQVM*)
+t obj_clear(SQVM*)
+t PrintTabs(int)
+t __strip_l(char const*, char const**)
+t __strip_r(char const*, int, char const**) [clone .part.0]
+t ConCommand::CanAutoComplete()
+t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t ConCommand::Dispatch(CCommand const&)
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [64]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [64]))
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [64]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [64]))
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+t CUtlBuffer::GetOverflow(int)
+t CUtlBuffer::IsBigEndian()
+t CUtlBuffer::PutOverflow(int)
+t CUtlBuffer::AssumeMemory(void*, int, int, int)
+t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::DetachMemory()
+t CUtlBuffer::SetBigEndian(bool)
+t CUtlBuffer::EatCPPComment()
+t CUtlBuffer::EatWhiteSpace()
+t CUtlBuffer::OnGetOverflow(int)
+t CUtlBuffer::OnPutOverflow(int)
+t CUtlBuffer::SetBufferType(bool, bool)
+t CUtlBuffer::EnsureCapacity(int)
+t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekWhiteSpace(int)
+t CUtlBuffer::PeekStringMatch(int, char const*, int)
+t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+t CUtlBuffer::GetStringInternal(char*, unsigned int)
+t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+t CUtlBuffer::AddNullTermination(int)
+t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+t CUtlBuffer::ActivateByteSwapping(bool)
+t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+t CUtlBuffer::Get(void*, int)
+t CUtlBuffer::Put(void const*, int)
+t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+t CUtlBuffer::Swap(CUtlBuffer&)
+t CUtlBuffer::Scanf(char const*, ...)
+t CUtlBuffer::Printf(char const*, ...)
+t CUtlBuffer::GetLine(char*, int)
+t CUtlBuffer::GetUpTo(void*, int)
+t CUtlBuffer::PeekGet(int, int)
+t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::VaScanf(char const*, char*)
+t CUtlBuffer::CheckGet(int)
+t CUtlBuffer::CheckPut(int)
+t CUtlBuffer::GetToken(char const*)
+t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<CUtlString, int>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.32]
+t CUtlMemory<unsigned char, int>::Grow(int)
+t CUtlMemory<unsigned char, int>::Purge()
+t CUtlMemory<int, int>::Grow(int)
+t CUtlMemory<unsigned int, int>::Grow(int)
+t CUtlMemory<CCountedStringPoolBase<unsigned int>::hash_item_t, int>::Grow(int)
+t CUtlMemory<CCountedStringPoolBase<unsigned short>::hash_item_t, int>::Grow(int)
+t CUtlMemory<char*, int>::Grow(int)
+t CUtlMemory<void (*)(IConVar*, char const*, float), int>::Grow(int)
+t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
+t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<unsigned short, int>::Grow(int)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Purge()
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlString::MatchesPattern(CUtlString const&, int)
+t CUtlString::StripTrailingSlash()
+t CUtlString::UnqualifiedFilename()
+t CUtlString::Get()
+t CUtlString::Set(char const*)
+t CUtlString::Left(int)
+t CUtlString::Purge()
+t CUtlString::Right(int)
+t CUtlString::Slice(int, int)
+t CUtlString::Append(char const*)
+t CUtlString::Format(char const*, ...)
+t CUtlString::AbsPath(char const*)
+t CUtlString::DirName()
+t CUtlString::Replace(char, char)
+t CUtlString::ToLower()
+t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::SetDirect(char const*, int)
+t CUtlString::SetLength(int)
+t CUtlString::operator=(char const*)
+t CUtlString::operator=(CUtlString const&)
+t CUtlString::CUtlString(char const*)
+t CUtlString::CUtlString(void const*, int)
+t CUtlString::CUtlString(void*, int, int)
+t CUtlString::CUtlString(CUtlString const&)
+t CUtlString::CUtlString()
+t CUtlString::CUtlString(char const*)
+t CUtlString::CUtlString(void const*, int)
+t CUtlString::CUtlString(void*, int, int)
+t CUtlString::CUtlString(CUtlString const&)
+t CUtlString::CUtlString()
+t CUtlString::operator+=(char)
+t CUtlString::operator+=(double)
+t CUtlString::operator+=(int)
+t CUtlString::operator+(char const*)
+t CUtlString::operator+=(char const*)
+t CUtlString::operator+=(CUtlString const&)
+t CUtlSymbol::Initialize()
+b CUtlSymbol::s_pSymbolTable
+t CUtlSymbol::LockTableForRead()
+t CUtlSymbol::UnlockTableForRead()
+t CUtlSymbol::DisableStaticSymbolTable()
+d CUtlSymbol::s_bAllowStaticSymbolTable
+t CUtlSymbol::CurrTable()
+t CUtlSymbol::CUtlSymbol(char const*)
+t CUtlSymbol::CUtlSymbol(char const*)
+t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
+t CUtlVector<CVariantBase<CVariantDefaultAllocator>, CUtlMemoryFixed<CVariantBase<CVariantDefaultAllocator>, 14u, 0> >::SetCount(int)
+t CUtlVector<int, CUtlMemory<int, int> >::InsertBefore(int, int const&)
+t CUtlVector<int, CUtlMemory<int, int> >::EnsureCapacity(int)
+t CUtlVector<int, CUtlMemory<int, int> >::SetCount(int)
+t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+t CUtlVector<unsigned int, CUtlMemory<unsigned int, int> >::SetCount(int)
+t CUtlVector<CCountedStringPoolBase<unsigned int>::hash_item_t, CUtlMemory<CCountedStringPoolBase<unsigned int>::hash_item_t, int> >::GrowVector(int)
+t CUtlVector<CCountedStringPoolBase<unsigned int>::hash_item_t, CUtlMemory<CCountedStringPoolBase<unsigned int>::hash_item_t, int> >::ShiftElementsRight(int, int)
+t CUtlVector<CCountedStringPoolBase<unsigned short>::hash_item_t, CUtlMemory<CCountedStringPoolBase<unsigned short>::hash_item_t, int> >::GrowVector(int)
+t CUtlVector<CCountedStringPoolBase<unsigned short>::hash_item_t, CUtlMemory<CCountedStringPoolBase<unsigned short>::hash_item_t, int> >::ShiftElementsRight(int, int)
+t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::InsertBefore(int, void (* const&)(IConVar*, char const*, float))
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
+t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
+t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::SetCount(int)
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+t SQCompiler::DeleteExpr()
+t SQCompiler::Expression()
+t SQCompiler::Statements()
+t SQCompiler::ThrowError(void*, char const*)
+t SQCompiler::FunctionExp(int, bool)
+t SQCompiler::IfStatement()
+t SQCompiler::BitwiseOrExp()
+t SQCompiler::ForStatement()
+t SQCompiler::LogicalOrExp()
+t SQCompiler::PrefixedExpr()
+t SQCompiler::PrefixIncDec(int)
+t SQCompiler::BitwiseAndExp()
+t SQCompiler::BitwiseXorExp()
+t SQCompiler::EnumStatement()
+t SQCompiler::LogicalAndExp()
+t SQCompiler::CreateFunction(tagSQObject&, bool)
+t SQCompiler::WhileStatement()
+t SQCompiler::SwitchStatement()
+t SQCompiler::DoWhileStatement()
+t SQCompiler::ForEachStatement()
+t SQCompiler::FunctionStatement()
+t SQCompiler::ParseTableOrClass(int, int)
+t SQCompiler::TryCatchStatement()
+t SQCompiler::LocalDeclStatement()
+t SQCompiler::EqExp()
+t SQCompiler::Error(char const*, ...)
+t SQCompiler::Expect(int)
+t SQCompiler::Factor()
+t void SQCompiler::BIN_EXP<void (SQCompiler::*)()>(SQOpcode, void (SQCompiler::*)(), int)
+t SQCompiler::CompExp()
+t SQCompiler::Compile(SQObjectPtr&)
+t SQCompiler::MultExp()
+t SQCompiler::PlusExp()
+t SQCompiler::ClassExp()
+t SQCompiler::ShiftExp()
+t SQCompiler::CommaExpr()
+t SQCompiler::Statement(bool)
+t SQInstance::InstanceOf(SQClass*)
+t SQInstance::GetMetaMethod(SQVM*, SQMetaMethod, SQObjectPtr&)
+t SQInstance::Init(SQSharedState*)
+t SQInstance::Mark(SQCollectable**)
+t SQInstance::GetType()
+t SQInstance::Iterate(CSQStateIterator*)
+t SQInstance::Release()
+t SQInstance::Finalize()
+t SQInstance::SQInstance(SQSharedState*, SQClass*, int)
+t SQInstance::SQInstance(SQSharedState*, SQInstance*, int)
+t SQInstance::SQInstance(SQSharedState*, SQClass*, int)
+t SQInstance::SQInstance(SQSharedState*, SQInstance*, int)
+t SQInstance::~SQInstance()
+t SQInstance::~SQInstance()
+t SQInstance::~SQInstance()
+t SQOuterVar::~SQOuterVar()
+t SQOuterVar::~SQOuterVar()
+t SQUserData::Mark(SQCollectable**)
+t SQUserData::GetType()
+t SQUserData::Iterate(CSQStateIterator*)
+t SQUserData::Release()
+t SQUserData::Finalize()
+t SQUserData::~SQUserData()
+t SQUserData::~SQUserData()
+t SQUserData::~SQUserData()
+t CSquirrelVM::ClearValue(HSCRIPT__*, char const*)
+t CSquirrelVM::CopyHandle(HSCRIPT__*)
+t CSquirrelVM::DumpObject(SQVM*)
+t CSquirrelVM::QueryBreak(SQVM*)
+t CSquirrelVM::WriteState(CUtlBuffer*)
+t CSquirrelVM::CreateArray(CVariantBase<CVariantDefaultAllocator>&)
+t CSquirrelVM::CreateClass(ScriptClassDesc_t*)
+t CSquirrelVM::CreateScope(char const*, HSCRIPT__*)
+t CSquirrelVM::CreateTable(CVariantBase<CVariantDefaultAllocator>&)
+t CSquirrelVM::GetIdentity(HSCRIPT__*)
+t CSquirrelVM::GetKeyValue(HSCRIPT__*, int, CVariantBase<CVariantDefaultAllocator>*, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelVM::GetLanguage()
+t CSquirrelVM::PushVariant(CVariantBase<CVariantDefaultAllocator> const&, bool)
+t CSquirrelVM::ReleaseHook(void*, int)
+t CSquirrelVM::ValueExists(HSCRIPT__*, char const*)
+t CSquirrelVM::GetDeveloper(SQVM*)
+t CSquirrelVM::GetKeyValue2(HSCRIPT__*, int, CVariantBase<CVariantDefaultAllocator>*, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelVM::GetRootTable()
+t CSquirrelVM::LookupObject(int, HSCRIPT__*, bool, bool)
+t CSquirrelVM::LookupObject(char const*, HSCRIPT__*, bool, bool)
+t CSquirrelVM::ReleaseScope(HSCRIPT__*)
+t CSquirrelVM::ReleaseValue(CVariantBase<CVariantDefaultAllocator>&)
+t CSquirrelVM::SetDebugHook(void (*)(SQVM*, int, char const*, int, char const*))
+t CSquirrelVM::AddSearchPath(char const*)
+t CSquirrelVM::CompileScript(char const*, char const*)
+t CSquirrelVM::GetArrayCount(HSCRIPT__*)
+t CSquirrelVM::GetInternalVM()
+t CSquirrelVM::MakeNamespace(SQVM*)
+t CSquirrelVM::RegisterClass(ScriptClassDesc_t*)
+t CSquirrelVM::ReleaseScript(HSCRIPT__*)
+t CSquirrelVM::TranslateCall(SQVM*)
+t CSquirrelVM::ArrayAddToTail(HSCRIPT__*, CVariantBase<CVariantDefaultAllocator> const&)
+t CSquirrelVM::ClearDebugHook(void (*)(SQVM*, int, char const*, int, char const*))
+t CSquirrelVM::CollectGarbage(char const*, bool)
+t CSquirrelVM::CollectGarbage(char const*, bool) [clone .part.53]
+t CSquirrelVM::GetScalarValue(HSCRIPT__*, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelVM::LookupFunction(char const*, HSCRIPT__*, bool)
+t CSquirrelVM::RaiseException(char const*)
+t CSquirrelVM::ReferenceScope(HSCRIPT__*)
+t CSquirrelVM::RemoveInstance(HSCRIPT__*)
+t CSquirrelVM::CallConstructor(SQVM*)
+t CSquirrelVM::ConnectDebugger()
+t CSquirrelVM::ExecuteFunction(HSCRIPT__*, CVariantBase<CVariantDefaultAllocator>*, int, CVariantBase<CVariantDefaultAllocator>*, HSCRIPT__*, bool)
+t CSquirrelVM::GetLanguageName()
+t CSquirrelVM::InstanceIsValid(SQVM*)
+t CSquirrelVM::ReleaseFunction(HSCRIPT__*)
+t CSquirrelVM::ConvertToVariant(SQVM*, tagSQObject, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelVM::GetInstanceValue(HSCRIPT__*, ScriptClassDesc_t*)
+t CSquirrelVM::InstanceToString(SQVM*)
+t CSquirrelVM::RegisterFunction(ScriptFunctionBinding_t*)
+t CSquirrelVM::RegisterInstance(ScriptClassDesc_t*, void*)
+t CSquirrelVM::SetErrorCallback(bool (*)(ScriptErrorLevel_t, char const*))
+t CSquirrelVM::GenerateUniqueKey(char const*, char*, int)
+t CSquirrelVM::SetOutputCallback(void (*)(char const*))
+t CSquirrelVM::DisconnectDebugger()
+t CSquirrelVM::GetNumTableEntries(HSCRIPT__*)
+t CSquirrelVM::IsClassDerivedFrom(ScriptClassDesc_t const*, ScriptClassDesc_t const*)
+t CSquirrelVM::SetInstanceUniqeId(HSCRIPT__*, char const*)
+t CSquirrelVM::ReleaseScriptObject(HSCRIPT__*)
+t CSquirrelVM::CreateNativeInstance(ScriptClassDesc_t*, void*, int (*)(void*, int))
+t CSquirrelVM::GetFunctionSignature(SQVM*)
+t CSquirrelVM::RegisterFunctionGuts(ScriptFunctionBinding_t*, ScriptClassDesc_t*)
+t CSquirrelVM::ForwardConsoleCommand(CCommandContext const&, CCommand const&)
+t CSquirrelVM::MakeSquirrelMetamethod_Get(HSCRIPT__*&, char const*, IScriptVM::ISquirrelMetamethodDelegate*, bool)
+t CSquirrelVM::ExternalInstanceReleaseHook(void*, int)
+t CSquirrelVM::DestroySquirrelMetamethod_Get(CSquirrelMetamethodDelegateImpl*)
+t CSquirrelVM::Run(HSCRIPT__*, bool)
+t CSquirrelVM::Run(HSCRIPT__*, HSCRIPT__*, bool)
+t CSquirrelVM::Run(char const*, bool)
+t CSquirrelVM::Experimental_ReplaceAFunctionInSourceFileAtLine(CSquirrelVM&, char const*, int)
+t CSquirrelVM::Init()
+t CSquirrelVM::Frame(float)
+t CSquirrelVM::IsArray(HSCRIPT__*)
+t CSquirrelVM::IsTable(HSCRIPT__*)
+t CSquirrelVM::GetValue(HSCRIPT__*, int, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelVM::GetValue(HSCRIPT__*, char const*, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelVM::SetValue(HSCRIPT__*, int, CVariantBase<CVariantDefaultAllocator> const&)
+t CSquirrelVM::SetValue(HSCRIPT__*, char const*, CVariantBase<CVariantDefaultAllocator> const&)
+t CSquirrelVM::SetValue(HSCRIPT__*, char const*, char const*)
+t CSquirrelVM::Shutdown()
+t CSquirrelVM::DumpState()
+t CSquirrelVM::ErrorFunc(SQVM*, char const*, ...)
+t CSquirrelVM::IsWeakref(SQVM*)
+t CSquirrelVM::PrintFunc(SQVM*, char const*, ...)
+t CSquirrelVM::ReadState(CUtlBuffer*)
+t CSquirrelVM::CSquirrelVM(SQVM*)
+t CSquirrelVM::CSquirrelVM(SQVM*)
+t CVProfScope::~CVProfScope() [clone .isra.16]
+t CVProfScope::~CVProfScope() [clone .isra.20]
+t CVProfScope::~CVProfScope() [clone .isra.21]
+t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
+t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&, FourVectors*)
+t FourVectors::CalcClosestPointOnLineSIMD(FourVectors const&, FourVectors const&, FourVectors const&, FourVectors&, float __vector(4)*)
+t FourVectors::CalcClosestPointOnLineSIMD(FourVectors const&, FourVectors const&, FourVectors const&, FourVectors&, float __vector*)
+t FourVectors::CalcClosestPointToLineTSIMD(FourVectors const&, FourVectors const&, FourVectors const&, FourVectors&)
+t SQDbgServer::EndElement(char const*)
+t SQDbgServer::escape_xml(char const*)
+t SQDbgServer::ParseWatch(char const*, Watch&)
+t SQDbgServer::SendUpdate()
+t SQDbgServer::Terminated()
+t SQDbgServer::EndDocument()
+t SQDbgServer::IsConnected()
+t SQDbgServer::RemoveWatch(int)
+t SQDbgServer::BeginElement(char const*)
+t SQDbgServer::SuperVerbose()
+t SQDbgServer::AddBreakpoint(BreakPoint&)
+t SQDbgServer::BreakExecution()
+t SQDbgServer::FindBreakpoint(int, char const*)
+t SQDbgServer::SerializeState()
+t SQDbgServer::ParseBreakpoint(char const*, BreakPoint&)
+t SQDbgServer::ParseRemoveWatch(char const*, int&)
+t SQDbgServer::RemoveBreakpoint(BreakPoint&)
+t SQDbgServer::SetErrorHandlers()
+t SQDbgServer::Hook(int, int, char const*, char const*)
+t SQDbgServer::Init()
+t SQDbgServer::Break(int, char const*, char const*, char const*)
+t SQDbgServer::ReadMsg()
+t SQDbgServer::AddWatch(Watch&)
+t SQDbgServer::BusyWait()
+t SQDbgServer::ParseMsg(char const*)
+t SQDbgServer::Attribute(char const*, char const*)
+t SQDbgServer::SendChunk(char const*)
+t SQDbgServer::SQDbgServer(SQVM*)
+t SQDbgServer::SQDbgServer(SQVM*)
+t SQDbgServer::~SQDbgServer()
+t SQDbgServer::~SQDbgServer()
+t SQDelegable::SetDelegate(SQTable*)
+t SQDelegable::GetMetaMethod(SQVM*, SQMetaMethod, SQObjectPtr&)
+t SQDelegable::~SQDelegable()
+t SQDelegable::~SQDelegable()
+t SQDelegable::~SQDelegable()
+t SQFuncState::BuildProto()
+t SQFuncState::IsConstant(tagSQObject const&, tagSQObject&)
+t SQFuncState::PushTarget(int)
+t SQFuncState::CountOuters(int)
+t SQFuncState::CreateTable()
+t SQFuncState::GetConstant(tagSQObject const&)
+t SQFuncState::GetUpTarget(int)
+t SQFuncState::AddLineInfos(int, bool, bool)
+t SQFuncState::AddParameter(tagSQObject const&)
+t SQFuncState::CreateString(char const*, int)
+t SQFuncState::GetStackSize()
+t SQFuncState::SetStackSize(int)
+t SQFuncState::AllocStackPos()
+t SQFuncState::DiscardTarget()
+t SQFuncState::PopChildState()
+t SQFuncState::AddInstruction(SQInstruction&)
+t SQFuncState::PushChildState(SQSharedState*)
+t SQFuncState::GetLocalVariable(tagSQObject const&)
+t SQFuncState::GetOuterVariable(tagSQObject const&)
+t SQFuncState::MarkLocalAsOuter(int)
+t SQFuncState::PushLocalVariable(tagSQObject const&)
+t SQFuncState::GetNumericConstant(float)
+t SQFuncState::GetNumericConstant(int)
+t SQFuncState::SetIntructionParam(int, int, int)
+t SQFuncState::SetIntructionParams(int, int, int, int, int)
+t SQFuncState::Error(char const*)
+t SQFuncState::IsLocal(unsigned int)
+t SQFuncState::PopTarget()
+t SQFuncState::TopTarget()
+t SQFuncState::SQFuncState(SQSharedState*, SQFuncState*, void (*)(void*, char const*), void*)
+t SQFuncState::SQFuncState(SQSharedState*, SQFuncState*, void (*)(void*, char const*), void*)
+t SQFuncState::~SQFuncState()
+t SQFuncState::~SQFuncState()
+t SQGenerator::Kill()
+t SQGenerator::Mark(SQCollectable**)
+t SQGenerator::Yield(SQVM*, int)
+t SQGenerator::Resume(SQVM*, SQObjectPtr&)
+t SQGenerator::GetType()
+t SQGenerator::Iterate(CSQStateIterator*)
+t SQGenerator::Release()
+t SQGenerator::Finalize()
+t SQGenerator::~SQGenerator()
+t SQGenerator::~SQGenerator()
+t SQGenerator::~SQGenerator()
+t SQObjectPtr::operator=(SQObjectPtr const&)
+t SQObjectPtr::~SQObjectPtr()
+t SQObjectPtr::~SQObjectPtr()
+t CEmptyConVar::SetValue(float)
+t CEmptyConVar::SetValue(int)
+t CEmptyConVar::SetValue(char const*)
+t CEmptyConVar::~CEmptyConVar()
+t CEmptyConVar::~CEmptyConVar()
+t CEmptyConVar::~CEmptyConVar()
+U CThreadEvent::Set()
+U CThreadEvent::CThreadEvent(bool)
+t CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::CUtlHashFast()
+t CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::CUtlHashFast()
+t CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::~CUtlHashFast()
+t CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::~CUtlHashFast()
+t CVariantBase<CVariantDefaultAllocator>::ConvertToCopiedData(bool) [clone .part.25] [clone .constprop.29]
+t fourplanes_t::Set2Planes(VPlane const*)
+t fourplanes_t::Set4Planes(VPlane const*)
+t fourplanes_t::ComputeSignbits()
+t fourplanes_t::SetPlane(int, Vector const&, float)
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t SQRefCounted::GetWeakRef(tagSQObjectType)
+t SQRefCounted::Iterate(CSQStateIterator*)
+t SQRefCounted::~SQRefCounted()
+t SQRefCounted::~SQRefCounted()
+t SQRefCounted::~SQRefCounted()
+t AsianWordWrap::CanEndLine(wchar_t)
+t AsianWordWrap::CanBeginLine(wchar_t)
+t AsianWordWrap::CanBreakAfter(wchar_t const*)
+t AsianWordWrap::CanBreakRepeated(wchar_t)
+U CThreadRWLock::UnlockWrite()
+U CThreadRWLock::WaitForRead()
+U CThreadRWLock::LockForWrite()
+t SQClassMember::~SQClassMember()
+t SQClassMember::~SQClassMember()
+t SQCollectable::AddToChain(SQCollectable**, SQCollectable*)
+t SQCollectable::RemoveFromChain(SQCollectable**, SQCollectable*)
+t SQCollectable::UnMark()
+t SQCollectable::~SQCollectable()
+t SQCollectable::~SQCollectable()
+t SQCollectable::~SQCollectable()
+t SQSharedState::MarkObject(SQObjectPtr&, SQCollectable**)
+t SQSharedState::GetScratchPad(int)
+t SQSharedState::IterateObject(CSQStateIterator*, SQObjectPtr&, char const*)
+t SQSharedState::CollectGarbage(SQVM*)
+t SQSharedState::ResurrectUnreachable(SQVM*)
+t SQSharedState::GetMetaMethodIdxByName(SQObjectPtr const&)
+d SQSharedState::_array_default_delegate_funcz
+d SQSharedState::_class_default_delegate_funcz
+d SQSharedState::_table_default_delegate_funcz
+d SQSharedState::_handle_default_delegate_funcz
+d SQSharedState::_number_default_delegate_funcz
+d SQSharedState::_string_default_delegate_funcz
+d SQSharedState::_thread_default_delegate_funcz
+d SQSharedState::_closure_default_delegate_funcz
+d SQSharedState::_weakref_default_delegate_funcz
+d SQSharedState::_instance_default_delegate_funcz
+d SQSharedState::_generator_default_delegate_funcz
+d SQSharedState::_utlstringtoken_default_delegate_funcz
+t SQSharedState::Init()
+t SQSharedState::Iterate(SQVM*, CSQStateIterator*)
+t SQSharedState::RunMark(SQVM*, SQCollectable**)
+t SQSharedState::SQSharedState()
+t SQSharedState::SQSharedState()
+t SQSharedState::~SQSharedState()
+t SQSharedState::~SQSharedState()
+t SQStringTable::AllocNodes(int)
+t SQStringTable::Add(char const*, int)
+t SQStringTable::Remove(SQString*)
+t SQStringTable::Resize(int)
+t SQStringTable::SQStringTable(SQSharedState*)
+t SQStringTable::SQStringTable(SQSharedState*)
+t SQStringTable::~SQStringTable()
+t SQStringTable::~SQStringTable()
+t CBaseAppSystem<IScriptManager>::Disconnect()
+t CBaseAppSystem<IScriptManager>::QueryInterface(char const*)
+t CBaseAppSystem<IScriptManager>::GetDependencies()
+t CBaseAppSystem<IScriptManager>::Init()
+t CBaseAppSystem<IScriptManager>::Connect(void* (*)(char const*, int*))
+t CBaseAppSystem<IScriptManager>::GetTier()
+t CBaseAppSystem<IScriptManager>::Shutdown()
+t CBaseAppSystem<IScriptManager>::Reconnect(void* (*)(char const*, int*), char const*)
+t ConCommandBase::CopyString(char const*)
+t ConCommandBase::RemoveFlags(int)
+b ConCommandBase::s_pAccessor
+b ConCommandBase::s_pConCommandBases
+t ConCommandBase::Init()
+t ConCommandBase::Create(char const*, char const*, int)
+t ConCommandBase::GetNext()
+t ConCommandBase::AddFlags(int)
+t ConCommandBase::Shutdown()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t CScriptManager::CreateVM(ScriptLanguage_t)
+t CScriptManager::DestroyVM(IScriptVM*)
+t CUtlLinkedList<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> > >::AllocInternal(bool)
+t CUtlLinkedList<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> > >::Unlink(int)
+t CUtlLinkedList<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> > >::RemoveAll()
+t CScopedIterator::EndContained()
+t CScopedIterator::BeginContained()
+t CScopedIterator::Key(SQObjectPtr const&)
+t CScopedIterator::Value(SQObjectPtr const&)
+t CScopedIterator::PsuedoKey(char const*)
+t CTier1AppSystem<IScriptManager, 0>::Disconnect()
+t CTier1AppSystem<IScriptManager, 0>::Init()
+t CTier1AppSystem<IScriptManager, 0>::Connect(void* (*)(char const*, int*))
+t CTier1AppSystem<IScriptManager, 0>::GetTier()
+t CTier1AppSystem<IScriptManager, 0>::Shutdown()
+t CUtlBinaryBlock::Set(void const*, int)
+t CUtlBinaryBlock::SetLength(int)
+t CUtlBinaryBlock::operator=(CUtlBinaryBlock const&)
+t CUtlBinaryBlock::CUtlBinaryBlock(int, int)
+t CUtlBinaryBlock::CUtlBinaryBlock(void const*, int)
+t CUtlBinaryBlock::CUtlBinaryBlock(void*, int, int)
+t CUtlBinaryBlock::CUtlBinaryBlock(CUtlBinaryBlock const&)
+t CUtlBinaryBlock::CUtlBinaryBlock(int, int)
+t CUtlBinaryBlock::CUtlBinaryBlock(void const*, int)
+t CUtlBinaryBlock::CUtlBinaryBlock(void*, int, int)
+t CUtlBinaryBlock::CUtlBinaryBlock(CUtlBinaryBlock const&)
+t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> >::Grow(int)
+t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> >::Purge() [clone .isra.83]
+t CUtlSymbolTable::CTree::~CTree()
+t CUtlSymbolTable::CTree::~CTree()
+t CUtlSymbolTable::AddString(char const*)
+t CUtlSymbolTable::RemoveAll()
+t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
+t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
+t CUtlSymbolTable::~CUtlSymbolTable()
+t CUtlSymbolTable::~CUtlSymbolTable()
+t SQFunctionProto::Load(SQVM*, void*, int (*)(void*, void*, int), SQObjectPtr&)
+t SQFunctionProto::Mark(SQCollectable**)
+t SQFunctionProto::Save(SQVM*, void*, int (*)(void*, void*, int))
+t SQFunctionProto::Create(SQSharedState*, int, int, int, int, int, int, int, int)
+t SQFunctionProto::GetLine(SQInstruction*)
+t SQFunctionProto::GetType()
+t SQFunctionProto::Release()
+t SQFunctionProto::Finalize()
+t SQFunctionProto::GetLocal(SQVM*, unsigned int, unsigned int, unsigned int)
+t SQFunctionProto::SQFunctionProto(SQSharedState*)
+t SQFunctionProto::SQFunctionProto(SQSharedState*)
+t SQFunctionProto::~SQFunctionProto()
+t SQFunctionProto::~SQFunctionProto()
+t SQFunctionProto::~SQFunctionProto()
+t SQNativeClosure::Mark(SQCollectable**)
+t SQNativeClosure::GetType()
+t SQNativeClosure::Iterate(CSQStateIterator*)
+t SQNativeClosure::Release()
+t SQNativeClosure::Finalize()
+t SQNativeClosure::~SQNativeClosure()
+t SQNativeClosure::~SQNativeClosure()
+t SQNativeClosure::~SQNativeClosure()
+t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
+t CDllDemandLoader::GetFactory()
+t CDllDemandLoader::Unload()
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+U CThreadSpinRWLock::SpinLockForRead()
+U CThreadSpinRWLock::SpinLockForWrite()
+U CThreadSyncObject::~CThreadSyncObject()
+t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr()
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlCharConversion::FindConversion(char const*, int*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlNoEscConversion::FindConversion(char const*, int*)
+t SplitScreenConVarRef::Init(char const*, bool)
+t SplitScreenConVarRef::SplitScreenConVarRef(IConVar*)
+t SplitScreenConVarRef::SplitScreenConVarRef(char const*)
+t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
+t SplitScreenConVarRef::SplitScreenConVarRef(IConVar*)
+t SplitScreenConVarRef::SplitScreenConVarRef(char const*)
+t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
+t CUtlCStringConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
+t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
+t CCountedStringPoolBase<unsigned int>::RestoreFromBuffer(CUtlBuffer&)
+t CCountedStringPoolBase<unsigned short>::RestoreFromBuffer(CUtlBuffer&)
+t CSplitScreenAddedConVar::~CSplitScreenAddedConVar()
+t CSplitScreenAddedConVar::~CSplitScreenAddedConVar()
+t CSplitScreenAddedConVar::~CSplitScreenAddedConVar()
+t CUtlFilenameSymbolTable::SpewStrings()
+t CUtlFilenameSymbolTable::FindFileName(char const*)
+t CUtlFilenameSymbolTable::SaveToBuffer(CUtlBuffer&)
+t CUtlFilenameSymbolTable::FindOrAddFileName(char const*)
+t CUtlFilenameSymbolTable::RestoreFromBuffer(CUtlBuffer&)
+t CUtlFilenameSymbolTable::String(void* const&, char*, int)
+t CUtlFilenameSymbolTable::RemoveAll()
+t ScriptFunctionBinding_t::~ScriptFunctionBinding_t()
+t ScriptFunctionBinding_t::~ScriptFunctionBinding_t()
+t CNonMemberScriptBinding2<float (*)(float, float), float, float, float>::Call(void*, void*, CVariantBase<CVariantDefaultAllocator>*, int, CVariantBase<CVariantDefaultAllocator>*)
+t CNonMemberScriptBinding2<int (*)(int, int), int, int, int>::Call(void*, void*, CVariantBase<CVariantDefaultAllocator>*, int, CVariantBase<CVariantDefaultAllocator>*)
+t CSquirrelMetamethodDelegateImpl::SqGetMetamethodThunk(SQVM*)
+t CSquirrelMetamethodDelegateImpl::CSquirrelMetamethodDelegateImpl(CSquirrelVM*, tagSQObject*, char const*, IScriptVM::ISquirrelMetamethodDelegate*, bool)
+t CSquirrelMetamethodDelegateImpl::CSquirrelMetamethodDelegateImpl(CSquirrelVM*, tagSQObject*, char const*, IScriptVM::ISquirrelMetamethodDelegate*, bool)
+t CSquirrelMetamethodDelegateImpl::~CSquirrelMetamethodDelegateImpl()
+t CSquirrelMetamethodDelegateImpl::~CSquirrelMetamethodDelegateImpl()
+t SQVM::CallNative(SQNativeClosure*, int, int, SQObjectPtr&, bool&)
+t SQVM::CLOSURE_OP(SQObjectPtr&, SQFunctionProto*)
+t SQVM::DeleteSlot(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&)
+t SQVM::EnterFrame(int, int, bool)
+t SQVM::FOREACH_OP(SQObjectPtr&, SQObjectPtr&, SQObjectPtr&, SQObjectPtr&, int, int, int&)
+t SQVM::LeaveFrame()
+t SQVM::PLOCAL_INC(int, SQObjectPtr&, SQObjectPtr&, SQObjectPtr&)
+t SQVM::CloseOuters(SQObjectPtr*)
+t SQVM::FallBackGet(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&)
+t SQVM::FallBackSet(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr const&)
+t SQVM::PrintObjVal(SQObjectPtr const&)
+t SQVM::Raise_Error(char const*, ...)
+t SQVM::Raise_Error(SQObjectPtr const&)
+t SQVM::CallDebugHook(int, int)
+t SQVM::GrowCallStack()
+t SQVM::CallMetaMethod(SQObjectPtr&, SQMetaMethod, int, SQObjectPtr&)
+t SQVM::Raise_IdxError(SQObjectPtr const&)
+t SQVM::RelocateOuters()
+t SQVM::ArithMetaMethod(int, SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&)
+t SQVM::CallErrorHandler(SQObjectPtr&)
+t SQVM::Raise_CompareError(tagSQObject const&, tagSQObject const&)
+t SQVM::CreateClassInstance(SQClass*, SQObjectPtr&, SQObjectPtr&)
+t SQVM::Raise_ParamTypeError(int, int, int)
+t SQVM::InvokeDefaultDelegate(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&)
+t SQVM::Get(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&, bool, int)
+t SQVM::Pop(int)
+t SQVM::Pop()
+t SQVM::Set(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr const&, int)
+t SQVM::Top()
+t SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)
+t SQVM::Call(SQObjectPtr&, int, int, SQObjectPtr&, unsigned int)
+t SQVM::Init(SQVM*, int)
+t SQVM::Mark(SQCollectable**)
+t SQVM::Push(SQObjectPtr const&)
+t SQVM::BW_OP(unsigned int, SQObjectPtr&, SQObjectPtr const&, SQObjectPtr const&)
+t SQVM::Clone(SQObjectPtr const&, SQObjectPtr&)
+t SQVM::GetAt(int)
+t SQVM::GetUp(int)
+t SQVM::CMP_OP(CmpOP, SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&)
+t SQVM::NEG_OP(SQObjectPtr&, SQObjectPtr const&)
+t SQVM::ObjCmp(SQObjectPtr const&, SQObjectPtr const&, int&)
+t SQVM::PopGet()
+t SQVM::Remove(int)
+t SQVM::Return(int, int, SQObjectPtr&)
+t SQVM::TypeOf(SQObjectPtr const&, SQObjectPtr&)
+t SQVM::Execute(SQObjectPtr&, int, int, SQObjectPtr&, unsigned int, SQVM::ExecutionType)
+t SQVM::GetType()
+t SQVM::IsEqual(SQObjectPtr const&, SQObjectPtr const&, bool&)
+t SQVM::IsFalse(SQObjectPtr&)
+t SQVM::Iterate(CSQStateIterator*)
+t SQVM::NewSlot(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr const&, bool)
+t SQVM::Release()
+t SQVM::Suspend()
+t SQVM::ARITH_OP(unsigned int, SQObjectPtr&, SQObjectPtr const&, SQObjectPtr const&)
+t SQVM::CLASS_OP(SQObjectPtr&, int, int)
+t SQVM::DerefInc(int, SQObjectPtr&, SQObjectPtr&, SQObjectPtr&, SQObjectPtr&, bool, int)
+t SQVM::Finalize()
+t SQVM::NewSlotA(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr const&, bool, bool)
+t SQVM::PushNull()
+t SQVM::ToString(SQObjectPtr const&, SQObjectPtr&)
+t SQVM::FindOuter(SQObjectPtr&, SQObjectPtr*)
+t SQVM::StartCall(SQClosure*, int, int, int, bool)
+t SQVM::StringCat(SQObjectPtr const&, SQObjectPtr const&, SQObjectPtr&)
+t SQVM::SQVM(SQSharedState*)
+t SQVM::SQVM(SQSharedState*)
+t SQVM::~SQVM()
+t SQVM::~SQVM()
+t SQVM::~SQVM()
+t ConVar::ClampValue(float&)
+t ConVar::SetDefault(char const*)
+t ConVar::InternalSetValue(char const*)
+t ConVar::ChangeStringValue(char const*, float)
+t ConVar::InternalSetIntValue(int)
+t ConVar::RemoveChangeCallback(void (*)(IConVar*, char const*, float))
+t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float), bool)
+t ConVar::InternalSetColorValue(Color)
+t ConVar::InternalSetFloatValue(float)
+t ConVar::InternalSetColorFromString(char const*)
+t ConVar::Init()
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Revert()
+t ConVar::AddFlags(int)
+t ConVar::SetValue(Color)
+t ConVar::SetValue(float)
+t ConVar::SetValue(int)
+t ConVar::SetValue(char const*)
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t SQBlob::EOS()
+t SQBlob::Len()
+t SQBlob::Read(void*, int)
+t SQBlob::Seek(int, int)
+t SQBlob::Tell()
+t SQBlob::Flush()
+t SQBlob::Write(void*, int)
+t SQBlob::IsValid()
+t SQBlob::~SQBlob()
+t SQBlob::~SQBlob()
+t SQBlob::~SQBlob()
+t CDefOps<void*>::LessFunc(void* const&, void* const&)
+t SQArray::Mark(SQCollectable**)
+t SQArray::Clone()
+t SQArray::Create(SQSharedState*, int)
+t SQArray::Extend(SQArray const*)
+t SQArray::GetType()
+t SQArray::Iterate(CSQStateIterator*)
+t SQArray::Release()
+t SQArray::Finalize()
+t SQArray::~SQArray()
+t SQArray::~SQArray()
+t SQArray::~SQArray()
+t SQClass::GetAttributes(SQObjectPtr const&, SQObjectPtr&)
+t SQClass::SetAttributes(SQObjectPtr const&, SQObjectPtr const&)
+t SQClass::CreateInstance()
+t SQClass::Mark(SQCollectable**)
+t SQClass::Next(SQObjectPtr const&, SQObjectPtr&, SQObjectPtr&)
+t SQClass::GetType()
+t SQClass::Iterate(CSQStateIterator*)
+t SQClass::NewSlot(SQSharedState*, SQObjectPtr const&, SQObjectPtr const&, bool)
+t SQClass::Release()
+t SQClass::Finalize()
+t SQClass::SQClass(SQSharedState*, SQClass*)
+t SQClass::SQClass(SQSharedState*, SQClass*)
+t SQClass::~SQClass()
+t SQClass::~SQClass()
+t SQClass::~SQClass()
+t SQLexer::ReadNumber()
+t SQLexer::ReadString(int, bool)
+t SQLexer::LexLineComment()
+t SQLexer::LexBlockComment()
+t SQLexer::Lex()
+t SQLexer::Init(SQSharedState*, int (*)(void*), void*, void (*)(void*, char const*), void*)
+t SQLexer::Next()
+t SQLexer::Error(char const*)
+t SQLexer::ReadID()
+t SQLexer::Tok2Str(int)
+t SQLexer::GetIDType(char*)
+t SQLexer::SQLexer()
+t SQLexer::SQLexer()
+t SQLexer::~SQLexer()
+t SQLexer::~SQLexer()
+t SQOuter::Mark(SQCollectable**)
+t SQOuter::GetType()
+t SQOuter::Release()
+t SQOuter::Finalize()
+t SQOuter::~SQOuter()
+t SQOuter::~SQOuter()
+t SQOuter::~SQOuter()
+t SQTable::AllocNodes(int)
+t SQTable::_ClearNodes()
+t SQTable::GetIncludingWeakref(SQObjectPtr const&, SQObjectPtr&)
+t SQTable::Get(SQObjectPtr const&, SQObjectPtr&)
+t SQTable::Set(SQObjectPtr const&, SQObjectPtr const&)
+t SQTable::Mark(SQCollectable**)
+t SQTable::Next(bool, SQObjectPtr const&, SQObjectPtr&, SQObjectPtr&)
+t SQTable::Clear()
+t SQTable::Clone()
+t SQTable::Append(SQTable*)
+t SQTable::Rehash(bool)
+t SQTable::Remove(SQObjectPtr const&)
+t SQTable::GetType()
+t SQTable::Iterate(CSQStateIterator*)
+t SQTable::NewSlot(SQObjectPtr const&, SQObjectPtr const&)
+t SQTable::Release()
+t SQTable::Finalize()
+t SQTable::SQTable(SQSharedState*, int)
+t SQTable::SQTable(SQSharedState*, int)
+t SQTable::~SQTable()
+t SQTable::~SQTable()
+t SQTable::~SQTable()
+t VMatrix::SetupMatrixOrgAngles(Vector const&, QAngle const&)
+t VMatrix::Scale(Vector const&)
+t VMatrix::operator=(VMatrix const&)
+t CCommand::DefaultBreakSet()
+t CCommand::Reset()
+t CCommand::Tokenize(char const*, characterset_t*)
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CFmtStrN<256, false>::InitQuietTruncation()
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t RefTable::AllocNodes(unsigned int)
+t RefTable::GetRefCount(tagSQObject&)
+t RefTable::Add(unsigned int, tagSQObject&)
+t RefTable::Get(tagSQObject&, unsigned int&, RefTable::RefNode**, bool)
+t RefTable::Mark(SQCollectable**)
+t RefTable::AddRef(tagSQObject&)
+t RefTable::Resize(unsigned int)
+t RefTable::Release(tagSQObject&)
+t RefTable::Finalize()
+t RefTable::RefTable()
+t RefTable::RefTable()
+t RefTable::~RefTable()
+t RefTable::~RefTable()
+t SQString::Next(SQObjectPtr const&, SQObjectPtr&, SQObjectPtr&)
+t SQString::Create(SQSharedState*, char const*, int)
+t SQString::Release()
+t SQString::~SQString()
+t SQString::~SQString()
+t SQString::~SQString()
+t sqvector<SQOuterVar>::~sqvector() [clone .part.16]
+t sqvector<SQObjectPtr>::~sqvector()
+t sqvector<SQObjectPtr>::~sqvector()
+t sqvector<SQObjectPtr>::~sqvector() [clone .part.10]
+t sqvector<SQClassMember>::~sqvector()
+t sqvector<SQClassMember>::~sqvector()
+t sqvector<SQLocalVarInfo>::~sqvector()
+t sqvector<SQLocalVarInfo>::~sqvector()
+t sqvector<SQExceptionTrap>::~sqvector()
+t sqvector<SQExceptionTrap>::~sqvector()
+t sqvector<int>::~sqvector()
+t sqvector<int>::~sqvector()
+t sqvector<SQVM::CallInfo>::~sqvector() [clone .part.30]
+t ConVarRef::Init(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t Frustum_t::CreateOrthoFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, float, float)
+t Frustum_t::CreateOrthoFrustumFLU(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, float, float)
+t Frustum_t::CreatePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, float)
+t Frustum_t::CreatePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float)
+t Frustum_t::CreatePerspectiveFrustumFLU(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float)
+t Frustum_t::SetPlane(int, Vector const&, float)
+t Frustum_t::SetPlanes(VPlane const*)
+t Frustum_t::Frustum_t()
+t Frustum_t::Frustum_t()
+t SQClosure::GetVprofNodeName()
+t SQClosure::Load(SQVM*, void*, int (*)(void*, void*, int), SQObjectPtr&)
+t SQClosure::Mark(SQCollectable**)
+t SQClosure::Save(SQVM*, void*, int (*)(void*, void*, int))
+t SQClosure::GetType()
+t SQClosure::Iterate(CSQStateIterator*)
+t SQClosure::Release()
+t SQClosure::Finalize()
+t SQClosure::~SQClosure()
+t SQClosure::~SQClosure()
+t SQClosure::~SQClosure()
+t SQWeakRef::Release()
+t SQWeakRef::~SQWeakRef()
+t SQWeakRef::~SQWeakRef()
+t SQWeakRef::~SQWeakRef()
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
+t ConCommand::IsCommand() const
+t CUtlString::Get() const
+t CUtlString::Length() const
+t CUtlString::operator char const*() const
+t CUtlString::operator==(char const*) const
+t CUtlString::operator==(CUtlString const&) const
+t CUtlSymbol::StringNoLock() const
+t CUtlSymbol::String() const
+t CUtlSymbol::operator==(char const*) const
+t Quaternion::GetForward() const
+t Quaternion::GetUp() const
+t Quaternion::GetLeft() const
+t CEmptyConVar::GetName() const
+t CEmptyConVar::IsFlagSet(int) const
+t fourplanes_t::Get2Planes(VPlane*) const
+t fourplanes_t::Get4Planes(VPlane*) const
+t fourplanes_t::GetPlane(int, Vector*, float*) const
+t ConCommandBase::GetHelpText() const
+t ConCommandBase::IsRegistered() const
+t ConCommandBase::GetDLLIdentifier() const
+t ConCommandBase::GetName() const
+t ConCommandBase::GetNext() const
+t ConCommandBase::GetFlags() const
+t ConCommandBase::IsCommand() const
+t ConCommandBase::IsFlagSet(int) const
+t CUtlBinaryBlock::Get(void*, int) const
+t CUtlBinaryBlock::operator==(CUtlBinaryBlock const&) const
+t CUtlSymbolTable::FindPoolWithSpace(int) const
+t CUtlSymbolTable::Find(char const*) const
+t CUtlSymbolTable::CLess::operator()(CUtlSymbolTable::CStringPoolIndex const&, CUtlSymbolTable::CStringPoolIndex const&) const
+t CUtlSymbolTable::String(CUtlSymbol) const
+t CUtlCharConversion::GetDelimiter() const
+t CUtlCharConversion::GetEscapeChar() const
+t CUtlCharConversion::GetDelimiterLength() const
+t CUtlCharConversion::GetConversionLength(char) const
+t CUtlCharConversion::GetConversionString(char) const
+t CUtlCharConversion::MaxConversionLength() const
+t SplitScreenConVarRef::IsValid() const
+t CSplitScreenAddedConVar::GetBaseName() const
+t CSplitScreenAddedConVar::GetSplitScreenPlayerSlot() const
+t ConVar::GetDefault() const
+t ConVar::GetBaseName() const
+t ConVar::GetHelpText() const
+t ConVar::GetMaxValue() const
+t ConVar::GetMinValue() const
+t ConVar::IsRegistered() const
+t ConVar::GetSplitScreenPlayerSlot() const
+t ConVar::GetInt() const
+t ConVar::GetMax(float&) const
+t ConVar::GetMin(float&) const
+t ConVar::HasMax() const
+t ConVar::HasMin() const
+t ConVar::GetName() const
+t ConVar::GetFlags() const
+t ConVar::GetFloat() const
+t ConVar::IsCommand() const
+t ConVar::IsFlagSet(int) const
+t VMatrix::Transpose3x3() const
+t VMatrix::InverseGeneral(VMatrix&) const
+t VMatrix::IsRotationMatrix() const
+t VMatrix::NormalizeBasisVectors() const
+t VMatrix::GetScale() const
+t VMatrix::InverseTR(VMatrix&) const
+t VMatrix::InverseTR() const
+t VMatrix::MatrixMul(VMatrix const&, VMatrix&) const
+t VMatrix::Transpose() const
+t VMatrix::operator==(VMatrix const&) const
+t VMatrix::operator*(VPlane const&) const
+t VMatrix::operator*(VMatrix const&) const
+t CCommand::FindArgInt(char const*, int) const
+t CCommand::FindArg(char const*) const
+t ConVarRef::IsValid() const
+t Frustum_t::GetCorners(Vector*) const
+t Frustum_t::Intersects(Vector const&, Vector const&) const
+t Frustum_t::Intersects(float __vector(4) const&, float __vector(4) const&) const
+t Frustum_t::Intersects(float __vector const&, float __vector const&) const
+t Frustum_t::Intersects(Frustum_t&) const
+t Frustum_t::CullBoxCenterExtents(Vector const&, Vector const&) const
+t Frustum_t::CullBoxCenterExtents(float __vector(4) const&, float __vector(4) const&) const
+t Frustum_t::CullBoxCenterExtents(float __vector const&, float __vector const&) const
+t Frustum_t::IntersectsCenterExtents(Vector const&, Vector const&) const
+t Frustum_t::IntersectsCenterExtents(float __vector(4) const&, float __vector(4) const&) const
+t Frustum_t::IntersectsCenterExtents(float __vector const&, float __vector const&) const
+t Frustum_t::CullBox(Vector const&, Vector const&) const
+t Frustum_t::CullBox(float __vector(4) const&, float __vector(4) const&) const
+t Frustum_t::CullBox(float __vector const&, float __vector const&) const
+t Frustum_t::Contains(Vector const&, Vector const&) const
+t Frustum_t::GetPlane(int, Vector*, float*) const
+t Frustum_t::GetPlanes(VPlane*) const
+t SQClosure::GetFunctionName(char const*) const
+U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
+U std::string::append(unsigned int, char)@@GLIBCXX_3.4
+U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::append(std::string const&)@@GLIBCXX_3.4
+U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::assign(std::string const&)@@GLIBCXX_3.4
+U std::string::reserve(unsigned int)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
+t std::vector<char, std::allocator<char> >::_M_default_append(unsigned int)
+t std::_Rb_tree_iterator<BreakPoint> std::_Rb_tree<BreakPoint, BreakPoint, std::_Identity<BreakPoint>, std::less<BreakPoint>, std::allocator<BreakPoint> >::_M_insert_<BreakPoint const&>(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, BreakPoint const&)
+t std::pair<std::_Rb_tree_iterator<BreakPoint>, bool> std::_Rb_tree<BreakPoint, BreakPoint, std::_Identity<BreakPoint>, std::less<BreakPoint>, std::allocator<BreakPoint> >::_M_insert_unique<BreakPoint const&>(BreakPoint const&)
+t std::_Rb_tree<BreakPoint, BreakPoint, std::_Identity<BreakPoint>, std::less<BreakPoint>, std::allocator<BreakPoint> >::_M_erase(std::_Rb_tree_node<BreakPoint>*)
+t std::_Rb_tree_iterator<Watch> std::_Rb_tree<Watch, Watch, std::_Identity<Watch>, std::less<Watch>, std::allocator<Watch> >::_M_insert_<Watch const&>(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, Watch const&)
+t std::pair<std::_Rb_tree_iterator<Watch>, bool> std::_Rb_tree<Watch, Watch, std::_Identity<Watch>, std::less<Watch>, std::allocator<Watch> >::_M_insert_unique<Watch const&>(Watch const&)
+t std::_Rb_tree<Watch, Watch, std::_Identity<Watch>, std::less<Watch>, std::allocator<Watch> >::_M_erase(std::_Rb_tree_node<Watch>*)
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+U std::__throw_length_error(char const*)@@GLIBCXX_3.4
+U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::terminate()@@GLIBCXX_3.4
+t non-virtual thunk to CEmptyConVar::SetValue(float)
+t non-virtual thunk to CEmptyConVar::SetValue(int)
+t non-virtual thunk to CEmptyConVar::SetValue(char const*)
+t non-virtual thunk to ConVar::SetValue(Color)
+t non-virtual thunk to ConVar::SetValue(float)
+t non-virtual thunk to ConVar::SetValue(int)
+t non-virtual thunk to ConVar::SetValue(char const*)
+t non-virtual thunk to CEmptyConVar::GetName() const
+t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
+t non-virtual thunk to CSplitScreenAddedConVar::GetBaseName() const
+t non-virtual thunk to CSplitScreenAddedConVar::GetSplitScreenPlayerSlot() const
+t non-virtual thunk to ConVar::GetBaseName() const
+t non-virtual thunk to ConVar::GetSplitScreenPlayerSlot() const
+t non-virtual thunk to ConVar::GetName() const
+t non-virtual thunk to ConVar::IsFlagSet(int) const
+d typeinfo for ConCommand
+d typeinfo for IAppSystem
+d typeinfo for SQInstance
+d typeinfo for SQUserData
+d typeinfo for CSquirrelVM
+d typeinfo for SQDelegable
+d typeinfo for SQGenerator
+d typeinfo for CEmptyConVar
+d typeinfo for SQRefCounted
+d typeinfo for SQCollectable
+d typeinfo for CBaseAppSystem<IScriptManager>
+d typeinfo for ConCommandBase
+d typeinfo for CScriptManager
+d typeinfo for IScriptManager
+d typeinfo for CScopedIterator
+d typeinfo for CTier0AppSystem<IScriptManager>
+d typeinfo for CTier1AppSystem<IScriptManager, 0>
+d typeinfo for SQFunctionProto
+d typeinfo for SQNativeClosure
+d typeinfo for CDefaultAccessor
+d typeinfo for CDllDemandLoader
+d typeinfo for CSQStateIterator
+d typeinfo for CUtlCharConversion
+d typeinfo for CUtlNoEscConversion
+d typeinfo for ConVar_ServerBounded
+d typeinfo for CUtlCStringConversion
+d typeinfo for CSplitScreenAddedConVar
+d typeinfo for IConCommandBaseAccessor
+d typeinfo for SQVM
+d typeinfo for ConVar
+d typeinfo for SQBlob
+d typeinfo for IConVar
+d typeinfo for SQArray
+d typeinfo for SQClass
+d typeinfo for SQOuter
+d typeinfo for SQTable
+d typeinfo for CFmtStrN<256, false>
+d typeinfo for SQStream
+d typeinfo for SQString
+d typeinfo for IScriptVM
+d typeinfo for SQClosure
+d typeinfo for SQWeakRef
+d typeinfo for SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator
+r typeinfo name for ConCommand
+r typeinfo name for IAppSystem
+r typeinfo name for SQInstance
+r typeinfo name for SQUserData
+r typeinfo name for CSquirrelVM
+r typeinfo name for SQDelegable
+r typeinfo name for SQGenerator
+r typeinfo name for CEmptyConVar
+r typeinfo name for SQRefCounted
+r typeinfo name for SQCollectable
+r typeinfo name for CBaseAppSystem<IScriptManager>
+r typeinfo name for ConCommandBase
+r typeinfo name for CScriptManager
+r typeinfo name for IScriptManager
+r typeinfo name for CScopedIterator
+r typeinfo name for CTier0AppSystem<IScriptManager>
+r typeinfo name for CTier1AppSystem<IScriptManager, 0>
+r typeinfo name for SQFunctionProto
+r typeinfo name for SQNativeClosure
+r typeinfo name for CDefaultAccessor
+r typeinfo name for CDllDemandLoader
+r typeinfo name for CSQStateIterator
+r typeinfo name for CUtlCharConversion
+r typeinfo name for CUtlNoEscConversion
+r typeinfo name for ConVar_ServerBounded
+r typeinfo name for CUtlCStringConversion
+r typeinfo name for CSplitScreenAddedConVar
+r typeinfo name for IConCommandBaseAccessor
+r typeinfo name for SQVM
+r typeinfo name for ConVar
+r typeinfo name for SQBlob
+r typeinfo name for IConVar
+r typeinfo name for SQArray
+r typeinfo name for SQClass
+r typeinfo name for SQOuter
+r typeinfo name for SQTable
+r typeinfo name for CFmtStrN<256, false>
+r typeinfo name for SQStream
+r typeinfo name for SQString
+r typeinfo name for IScriptVM
+r typeinfo name for SQClosure
+r typeinfo name for SQWeakRef
+r typeinfo name for SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator
+d vtable for ConCommand
+d vtable for IAppSystem
+d vtable for SQInstance
+d vtable for SQUserData
+d vtable for CSquirrelVM
+d vtable for SQDelegable
+d vtable for SQGenerator
+d vtable for CEmptyConVar
+d vtable for SQRefCounted
+d vtable for SQCollectable
+d vtable for CBaseAppSystem<IScriptManager>
+d vtable for ConCommandBase
+d vtable for CScriptManager
+d vtable for IScriptManager
+d vtable for CScopedIterator
+d vtable for CTier0AppSystem<IScriptManager>
+d vtable for CTier1AppSystem<IScriptManager, 0>
+d vtable for SQFunctionProto
+d vtable for SQNativeClosure
+d vtable for CDefaultAccessor
+d vtable for CDllDemandLoader
+d vtable for CSQStateIterator
+d vtable for CUtlCharConversion
+d vtable for CUtlNoEscConversion
+d vtable for CUtlCStringConversion
+d vtable for CSplitScreenAddedConVar
+d vtable for SQVM
+d vtable for ConVar
+d vtable for SQBlob
+d vtable for IConVar
+d vtable for SQArray
+d vtable for SQClass
+d vtable for SQOuter
+d vtable for SQTable
+d vtable for CFmtStrN<256, false>
+d vtable for SQStream
+d vtable for SQString
+d vtable for IScriptVM
+d vtable for SQClosure
+d vtable for SQWeakRef
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+d vtable for SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator
+b IntToString(int)::temp
+d QuatIterate(SQVM*)::results
+b V_pretifymem(float, int, bool)::output
+b V_pretifymem(float, int, bool)::current
+b V_pretifynum(long long)::output
+b V_pretifynum(long long)::current
+d QAngleIterate(SQVM*)::results
+d VectorIterate(SQVM*)::results
+d Vector2DIterate(SQVM*)::results
+d Vector4DIterate(SQVM*)::results
+d GetMetamethodIdentifier(SQMetaMethod)::pIdentifiers
+b Bias(float, float)::lastExponent
+b CUtlSymbol::Initialize()::symbolsInitialized
+b SQCompiler::Error(char const*, ...)::temp
+b SQDbgServer::SuperVerbose()::s_bVerbose
+b SQDbgServer::ParseBreakpoint(char const*, BreakPoint&)::stemp
+b CScriptManager::CreateVM(ScriptLanguage_t)::binding
+b CScriptManager::CreateVM(ScriptLanguage_t)::binding
+b CUtlLinkedList<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> > >::AllocInternal(bool)::__executeCount
+b CUtlLinkedList<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<SQClass*, CUtlHashFastGenericHash>::HashFastData_t_<SQClass*>, int> > >::AllocInternal(bool)::__executeCount
+d SplitScreenConVarRef::Init(char const*, bool)::bFirst
+t SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator::EndContained()
+t SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator::BeginContained()
+t SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator::Key(SQObjectPtr const&)
+t SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator::Value(SQObjectPtr const&)
+t SQVM::FindAllClosuresForFunctionBySourceAndLineNumber(sqvector<SQObjectPtr>&, char const*, int)::CHackerator::PsuedoKey(char const*)
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
+d ConVarRef::Init(char const*, bool)::bFirst
+d CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+d CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel

@@ -1,0 +1,84 @@
+A __bss_start
+t _calloc_dbg
+b completed.5517
+d __CTOR_END__
+d __CTOR_LIST__
+w __cxa_finalize@@GLIBC_2.1.3
+t __cxa_pure_virtual
+t __do_global_ctors_aux
+t __do_global_dtors_aux
+d __dso_handle
+d __DTOR_END__
+b dtor_idx.5519
+d __DTOR_LIST__
+a _DYNAMIC
+A _edata
+A _end
+t _expand_dbg
+T _fini
+t frame_dummy
+r __FRAME_END__
+t _free_dbg
+T GetUnitTest
+a _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_memoverride.cpp
+t _GLOBAL__sub_I_unitlib.cpp
+w __gmon_start__
+U g_pMemAlloc
+d g_pszModule
+t __i686.get_pc_thunk.bx
+t __i686.get_pc_thunk.cx
+T _init
+d __JCR_END__
+d __JCR_LIST__
+w _Jv_RegisterClasses
+t _malloc_dbg
+U memset@@GLIBC_2.0
+t _msize_dbg
+t _nh_malloc_dbg
+U Plat_ExitProcess
+U Plat_IsInDebugSession
+t _realloc_dbg
+t set_fast_math
+U strcpy@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+T UnitTestCount
+T UnitTestInstallTestCase
+U WriteMiniDump
+t operator delete[](void*)
+t operator delete(void*)
+b s_TestCount
+b s_ppTestCases
+b s_TestAllocated
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+T CTestSuite::AddTest(ITestCase*)
+T CTestSuite::GetName()
+T CTestSuite::RunTest()
+T CTestSuite::CTestSuite(char const*, ITestSuite*)
+T CTestSuite::CTestSuite(char const*, ITestSuite*)
+T CTestSuite::~CTestSuite()
+T CTestSuite::~CTestSuite()
+T CTestCase::GetName()
+T CTestCase::CTestCase(char const*, ITestSuite*)
+T CTestCase::CTestCase(char const*, ITestSuite*)
+T CTestCase::~CTestCase()
+T CTestCase::~CTestCase()
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
+V typeinfo for CTestSuite
+d typeinfo for ITestSuite
+V typeinfo for CTestCase
+d typeinfo for ITestCase
+V typeinfo name for CTestSuite
+r typeinfo name for ITestSuite
+V typeinfo name for CTestCase
+r typeinfo name for ITestCase
+V vtable for CTestSuite
+d vtable for ITestSuite
+V vtable for CTestCase
+d vtable for ITestCase
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
