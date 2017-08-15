@@ -1776,14 +1776,14 @@ t .L1582
 t .L1583
 t .L1584
 t .L16
-t .L1654
-t .L1655
-t .L1656
-t .L1657
-t .L1658
-t .L1659
+t .L1639
+t .L1640
+t .L1641
+t .L1642
+t .L1643
+t .L1644
+t .L1645
 t .L166
-t .L1660
 t .L1666
 t .L1677
 t .L1678
@@ -18848,7 +18848,7 @@ t CVProfScope::~CVProfScope() [clone .isra.33]
 t CVProfScope::~CVProfScope() [clone .isra.33]
 t CVProfScope::~CVProfScope() [clone .isra.33]
 t CVProfScope::~CVProfScope() [clone .isra.33]
-t CVProfScope::~CVProfScope() [clone .isra.33]
+t CVProfScope::~CVProfScope() [clone .isra.34]
 t CVProfScope::~CVProfScope() [clone .isra.34]
 t CVProfScope::~CVProfScope() [clone .isra.34]
 t CVProfScope::~CVProfScope() [clone .isra.34]
@@ -37977,6 +37977,7 @@ t CINSRemoteBase::GetWeaponIdleActivity() const
 t CINSRemoteBase::GetPrimaryAttackActivity() const
 t CINSRemoteBase::IsEmpty() const
 t CINSRemoteBase::CheckAmmo() const
+t CINSRules_Hunt::GetBotQuota(int) const
 t CINSRules_Hunt::IsAttackDefend() const
 t CINSRules_Hunt::GetDesiredBotCount(int, bool) const
 t CINSRules_Hunt::IsEliminationRules() const
@@ -38297,6 +38298,7 @@ t CINSBotMainAction::SelectCloserThreat(CINSNextBot*, CKnownEntity const*, CKnow
 t CINSBotMainAction::SelectMoreDangerousThreat(INextBot const*, CBaseCombatCharacter const*, CKnownEntity const*, CKnownEntity const*) const
 t CINSBotMainAction::SelectMoreDangerousThreatInternal(INextBot const*, CBaseCombatCharacter const*, CKnownEntity const*, CKnownEntity const*) const
 t CINSBotMainAction::GetName() const
+t CINSRules_Conquer::GetBotQuota(int) const
 t CINSRules_Conquer::IsAttackDefend() const
 t CINSRules_Conquer::UsesControlPoints() const
 t CINSRules_Conquer::GetDesiredBotCount(int, bool) const
@@ -38311,6 +38313,7 @@ t CINSRulesCoopBase::GetBotQuota(int) const
 t CINSRulesCoopBase::GetDesiredBotCount(int, bool) const
 t CINSRules_Outpost::IsAttackDefend() const
 t CINSRules_Outpost::ResupplyCacheOnly(CINSPlayer*) const
+t CINSRules_Outpost::GetDesiredBotCount(int, bool) const
 t CINSRules_Outpost::IsEliminationRules() const
 t CINSRules_Outpost::DisplayObjectiveLayout() const
 t CINSRules_Outpost::GetRestrictedAreaSetup() const
