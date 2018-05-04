@@ -16,6 +16,7 @@ d __CTOR_LIST__
 U __ctype_b_loc@@GLIBC_2.3
 b cvar
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -24,7 +25,6 @@ t __cxa_pure_virtual
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
-t __divdi3
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
@@ -79,6 +79,7 @@ t _GLOBAL__sub_I_registry.cpp
 t _GLOBAL__sub_I_resourceprecacher.cpp
 t _GLOBAL__sub_I_schemaclassbinding.cpp
 t _GLOBAL__sub_I_strtools.cpp
+t _GLOBAL__sub_I_strtools_unicode.cpp
 t _GLOBAL__sub_I_tier1.cpp
 t _GLOBAL__sub_I_tier2.cpp
 t _GLOBAL__sub_I_unicodefilehelpers.cpp
@@ -141,21 +142,85 @@ U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 t __i686.get_pc_thunk.bx
 t __i686.get_pc_thunk.cx
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
 U KeyValuesSystem
-t .L125
-t .L126
-t .L127
-t .L128
-t .L129
-t .L130
-t .L131
+t .L1301
+t .L1302
+t .L1303
+t .L1304
+t .L1305
+t .L1306
+t .L1307
+t .L1308
+t .L1429
+t .L1430
+t .L1431
+t .L1432
+t .L1433
+t .L1434
+t .L1435
+t .L1436
+t .L1444
+t .L1445
+t .L1446
+t .L1447
+t .L1448
+t .L1449
+t .L1450
+t .L1451
+t .L1458
+t .L1459
+t .L1460
+t .L1461
+t .L1462
+t .L1465
+t .L1475
+t .L1476
+t .L1477
+t .L1478
+t .L1479
+t .L1480
+t .L1485
+t .L1486
+t .L1487
+t .L1488
+t .L1489
+t .L1490
+t .L1499
+t .L1526
+t .L1527
+t .L1528
+t .L1529
+t .L1530
+t .L1531
+t .L1532
+t .L1551
+t .L1552
+t .L1553
+t .L1554
+t .L1555
+t .L1556
+t .L1557
+t .L161
+t .L162
+t .L163
+t .L164
+t .L165
+t .L166
+t .L167
+t .L168
 t .L17
 t .L19
 t .L20
@@ -184,16 +249,8 @@ t .L26
 t .L271
 t .L272
 t .L273
-t .L273
-t .L274
 t .L274
 t .L275
-t .L275
-t .L276
-t .L277
-t .L278
-t .L279
-t .L280
 t .L291
 t .L298
 t .L299
@@ -204,20 +261,22 @@ t .L303
 t .L304
 t .L305
 t .L306
-t .L350
-t .L351
-t .L353
-t .L354
-t .L355
-t .L356
-t .L357
-t .L392
-t .L393
-t .L394
-t .L395
-t .L396
-t .L397
-t .L398
+t .L322
+t .L323
+t .L324
+t .L325
+t .L326
+t .L327
+t .L328
+t .L329
+t .L401
+t .L404
+t .L405
+t .L406
+t .L407
+t .L408
+t .L409
+t .L410
 t .L43
 t .L45
 t .L46
@@ -225,45 +284,32 @@ t .L47
 t .L47
 t .L48
 t .L48
+t .L486
+t .L487
+t .L489
 t .L49
-t .L494
-t .L495
-t .L496
-t .L497
-t .L498
-t .L499
+t .L490
+t .L491
+t .L492
+t .L493
 t .L50
-t .L500
-t .L508
-t .L509
 t .L51
 t .L51
-t .L510
-t .L511
-t .L512
-t .L513
-t .L514
 t .L52
 t .L52
-t .L521
-t .L522
-t .L523
-t .L524
-t .L525
 t .L528
+t .L529
 t .L53
 t .L53
+t .L530
+t .L531
+t .L532
+t .L533
+t .L534
 t .L54
 t .L54
 t .L55
-t .L559
 t .L56
-t .L560
-t .L561
-t .L562
-t .L563
-t .L564
-t .L565
 t .L57
 t .L58
 t .L59
@@ -279,22 +325,18 @@ t .L68
 t .L69
 t .L70
 t .L71
-t .L721
-t .L722
-t .L723
-t .L724
-t .L725
-t .L726
-t .L727
-t .L728
-t .L865
-t .L866
-t .L867
-t .L868
-t .L869
-t .L870
-t .L871
+t .L781
+t .L782
+t .L783
+t .L784
+t .L785
+t .L786
+t .L787
+t .L788
 t linear_search_fdes
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
 t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.6968
@@ -306,7 +348,6 @@ U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
-t __moddi3
 U Msg
 t _msize_dbg
 t _nh_malloc_dbg
@@ -325,6 +366,7 @@ U pthread_mutex_init@@GLIBC_2.0
 U pthread_mutex_lock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
+U rand@@GLIBC_2.0
 t read_encoded_value
 t read_encoded_value_with_base
 t read_sleb128
@@ -355,12 +397,14 @@ U strcpy@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b studiorender
 b subs.7231
 U swprintf@@GLIBC_2.2
@@ -371,6 +415,7 @@ U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
+t __udivdi3
 b unseen_objects
 t _Unwind_Backtrace
 t _Unwind_DebugHook
@@ -402,11 +447,8 @@ t uw_update_context
 t uw_update_context_1
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
-U V_UCS2ToUnicode
 U V_UCS2ToUTF8
-U V_UnicodeToUCS2
 U V_UnicodeToUTF8
-U V_UTF8ToUCS2
 U V_UTF8ToUnicode
 U Warning
 U wcschr@@GLIBC_2.0
@@ -428,60 +470,108 @@ t V_snprintf(char*, int, char const*, ...)
 t _V_stricmp(char const*, char const*)
 t V_strnicmp(char const*, char const*, int)
 t V_strnistr(char const*, char const*, int)
+t _V_strnlen(char const*, int)
 t _V_strrchr(char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
 t MurmurHash2(void const*, int, unsigned int)
 t Q_URLDecode(char*, int, char const*, int)
 t Q_URLEncode(char*, int, char const*, int)
+t V_ParseLine(char const*, char*, int, bool*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
 t _V_strlower(char*)
+t V_strtoui64(char const*, char**, int)
+t V_vscprintf(char const*, char*)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(wchar_t*)
+t AllocWString(wchar_t const*, int)
 t CopyMemory3D(void*, void const*, int, int, int, int, int, int, int)
 t MurmurHash64(void const*, int, unsigned int)
 t V_FixSlashes(char*, char)
+t V_ParseToken(char const*, char*, int, bool*, characterset_t*)
+t V_PathsMatch(char const*, char const*)
 t V_pretifymem(float, int, bool)
 t V_pretifynum(long long)
 t V_strcasecmp(char const*, char const*)
 t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
 t iHexCharToInt(char)
-t V_AppendSlash(char*, int)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
+t V_AppendSlash(char*, int, char)
 t V_binarytohex(unsigned char const*, int, char*, int)
 t V_BinToString(char*, void*, unsigned int)
-t V_GetFileName(char const*)
 t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, bool)
 t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_StringToBin(char const*, void*, unsigned int)
 t V_strncasecmp(char const*, char const*, int)
+t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
 t cIntToHexDigit(int)
 t Q_URLDecodeRaw(char*, int, char const*, int)
 t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
 t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
+t V_RandomString(int)
 t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const* const*, int, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, bool)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_SplitWString(wchar_t const*, wchar_t const*, CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >&)
 t V_StripLastDir(char*, int)
+t V_TokenWaiting(char const*)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
 t ConVar_Register(int, IConCommandBaseAccessor*)
 t GetModuleHandle(char const*)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
 t ReadToEndOfLine(unsigned short*)
-t V_FixupPathName(char*, unsigned int, char const*)
+t V_FixupPathName(char*, int, char const*)
+t V_IsDeprecatedW(wchar_t)
+t V_SplitWString2(wchar_t const*, wchar_t const**, int, CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >&)
 t V_StripFilename(char*)
 t InstanceRegistry(char const*)
+t Q_IsValidUChar32(wchar_t)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
 t ReadUnicodeToken(unsigned short*, unsigned short*, int, bool&)
 t Sys_UnloadModule(CSysModule*)
 t V_IsAbsolutePath(char const*)
+t V_StringToVector(float*, char const*)
 t V_StripExtension(char const*, char*, int)
+t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t _V_UnicodeToUTF8(wchar_t const*, char*, int)
+t _V_UTF8ToUnicode(char const*, wchar_t*, int)
 t CharacterSetBuild(characterset_t*, char const*)
 t ConnectInterfaces(void* (**)(char const*, int*), int)
 t ConVar_Unregister()
 t isbreakablewspace(wchar_t)
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
 t RegisterInterface(void* (*)(char const*, int*), char const*, void**)
 t StringAfterPrefix(char const*, char const*)
 t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
@@ -490,48 +580,76 @@ t V_ExtractFilePath(char const*, char*, int)
 t V_StringToColor32(color32_s*, char const*)
 t ConVar_AppendFlags(ConCommandBase const*, char*, unsigned int)
 t HashStringCaseless(char const*)
+t nexttoken_explicit(char*, char const*, char, unsigned int)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t ReconnectInterface(void* (*)(char const*, int*), char const*)
 t ReconnectInterface(void* (*)(char const*, int*), char const*, void**)
 t Sys_GetFactoryThis()
+t V_BoyerMooreSearch(unsigned char const*, int, unsigned char const*, int)
 t V_DefaultExtension(char*, char const*, int)
 t V_FixDoubleSlashes(char*)
 t V_GetFileExtension(char const*)
 t V_MakeAbsolutePath(char*, int, char const*, char const*)
 t V_MakeRelativePath(char const*, char const*, char*, int)
-t V_RemoveDotSlashes(char*, char, bool)
+t V_RemoveDotSlashes(char*, char)
 t V_StringToIntArray(int*, int, char const*)
 t WriteUnicodeString(CUtlBuffer&, wchar_t const*, bool)
 t DistanceToEndOfLine(unsigned short*)
+t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t DisconnectInterfaces()
 t MurmurHash2LowerCase(char const*, unsigned int)
+t V_StringToFloatArray(float*, int, char const*)
 t V_StripTrailingSlash(char*)
 t AdvanceOverWhitespace(unsigned short*)
 t ConnectTier1Libraries(void* (**)(char const*, int*), int)
 t ConnectTier2Libraries(void* (**)(char const*, int*), int)
 t DefaultCompletionFunc(char const*, char (*) [64])
+t LengthOfMatchingPaths(char const*, char const*)
 t Sys_IsDebuggerPresent()
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t GetNoEscCharConversion()
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
+t V_GetFileExtensionSafe(char const*)
 t V_normalizeFloatString(char*)
+t V_StringMatchesPattern(char const*, char const*, int)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t ConVar_PrintDescription(ConCommandBase const*)
 t CreateInterfaceInternal(char const*, int*)
 t char const* GetTypedKeyValuesString<char>(KeyValues*, char const*)
 t wchar_t const* GetTypedKeyValuesString<wchar_t>(KeyValues*, char const*)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t DisconnectTier1Libraries()
 t DisconnectTier2Libraries()
 t GetCStringCharConversion()
 t ReleaseInstancedRegistry(IRegistry*)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
+t V_StripLeadingWhitespace(char*)
+t V_StripSurroundingQuotes(char*)
+t Q_RemoveAllEvilCharacters(char*)
 t ReadUnicodeTokenNoSpecial(unsigned short*, unsigned short*, int, bool&)
+t V_StripTrailingWhitespace(char*)
 t WriteAsciiStringAsUnicode(CUtlBuffer&, char const*, bool)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t V_TranslateLineFeedsToUnix(char*)
 t DefaultConditionalErrorProc(char const*)
 t Sys_RunningWithDebugModules()
 t DefaultConditionalSymbolProc(char const*)
+t V_FixupPathSpaceToUnderscore(char*)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t _V_stricmp_NegativeForUnequal(char const*, char const*)
 t HashStringCaselessConventional(char const*)
 t StringAfterPrefixCaseSensitive(char const*, char const*)
@@ -540,12 +658,17 @@ t void ConstructStringVArgsInternal_Impl<char>(char*, int, char const*, int, cha
 t void ConstructStringVArgsInternal_Impl<wchar_t>(wchar_t*, int, wchar_t const*, int, char*)
 t void ConstructStringKeyValuesInternal_Impl<char>(char*, int, char const*, KeyValues*)
 t void ConstructStringKeyValuesInternal_Impl<wchar_t>(wchar_t*, int, wchar_t const*, KeyValues*)
+t Q_StripPrecedingAndTrailingWhitespace(char*)
+t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
 t Hash4(void const*)
 t Hash8(void const*)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)
 t Hash12(void const*)
 t Hash16(void const*)
+t V_atod(char const*)
 t V_atof(char const*)
 t V_atoi(char const*)
 t HashInt(int)
@@ -556,6 +679,7 @@ t V_atoui64(char const*)
 t _V_memcmp(void const*, void const*, int)
 t _V_memcpy(void*, void const*, int)
 t _V_memset(void*, int, int)
+t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
 t _V_strcmp(char const*, char const*)
 t _V_strcpy(char*, char const*)
 t V_stristr(char*, char const*)
@@ -568,8 +692,11 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, char const*)
+t V_StrTrim(char*)
 t _V_strupr(char*)
 t _V_wcscmp(wchar_t const*, wchar_t const*)
+t V_wcsistr(wchar_t const*, wchar_t const*)
+t V_wcsistr(wchar_t*, wchar_t const*)
 t _V_wcslen(wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
@@ -578,14 +705,10 @@ t operator delete[](void*)
 t operator delete(void*)
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 b guard variable for CLocalize::AddFile(char const*, char const*, bool)::cl_language
-b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-b guard variable for CUtlRBTree<CLocalize::fastvalue_t, int, bool (*)(CLocalize::fastvalue_t const&, CLocalize::fastvalue_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::fastvalue_t, int>, int> >::Links(int) const::s_Sentinel
-b guard variable for CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::Links(unsigned int) const::s_Sentinel
 b g_Registry
 b s_BreakSet
 b s_Localize
 b s_nCVarFlag
-b s_pTokenBuf
 b vec2_origin
 b vec2_origin
 b vec2_origin
@@ -630,13 +753,17 @@ r wszCantBeginLine
 d s_DefaultAccessor
 d g_PrintConVarFlags
 b s_nConnectionCount
+d g_BasicHTMLEntities
 d g_pInterfaceGlobals
 t Sys_LoadLibraryGuts(char const*)
 b g_CleanupSymbolTable
+d g_WhitespaceEntities
 b s_nRegistrationCount
 d s_LastFileLoadingFrom
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
 b s_bPrecachesRegistered
 b s_bResourceFCRegistered
+d g_Tier1_FullHTMLEntities
 b s_pConnectionRegistration
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
@@ -656,6 +783,9 @@ b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b s_bRunningWithDebugModules
+d g_pszSimpleBBCodeReplacements
 b __g_CreateCLocalizeILocalize_reg
 d s_pConversionArrays_NoEscConversion
 t __CreateCLocalizeILocalize_interface()
@@ -697,7 +827,6 @@ t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
-t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination(int)
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
@@ -722,13 +851,18 @@ t CUtlBuffer::CheckGet(int)
 t CUtlBuffer::CheckPut(int)
 t CUtlBuffer::GetToken(char const*)
 t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::GetString(char*, int)
 t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::operator=(CUtlBuffer&&)
+t CUtlBuffer::operator=(CUtlBuffer const&)
 t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(CUtlBuffer&&)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(CUtlBuffer const&)
 t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(CUtlBuffer&&)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlBuffer::~CUtlBuffer()
-t CUtlBuffer::~CUtlBuffer()
+t CUtlBuffer::CUtlBuffer(CUtlBuffer const&)
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
@@ -741,7 +875,7 @@ t CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsign
 t CUtlMemory<char, int>::Grow(int)
 t CUtlMemory<char, int>::~CUtlMemory()
 t CUtlMemory<char, int>::~CUtlMemory()
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.32]
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.35]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
@@ -761,9 +895,11 @@ t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::Grow(int)
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
+t CUtlMemory<char const*, int>::Grow(int)
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<wchar_t*, int>::Grow(int)
 t CUtlMemory<unsigned short, int>::Grow(int)
 t CUtlMemory<wchar_t, int>::Grow(int)
 t CUtlMemory<wchar_t, int>::~CUtlMemory()
@@ -791,24 +927,31 @@ t CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::loc
 t CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::RemoveAll()
 t CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::~CUtlRBTree()
 t CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::~CUtlRBTree()
+t CUtlString::GetForModify()
 t CUtlString::MatchesPattern(CUtlString const&, int)
+t CUtlString::RemoveDotSlashes(char)
 t CUtlString::StripTrailingSlash()
-t CUtlString::UnqualifiedFilename()
 t CUtlString::Get()
 t CUtlString::Set(char const*)
 t CUtlString::Left(int)
+t CUtlString::Swap(CUtlString&)
+t CUtlString::Trim(char const*)
 t CUtlString::Purge()
 t CUtlString::Right(int)
 t CUtlString::Slice(int, int)
 t CUtlString::Append(char const*)
+t CUtlString::Append(char const*, int)
 t CUtlString::Format(char const*, ...)
-t CUtlString::AbsPath(char const*)
 t CUtlString::DirName()
+t CUtlString::FormatV(char const*, char*)
 t CUtlString::Replace(char, char)
 t CUtlString::ToLower()
+t CUtlString::ToUpper()
 t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::TrimLeft(char const*)
 t CUtlString::SetDirect(char const*, int)
 t CUtlString::SetLength(int)
+t CUtlString::TrimRight(char const*)
 t CUtlString::operator=(char const*)
 t CUtlString::operator=(CUtlString const&)
 t CUtlString::CUtlString(char const*)
@@ -821,10 +964,11 @@ t CUtlString::CUtlString(void const*, int)
 t CUtlString::CUtlString(void*, int, int)
 t CUtlString::CUtlString(CUtlString const&)
 t CUtlString::CUtlString()
+t CUtlString::~CUtlString()
+t CUtlString::~CUtlString()
 t CUtlString::operator+=(char)
 t CUtlString::operator+=(double)
 t CUtlString::operator+=(int)
-t CUtlString::operator+(char const*)
 t CUtlString::operator+=(char const*)
 t CUtlString::operator+=(CUtlString const&)
 t CUtlSymbol::Initialize()
@@ -836,6 +980,7 @@ d CUtlSymbol::s_bAllowStaticSymbolTable
 t CUtlSymbol::CurrTable()
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlSymbol::CUtlSymbol(char const*)
+t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
 t CUtlVector<char, CUtlMemory<char, int> >::GrowVector(int)
 t CUtlVector<char, CUtlMemory<char, int> >::ShiftElementsRight(int, int)
@@ -861,7 +1006,11 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::InsertBefore(int, void (* const&)(IConVar*, char const*, float))
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
+t CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >::InsertBefore(int, wchar_t* const&)
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::SetCount(int)
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
@@ -871,7 +1020,12 @@ t CUtlVector<wchar_t, CUtlMemory<wchar_t, int> >::~CUtlVector()
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
-t CVProfScope::~CVProfScope() [clone .isra.20]
+t IAppSystem::IsSingleton()
+t IAppSystem::GetDependencies()
+t IAppSystem::GetTier()
+t IAppSystem::Reconnect(void* (*)(char const*, int*), char const*)
+t CVProfScope::~CVProfScope()
+t CVProfScope::~CVProfScope()
 t CEmptyConVar::SetValue(float)
 t CEmptyConVar::SetValue(int)
 t CEmptyConVar::SetValue(char const*)
@@ -880,6 +1034,8 @@ t CEmptyConVar::~CEmptyConVar()
 t CEmptyConVar::~CEmptyConVar()
 U CThreadEvent::Set()
 U CThreadEvent::CThreadEvent(bool)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.4]
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t AsianWordWrap::CanEndLine(wchar_t)
@@ -950,6 +1106,9 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
+t CBoyerMooreSearch::Search(unsigned char const*, int)
+t CBoyerMooreSearch::CBoyerMooreSearch(unsigned char const*, int)
+t CBoyerMooreSearch::CBoyerMooreSearch(unsigned char const*, int)
 U CThreadSpinRWLock::SpinLockForRead()
 U CThreadSpinRWLock::SpinLockForWrite()
 U CThreadSyncObject::~CThreadSyncObject()
@@ -957,6 +1116,19 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlStringBuilder::TakeOwnership(unsigned int*, unsigned int*)
+t CUtlStringBuilder::TrimWhitespace()
+t CUtlStringBuilder::ReplaceInternal(char const*, char const*, char const* (*)(char const*, char const*))
+t CUtlStringBuilder::RemoveWhitespace()
+t CUtlStringBuilder::ReplaceFastCaseless(char const*, char const*)
+t CUtlStringBuilder::InternalPrepareBuffer(unsigned int, bool, unsigned int)
+t CUtlStringBuilder::Data::ClearError()
+t CUtlStringBuilder::Data::MoveToHeap()
+t CUtlStringBuilder::Data::SetPtr(char*, unsigned int)
+t CUtlStringBuilder::Data::SetError(bool)
+t CUtlStringBuilder::Data::SetLength(unsigned int)
+t CUtlStringBuilder::Replace(char const*, char const*)
+t CUtlStringBuilder::SetLength(unsigned int)
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -986,6 +1158,11 @@ t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
 t SplitScreenConVarRef::SplitScreenConVarRef(IConVar*)
 t SplitScreenConVarRef::SplitScreenConVarRef(char const*)
 t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
+b CKeyValuesTokenReader::s_pTokenBuf
+t CKeyValuesTokenReader::SeekBackOneToken()
+t CKeyValuesTokenReader::ReadToken(bool&, bool&)
+t CKeyValuesTokenReader::CKeyValuesTokenReader(KeyValues*, CUtlBuffer&)
+t CKeyValuesTokenReader::CKeyValuesTokenReader(KeyValues*, CUtlBuffer&)
 t CUtlCStringConversion::FindConversion(char const*, int*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -1046,16 +1223,20 @@ t ConVar::~ConVar()
 t ConVar::~ConVar()
 t CCommand::DefaultBreakSet()
 t CCommand::Reset()
-t CCommand::Tokenize(char const*, characterset_t*)
-t CCommand::CCommand(int, char const**)
+t CCommand::Tokenize(char const*, cmd_source_t, characterset_t*)
+t CCommand::CCommand(int, char const**, cmd_source_t)
 t CCommand::CCommand()
-t CCommand::CCommand(int, char const**)
+t CCommand::CCommand(int, char const**, cmd_source_t)
 t CCommand::CCommand()
 t CFmtStrN<256, false>::InitQuietTruncation()
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t CLocalize::FindAsUTF8(char const*)
 t CLocalize::SaveToFile(char const*)
 t CLocalize::SetTextQuery(ILocalizeTextQuery*)
@@ -1096,7 +1277,7 @@ t CLocalize::SymLess(CLocalize::localizedstring_t const&, CLocalize::localizedst
 t CLocalize::FindSafe(char const*)
 b CLocalize::s_pTable
 t CLocalize::AddString(char const*, unsigned short*, char const*)
-t CLocalize::AddString(char const*, unsigned short*, char const*) [clone .part.3]
+t CLocalize::AddString(char const*, unsigned short*, char const*) [clone .part.19]
 t CLocalize::AddString(char const*, wchar_t*, char const*)
 t CLocalize::FindIndex(char const*)
 t CLocalize::RemoveAll()
@@ -1128,11 +1309,13 @@ t CRegistry::CRegistry()
 t CRegistry::~CRegistry()
 t CRegistry::~CRegistry()
 t CRegistry::~CRegistry()
+t IRegistry::~IRegistry()
+t IRegistry::~IRegistry()
+t IRegistry::~IRegistry()
 t KeyValues::deleteThis()
 t KeyValues::FromString(char const*, char const*, char const**)
-t KeyValues::GetNextKey()
 t KeyValues::GetWString(char const*, wchar_t const*)
-t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*)
+t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool)
 t KeyValues::SetNextKey(KeyValues*)
 t KeyValues::SetWString(char const*, wchar_t const*)
 t KeyValues::SwapSubKey(KeyValues*, KeyValues*)
@@ -1142,15 +1325,16 @@ t KeyValues::CreateNewKey()
 t KeyValues::GetNextValue()
 t KeyValues::InsertSubKey(int, KeyValues*)
 t KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool (*)(char const*))
-t KeyValues::ReadAsBinary(CUtlBuffer&)
+t KeyValues::ReadAsBinary(CUtlBuffer&, int)
 t KeyValues::RemoveSubKey(KeyValues*)
 t KeyValues::WriteIndents(IBaseFileSystem*, void*, CUtlBuffer*, int)
 t KeyValues::ChainKeyValue(KeyValues*)
+t KeyValues::CreatePeerKey(char const*)
 t KeyValues::GetFirstValue()
 t KeyValues::InternalWrite(IBaseFileSystem*, void*, CUtlBuffer*, void const*, int)
 t KeyValues::MergeBaseKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
 t KeyValues::ContainsSubKey(KeyValues*)
-t KeyValues::GetFirstSubKey()
+t KeyValues::FindLastSubKey()
 t KeyValues::LoadFromBuffer(char const*, CUtlBuffer&, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::LoadFromBuffer(char const*, char const*, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::SetStringValue(char const*)
@@ -1160,17 +1344,19 @@ t KeyValues::ParseIncludedKeys(char const*, char const*, IBaseFileSystem*, char 
 t KeyValues::AppendIncludedKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
 t KeyValues::GetFirstTrueSubKey()
 t KeyValues::EvaluateConditional(char const*, bool (*)(char const*))
-t KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int)
+t KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool)
 t KeyValues::RecursiveSaveToFile(CUtlBuffer&, int)
 t KeyValues::UnpackIntoStructure(KeyValuesUnpackStructure const*, void*)
 t KeyValues::UsesEscapeSequences(bool)
+t KeyValues::ReadAsBinaryFiltered(CUtlBuffer&, int)
 t KeyValues::WriteConvertedString(IBaseFileSystem*, void*, CUtlBuffer*, char const*)
 t KeyValues::ProcessResolutionKeys(char const*)
+t KeyValues::WriteAsBinaryFiltered(CUtlBuffer&)
 t KeyValues::RecursiveCopyKeyValues(KeyValues&)
 d KeyValues::s_pfGetStringForSymbol
 d KeyValues::s_pfGetSymbolForString
 b KeyValues::s_pGrowableStringTable
-t KeyValues::RecursiveLoadFromBuffer(char const*, CUtlBuffer&, bool (*)(char const*))
+t KeyValues::RecursiveLoadFromBuffer(char const*, CKeyValuesTokenReader&, bool (*)(char const*))
 t KeyValues::RecursiveMergeKeyValues(KeyValues*)
 t KeyValues::ReadAsBinaryPooledFormat(CUtlBuffer&, IBaseFileSystem*, unsigned int, bool (*)(char const*))
 t KeyValues::GetStringForSymbolClassic(int)
@@ -1178,6 +1364,8 @@ t KeyValues::GetSymbolForStringClassic(char const*, bool)
 t KeyValues::SetUseGrowableStringTable(bool)
 t KeyValues::GetStringForSymbolGrowable(int)
 t KeyValues::GetSymbolForStringGrowable(char const*, bool)
+t KeyValues::AddSubkeyUsingKnownLastChild(KeyValues*, KeyValues*)
+t KeyValues::CreateKeyUsingKnownLastChild(char const*, KeyValues*)
 t KeyValues::Dump(IKeyValuesDumpContext*, int)
 t KeyValues::Init()
 t KeyValues::Clear()
@@ -1187,6 +1375,7 @@ t KeyValues::SetInt(char const*, int)
 t KeyValues::SetPtr(char const*, void*)
 t KeyValues::FindKey(char const*, bool)
 t KeyValues::IsEmpty(char const*)
+t KeyValues::IsEqual(KeyValues*)
 t KeyValues::SetName(char const*)
 t KeyValues::GetColor(char const*, Color const&)
 t KeyValues::GetFloat(char const*, float)
@@ -1197,7 +1386,6 @@ t KeyValues::CreateKey(char const*)
 t KeyValues::GetString(char const*, char const*)
 t KeyValues::GetUint64(char const*, unsigned long long)
 t KeyValues::MergeFrom(KeyValues*, KeyValues::MergeKeyValuesOp_t)
-t KeyValues::ReadToken(CUtlBuffer&, bool&, bool&)
 t KeyValues::SetString(char const*, char const*)
 t KeyValues::SetUint64(char const*, unsigned long long)
 t KeyValues::operator=(KeyValues&)
@@ -1222,10 +1410,20 @@ t KeyValues::operator new(unsigned int, int, char const*, int)
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Find(CUtlSymbolTable::CStringPoolIndex const&) const
+t CUtlRBTree<CLocalize::fastvalue_t, int, bool (*)(CLocalize::fastvalue_t const&, CLocalize::fastvalue_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::fastvalue_t, int>, int> >::Find(CLocalize::fastvalue_t const&) const
 t CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::NextInorder(unsigned int) const
+t CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::Find(CLocalize::localizedstring_t const&) const
+t CUtlString::GetExtension() const
+t CUtlString::StripFilename() const
+t CUtlString::StripExtension() const
+t CUtlString::GetBaseFilename() const
+t CUtlString::UnqualifiedFilename() const
 t CUtlString::Get() const
 t CUtlString::Length() const
-t CUtlString::operator char const*() const
+t CUtlString::Remove(char const*, bool) const
+t CUtlString::AbsPath(char const*) const
+t CUtlString::Replace(char const*, char const*, bool) const
 t CUtlString::operator==(char const*) const
 t CUtlString::operator==(CUtlString const&) const
 t CUtlSymbol::StringNoLock() const
@@ -1247,6 +1445,7 @@ t CUtlSymbolTable::FindPoolWithSpace(int) const
 t CUtlSymbolTable::Find(char const*) const
 t CUtlSymbolTable::CLess::operator()(CUtlSymbolTable::CStringPoolIndex const&, CUtlSymbolTable::CStringPoolIndex const&) const
 t CUtlSymbolTable::String(CUtlSymbol) const
+t CUtlStringBuilder::IndexOf(char const*) const
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
 t CUtlCharConversion::GetDelimiterLength() const
@@ -1277,9 +1476,12 @@ t ConVar::IsFlagSet(int) const
 t CCommand::FindArgInt(char const*, int) const
 t CCommand::FindArg(char const*) const
 t ConVarRef::IsValid() const
+t KeyValues::GetNextKey() const
 t KeyValues::CopySubkeys(KeyValues*) const
+t KeyValues::GetDataType() const
 t KeyValues::GetNameSymbol() const
 t KeyValues::WriteAsBinary(CUtlBuffer&) const
+t KeyValues::GetFirstSubKey() const
 t KeyValues::GetNameSymbolCaseSensitive() const
 t KeyValues::FindKey(int) const
 t KeyValues::GetName() const
@@ -1381,10 +1583,13 @@ d vtable for IRegistry
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+b V_ParseToken(char const*, char*, int, bool*, characterset_t*)::s_BreakSetIncludingColons
+b V_ParseToken(char const*, char*, int, bool*, characterset_t*)::built
 b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b CUtlSymbol::Initialize()::symbolsInitialized
 d SplitScreenConVarRef::Init(char const*, bool)::bFirst
 b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
@@ -1393,7 +1598,4 @@ b CLocalize::FindAsUTF8(char const*)::rgchT
 b CLocalize::SaveToFile(char const*)::unicodeString
 b CLocalize::AddFile(char const*, char const*, bool)::cl_language
 d ConVarRef::Init(char const*, bool)::bFirst
-b KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int)::buf
-d CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-d CUtlRBTree<CLocalize::fastvalue_t, int, bool (*)(CLocalize::fastvalue_t const&, CLocalize::fastvalue_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::fastvalue_t, int>, int> >::Links(int) const::s_Sentinel
-d CUtlRBTree<CLocalize::localizedstring_t, unsigned int, bool (*)(CLocalize::localizedstring_t const&, CLocalize::localizedstring_t const&), CUtlMemory<UtlRBTreeNode_t<CLocalize::localizedstring_t, unsigned int>, unsigned int> >::Links(unsigned int) const::s_Sentinel
+b KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool)::buf

@@ -4,6 +4,7 @@ U chdir@@GLIBC_2.0
 U CommandLine
 T CreateInterface
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -24,10 +25,19 @@ w __gmon_start__
 U g_pMemAlloc
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
 T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 w _Jv_RegisterClasses
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
 U malloc@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
@@ -49,6 +59,7 @@ U pthread_mutex_init@@GLIBC_2.0
 U pthread_mutex_lock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
+U rand@@GLIBC_2.0
 U SDL_AddEventWatch
 U SDL_DelEventWatch
 U SDL_GameControllerClose
@@ -83,12 +94,13 @@ U strcmp@@GLIBC_2.0
 U strcpy@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncat@@GLIBC_2.0
-U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 U ThreadGetCurrentId
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
@@ -102,6 +114,7 @@ U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
 U WriteMiniDump
+U DevWarning(char const*, ...)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)
 U CVProfNode::EnterScope()

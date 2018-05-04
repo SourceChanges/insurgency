@@ -2,6 +2,7 @@ U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 U alphasort@@GLIBC_2.0
 A __bss_start
+U CallAssertFailedNotifyFunc
 U chdir@@GLIBC_2.0
 U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
@@ -20,6 +21,7 @@ U __ctype_toupper_loc@@GLIBC_2.3
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_free_exception@@CXXABI_1.3
@@ -70,8 +72,14 @@ U g_pMemAlloc
 U g_pThreadPool
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
 T _init
+U isalnum@@GLIBC_2.0
 U isalpha@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 w _Jv_RegisterClasses
@@ -79,6 +87,9 @@ U KeyValuesSystem
 U lchown@@GLIBC_2.0
 U link@@GLIBC_2.0
 U localtime@@GLIBC_2.0
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
 U LoggingSystem_LogAssert
 U log@@GLIBC_2.0
 U __longjmp_chk@@GLIBC_2.11
@@ -115,6 +126,7 @@ U pthread_mutex_lock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 U qsort@@GLIBC_2.0
+U rand@@GLIBC_2.0
 U RandomInt
 U readdir@@GLIBC_2.0
 U read@@GLIBC_2.0
@@ -144,6 +156,7 @@ U strdup@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
 U strpbrk@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
 U strstr@@GLIBC_2.0
@@ -151,6 +164,7 @@ U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 U swprintf@@GLIBC_2.2
 U swscanf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
@@ -164,7 +178,6 @@ U ThreadSetPriority
 U ThreadSleep
 U time@@GLIBC_2.0
 U times@@GLIBC_2.0
-U ___tls_get_addr@@GLIBC_2.3
 U tmpnam@@GLIBC_2.0
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
@@ -176,8 +189,6 @@ U utimes@@GLIBC_2.0
 U vfprintf@@GLIBC_2.0
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
-U V_UnicodeToUTF8
-U V_UTF8ToUnicode
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -204,6 +215,10 @@ U CThreadRWLock::LockForWrite()
 U CThreadSpinRWLock::SpinLockForRead()
 U CThreadSpinRWLock::SpinLockForWrite()
 U CThreadSyncObject::~CThreadSyncObject()
+U GenericThreadLocals::CThreadLocalBase::Set(void*)
+U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
+U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
+U GenericThreadLocals::CThreadLocalBase::Get() const
 U std::istream::read(char*, int)@@GLIBCXX_3.4
 U std::istream::putback(char)@@GLIBCXX_3.4
 U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4

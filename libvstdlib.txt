@@ -1,4 +1,5 @@
 U abort@@GLIBC_2.0
+U AddMemoryInfoCallback
 A __bss_start
 U chdir@@GLIBC_2.0
 U close@@GLIBC_2.0
@@ -17,6 +18,7 @@ T Coroutine_YieldToMain
 T CreateInterface
 T CreateNewThreadPool
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -55,12 +57,18 @@ U iconv_open@@GLIBC_2.1
 T _init
 T InstallUniformRandomStream
 U ioctl@@GLIBC_2.0
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 w _Jv_RegisterClasses
 T KeyValuesSystem
 U kill@@GLIBC_2.0
 U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
 U longjmp@@GLIBC_2.0
 U malloc@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
@@ -85,11 +93,6 @@ U pthread_mutex_init@@GLIBC_2.0
 U pthread_mutex_lock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
-T Q_AggressiveStripPrecedingAndTrailingWhitespace
-T Q_AggressiveStripPrecedingAndTrailingWhitespaceW
-T Q_RemoveAllEvilCharacters
-T Q_StripPrecedingAndTrailingWhitespace
-T Q_StripPrecedingAndTrailingWhitespaceW
 U rand@@GLIBC_2.0
 T RandomFloat
 T RandomFloatExp
@@ -97,6 +100,7 @@ T RandomGaussianFloat
 T RandomInt
 T RandomSeed
 U read@@GLIBC_2.0
+U RemoveMemoryInfoCallback
 T RunThreadPoolTests
 U RunTSListTests
 U RunTSQueueTests
@@ -116,11 +120,13 @@ U strerror_r@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 U system@@GLIBC_2.0
 U ThreadGetCurrentId
 U ThreadGetPriority
@@ -131,7 +137,6 @@ U ThreadSetAffinity
 U ThreadSetDebugName
 U ThreadSetPriority
 U ThreadSleep
-U ___tls_get_addr@@GLIBC_2.3
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
@@ -155,6 +160,7 @@ U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
 U write@@GLIBC_2.0
 U WriteMiniDump
+U DevWarning(char const*, ...)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)
 U CVProfNode::EnterScope()
@@ -167,6 +173,7 @@ U CThreadEvent::Check()
 U CThreadEvent::Reset()
 U CThreadEvent::CThreadEvent(bool)
 U CThreadEvent::CThreadEvent(bool)
+U CThreadMutex::TryLock()
 U CWorkerThread::CallWorker(unsigned int, unsigned int, bool)
 U CWorkerThread::WaitForReply(unsigned int)
 U CWorkerThread::GetCallHandle()
@@ -176,6 +183,9 @@ U CWorkerThread::CWorkerThread()
 U CThreadSpinRWLock::SpinLockForRead()
 U CThreadSpinRWLock::SpinLockForWrite()
 U CThreadSyncObject::~CThreadSyncObject()
+U GenericThreadLocals::CThreadLocalBase::Set(void*)
+U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
+U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
 T CUniformRandomStream::RandomFloat(float, float)
 T CUniformRandomStream::RandomFloatExp(float, float, float)
 T CUniformRandomStream::GenerateRandomNumber()
@@ -189,9 +199,10 @@ T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
 T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
 U CThread::GetThreadProc()
 U CThread::GetThreadHandle()
+U CThread::IsThreadRunning()
 U CThread::WaitForCreateComplete(CThreadEvent*)
 U CThread::Init()
-U CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+U CThread::Start(unsigned int, ThreadPriorityEnum_t)
 U CThread::OnExit()
 U CThread::Resume()
 U CThread::IsAlive()
@@ -200,6 +211,7 @@ U CThread::Suspend()
 U CThread::~CThread()
 U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
 U CWorkerThread::GetCallParam() const
+U GenericThreadLocals::CThreadLocalBase::Get() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U std::terminate()@@GLIBCXX_3.4
 V typeinfo for CUniformRandomStream

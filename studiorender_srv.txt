@@ -27,6 +27,7 @@ d __CTOR_LIST__
 U __ctype_b_loc@@GLIBC_2.3
 b cvar
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -35,7 +36,6 @@ t __cxa_pure_virtual
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
-t __divdi3
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
@@ -135,6 +135,7 @@ t _GLOBAL__sub_I_r_studiosubd_patches.cpp
 t _GLOBAL__sub_I_schemaclassbinding.cpp
 t _GLOBAL__sub_I_sseconst.cpp
 t _GLOBAL__sub_I_strtools.cpp
+t _GLOBAL__sub_I_strtools_unicode.cpp
 t _GLOBAL__sub_I_studiorendercontext.cpp
 t _GLOBAL__sub_I_studiorender.cpp
 t _GLOBAL__sub_I_tier1.cpp
@@ -218,8 +219,14 @@ U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 t __i686.get_pc_thunk.bx
 t __i686.get_pc_thunk.cx
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 d __JCR_END__
@@ -227,51 +234,116 @@ d __JCR_LIST__
 w _Jv_RegisterClasses
 U KeyValuesSystem
 t .L1000
+t .L1000
 t .L1001
 t .L1002
 t .L1003
-t .L1035
-t .L106
-t .L125
-t .L126
-t .L127
-t .L128
-t .L129
-t .L130
-t .L131
+t .L1004
+t .L1005
+t .L1006
+t .L1007
+t .L1008
+t .L1009
+t .L103
+t .L1054
+t .L1301
+t .L1302
+t .L1303
+t .L1304
+t .L1305
+t .L1306
+t .L1307
+t .L1308
 t .L138
 t .L139
-t .L1390
-t .L1391
-t .L1392
-t .L1393
-t .L1394
-t .L1398
-t .L1399
 t .L140
 t .L1400
 t .L1401
 t .L1402
 t .L1403
+t .L1404
+t .L1408
+t .L1409
 t .L141
+t .L1410
+t .L1411
+t .L1412
+t .L1413
 t .L142
+t .L1429
 t .L143
+t .L1430
+t .L1431
+t .L1432
+t .L1433
+t .L1434
+t .L1435
+t .L1436
 t .L144
-t .L1441
+t .L1444
+t .L1445
+t .L1446
+t .L1447
+t .L1448
+t .L1449
 t .L145
+t .L1450
+t .L1451
+t .L1453
+t .L1458
+t .L1459
+t .L1460
+t .L1461
+t .L1462
+t .L1465
+t .L1475
+t .L1476
+t .L1477
+t .L1478
+t .L1479
+t .L1480
+t .L1485
+t .L1486
+t .L1487
+t .L1488
+t .L1489
+t .L149
+t .L1490
+t .L1499
+t .L150
+t .L151
 t .L152
+t .L1526
+t .L1527
+t .L1528
+t .L1529
 t .L153
-t .L154
-t .L155
-t .L156
+t .L1530
+t .L1531
+t .L1532
+t .L1551
+t .L1552
+t .L1553
+t .L1554
+t .L1555
+t .L1556
+t .L1557
+t .L157
+t .L158
+t .L159
 t .L160
 t .L161
+t .L161
+t .L162
 t .L162
 t .L163
 t .L164
 t .L165
+t .L166
+t .L167
+t .L168
 t .L17
-t .L188
+t .L185
 t .L19
 t .L20
 t .L214
@@ -292,13 +364,8 @@ t .L228
 t .L229
 t .L23
 t .L230
-t .L235
-t .L237
-t .L238
-t .L239
 t .L24
 t .L240
-t .L241
 t .L242
 t .L243
 t .L244
@@ -310,32 +377,29 @@ t .L248
 t .L249
 t .L25
 t .L250
+t .L251
+t .L252
+t .L253
+t .L254
+t .L255
 t .L26
 t .L271
 t .L272
 t .L273
-t .L273
-t .L274
 t .L274
 t .L275
-t .L275
-t .L275
-t .L276
-t .L276
-t .L277
-t .L277
-t .L278
-t .L278
-t .L279
-t .L279
 t .L280
+t .L281
+t .L282
 t .L283
 t .L284
-t .L285
-t .L286
-t .L287
 t .L288
+t .L289
+t .L290
 t .L291
+t .L291
+t .L292
+t .L293
 t .L298
 t .L299
 t .L300
@@ -345,209 +409,187 @@ t .L303
 t .L304
 t .L305
 t .L306
-t .L311
-t .L350
-t .L351
-t .L353
-t .L354
-t .L355
-t .L356
-t .L357
-t .L392
-t .L393
-t .L394
-t .L395
-t .L396
-t .L397
-t .L398
+t .L316
+t .L322
+t .L323
+t .L324
+t .L325
+t .L326
+t .L327
+t .L328
+t .L329
+t .L401
+t .L404
+t .L405
+t .L406
 t .L407
 t .L408
 t .L409
 t .L410
-t .L411
+t .L414
 t .L415
 t .L416
 t .L417
 t .L418
-t .L419
-t .L420
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
 t .L43
-t .L442
 t .L45
+t .L452
 t .L46
 t .L47
 t .L47
 t .L48
 t .L48
+t .L486
+t .L487
+t .L489
 t .L49
-t .L494
-t .L495
-t .L496
-t .L497
-t .L498
-t .L499
+t .L490
+t .L491
+t .L492
+t .L493
 t .L50
-t .L500
-t .L508
-t .L509
 t .L51
 t .L51
-t .L510
-t .L511
-t .L512
-t .L513
-t .L514
 t .L52
 t .L52
-t .L521
-t .L521
-t .L522
-t .L522
-t .L523
-t .L523
-t .L524
-t .L524
-t .L525
-t .L525
 t .L528
+t .L528
+t .L529
 t .L529
 t .L53
 t .L53
+t .L530
 t .L530
 t .L531
 t .L531
 t .L532
 t .L532
 t .L533
-t .L533
 t .L534
-t .L534
-t .L535
+t .L536
+t .L537
+t .L538
 t .L539
 t .L54
 t .L54
 t .L540
 t .L541
-t .L542
-t .L543
-t .L544
+t .L549
 t .L55
+t .L550
+t .L551
+t .L552
+t .L553
+t .L557
+t .L558
 t .L559
 t .L56
 t .L560
 t .L561
 t .L562
-t .L563
-t .L563
-t .L564
-t .L565
-t .L569
 t .L57
 t .L570
-t .L571
-t .L572
-t .L573
-t .L577
-t .L578
-t .L579
 t .L58
-t .L580
-t .L581
-t .L582
+t .L583
+t .L584
+t .L585
+t .L586
+t .L587
 t .L59
+t .L591
+t .L592
+t .L593
+t .L594
+t .L595
+t .L596
 t .L60
-t .L604
-t .L606
 t .L61
+t .L618
 t .L62
+t .L620
 t .L63
 t .L64
-t .L648
-t .L649
 t .L65
-t .L650
-t .L651
-t .L652
-t .L656
-t .L657
-t .L658
-t .L659
 t .L66
-t .L660
 t .L661
+t .L662
+t .L663
+t .L664
+t .L665
+t .L669
 t .L67
+t .L670
+t .L671
+t .L672
+t .L673
+t .L674
 t .L68
 t .L69
-t .L696
 t .L70
-t .L702
-t .L703
-t .L704
-t .L705
-t .L706
+t .L709
 t .L71
-t .L710
-t .L711
-t .L712
-t .L713
+t .L71
 t .L714
 t .L715
-t .L721
+t .L716
+t .L717
+t .L718
+t .L72
 t .L722
 t .L723
 t .L724
 t .L725
 t .L726
 t .L727
-t .L728
+t .L73
 t .L74
-t .L746
 t .L75
-t .L76
-t .L77
-t .L78
-t .L812
-t .L813
-t .L814
-t .L815
-t .L816
+t .L758
+t .L781
+t .L782
+t .L783
+t .L784
+t .L785
+t .L786
+t .L787
+t .L788
+t .L79
+t .L80
+t .L81
 t .L82
-t .L820
-t .L821
-t .L822
-t .L823
 t .L824
 t .L825
+t .L826
+t .L827
+t .L828
 t .L83
+t .L832
+t .L833
+t .L834
+t .L835
+t .L836
+t .L837
 t .L84
-t .L85
-t .L86
-t .L865
-t .L866
-t .L867
-t .L868
-t .L869
-t .L869
-t .L87
-t .L870
-t .L871
-t .L979
-t .L980
-t .L981
-t .L982
-t .L983
-t .L987
-t .L988
-t .L989
-t .L990
-t .L991
-t .L992
+t .L883
+t .L996
+t .L997
 t .L998
+t .L998
+t .L999
 t .L999
 t linear_search_fdes
 b lineartolightmap
 b lineartovertex
 U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
+U LoggingSystem_IsChannelEnabled
+U LoggingSystem_Log
 t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.6968
@@ -559,7 +601,6 @@ U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
-t __moddi3
 U Msg
 t _msize_dbg
 r nanmask
@@ -619,11 +660,13 @@ U strcpy@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b studiorender
 b subs.7231
 U swprintf@@GLIBC_2.2
@@ -637,6 +680,7 @@ U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
+t __udivdi3
 b unseen_objects
 t _Unwind_Backtrace
 t _Unwind_DebugHook
@@ -671,8 +715,6 @@ b vec3_invalid
 b vec3_origin
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
-U V_UnicodeToUTF8
-U V_UTF8ToUnicode
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -681,6 +723,7 @@ U wcstof@@GLIBC_2.0
 U wcstol@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
 U WriteMiniDump
+U DevWarning(char const*, ...)
 t FillTables()
 t HashString(char const*)
 t HexToValue(char)
@@ -694,10 +737,12 @@ t V_snprintf(char*, int, char const*, ...)
 t _V_stricmp(char const*, char const*)
 t V_strnicmp(char const*, char const*, int)
 t V_strnistr(char const*, char const*, int)
+t _V_strnlen(char const*, int)
 t _V_strrchr(char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
@@ -716,10 +761,14 @@ t MurmurHash2(void const*, int, unsigned int)
 t Q_URLDecode(char*, int, char const*, int)
 t Q_URLEncode(char*, int, char const*, int)
 t SmoothCurve(float)
+t V_ParseLine(char const*, char*, int, bool*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
 t _V_strlower(char*)
+t V_strtoui64(char const*, char**, int)
+t V_vscprintf(char const*, char*)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(wchar_t*)
+t AllocWString(wchar_t const*, int)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
 t AngleIMatrix(QAngle const&, matrix3x4_t&)
 t AngleIMatrix(QAngle const&, Vector const&, matrix3x4_t&)
@@ -747,6 +796,8 @@ t VectorRotate(Vector const&, Quaternion const&, Vector&)
 t VectorRotate(Vector const&, QAngle const&, Vector&)
 t VectorsEqual(float const*, float const*)
 t V_FixSlashes(char*, char)
+t V_ParseToken(char const*, char*, int, bool*, characterset_t*)
+t V_PathsMatch(char const*, char const*)
 t V_pretifymem(float, int, bool)
 t V_pretifynum(long long)
 t V_strcasecmp(char const*, char const*)
@@ -761,20 +812,26 @@ t PointsFromBox(Vector const&, Vector const&, Vector*)
 t PolyFromPlane(Vector*, Vector const&, float, float)
 t QuaternionAdd(Quaternion const&, Quaternion const&, Quaternion&)
 t QuaternionExp(Quaternion const&, Quaternion&)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
 t RotateBetween(Vector const&, Vector const&)
 t RotationDelta(QAngle const&, QAngle const&, QAngle*)
 t TransformAABB(matrix3x4_t const&, Vector const&, Vector const&, Vector&, Vector&)
-t V_AppendSlash(char*, int)
+t V_AppendSlash(char*, int, char)
 t V_binarytohex(unsigned char const*, int, char*, int)
 t V_BinToString(char*, void*, unsigned int)
 t VectorCompare(float const*, float const*)
 t VectorIRotate(float const*, matrix3x4_t const&, float*)
 t VectorVectors(Vector const&, Vector&, Vector&)
-t V_GetFileName(char const*)
 t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, bool)
 t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_StringToBin(char const*, void*, unsigned int)
 t V_strncasecmp(char const*, char const*, int)
+t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
 t AngleNormalize(float)
 t AnglesAreEqual(float, float, float)
 t AreBoundsValid(Vector const&, Vector const&)
@@ -791,14 +848,24 @@ t MatrixToAngles(VMatrix const&, QAngle&)
 t QuaternionMult(Quaternion const&, Quaternion const&, Quaternion&)
 t Q_URLDecodeRaw(char*, int, char const*, int)
 t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
 t SetScaleMatrix(float, float, float, matrix3x4_t&)
 t SolveQuadratic(float, float, float, float&, float&)
 t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
+t V_RandomString(int)
 t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const* const*, int, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, bool)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_SplitWString(wchar_t const*, wchar_t const*, CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >&)
 t V_StripLastDir(char*, int)
+t V_TokenWaiting(char const*)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
 t AngleQuaternion(RadianEuler const&, Quaternion&)
 t AngleQuaternion(QAngle const&, Quaternion&)
@@ -822,12 +889,22 @@ t QuaternionAlign(Quaternion const&, Quaternion const&, Quaternion&)
 t QuaternionBlend(Quaternion const&, Quaternion const&, float, Quaternion&)
 t QuaternionScale(Quaternion const&, float, Quaternion&)
 t QuaternionSlerp(Quaternion const&, Quaternion const&, float, Quaternion&)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
 t RangeCompressor(float, float, float, float)
 t TextureToLinear(int)
 t VectorNormalize(Vector&)
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
-t V_FixupPathName(char*, unsigned int, char const*)
+t V_FixupPathName(char*, int, char const*)
+t V_IsDeprecatedW(wchar_t)
+t V_SplitWString2(wchar_t const*, wchar_t const**, int, CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >&)
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t BuildTexturePath(char const*, char const*, char*, int)
@@ -841,6 +918,7 @@ t MatrixInitialize(matrix3x4_t&, Vector const&, Vector const&, Vector const&, Ve
 t MatrixQuaternion(matrix3x4_t const&, Quaternion&)
 t MatrixVectorsFLU(matrix3x4_t const&, Vector*, Vector*, Vector*)
 t Parabolic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t Q_IsValidUChar32(wchar_t)
 t QuaternionAngles(Quaternion const&, RadianEuler&)
 t QuaternionAngles(Quaternion const&, QAngle&)
 t QuaternionInvert(Quaternion const&, Quaternion&)
@@ -848,6 +926,11 @@ t QuaternionLookAt(Vector const&, Vector const&, Quaternion&)
 t QuaternionMatrix(Quaternion const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, Vector const&, matrix3x4_t&)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
 t RandomQuaternion(IUniformRandomStream*)
 t RandomQuaternion()
 t SetupMatrixScale(Vector const&)
@@ -858,7 +941,12 @@ t Vector3DMultiply(VMatrix const&, Vector const&, Vector&)
 t Vector4DMultiply(VMatrix const&, Vector4D const&, Vector4D&)
 t VectorITransform(float const*, matrix3x4_t const&, float*)
 t V_IsAbsolutePath(char const*)
+t V_StringToVector(float*, char const*)
 t V_StripExtension(char const*, char*, int)
+t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t _V_UnicodeToUTF8(wchar_t const*, char*, int)
+t _V_UTF8ToUnicode(char const*, wchar_t*, int)
 t BasisToQuaternion(Vector const&, Vector const&, Vector const&, Quaternion&)
 t CharacterSetBuild(characterset_t*, char const*)
 t ComputeSkinMatrix(mstudioboneweight_t&, matrix3x4_t*, matrix3x4_t&)
@@ -867,6 +955,9 @@ t ConVar_Unregister()
 t isbreakablewspace(wchar_t)
 t MatrixSetIdentity(VMatrix&)
 t PlaneIntersection(VPlane const&, VPlane const&, VPlane const&, Vector&)
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
 t RegisterInterface(void* (*)(char const*, int*), char const*, void**)
 t R_LightAmbient_3D(Vector const&, Vector const*, Vector&)
 t R_LightAmbient_4D(Vector const&, Vector4D*, Vector&)
@@ -895,21 +986,28 @@ t HashStringCaseless(char const*)
 t MathLib_MMXEnabled()
 t MathLib_SSEEnabled()
 t MatrixBuildRotateZ(VMatrix&, float)
+t nexttoken_explicit(char*, char const*, char, unsigned int)
 t PolyFromPlane_SIMD(float __vector(4)*, float __vector(4) const&, float)
 t PolyFromPlane_SIMD(float __vector*, float __vector const&, float)
 t QuaternionMultiply(Quaternion const&, Vector const&, Vector&)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t ReconnectInterface(void* (*)(char const*, int*), char const*)
 t ReconnectInterface(void* (*)(char const*, int*), char const*, void**)
 t R_StudioSetupModel(int, int, mstudiomodel_t**, studiohdr_t const*)
 t SetupMatrixAxisRot(Vector const&, float)
 t Sys_GetFactoryThis()
 t UnitTestQuatExpLog()
+t V_BoyerMooreSearch(unsigned char const*, int, unsigned char const*, int)
 t V_DefaultExtension(char*, char const*, int)
 t V_FixDoubleSlashes(char*)
 t V_GetFileExtension(char const*)
 t V_MakeAbsolutePath(char*, int, char const*, char const*)
 t V_MakeRelativePath(char const*, char const*, char*, int)
-t V_RemoveDotSlashes(char*, char, bool)
+t V_RemoveDotSlashes(char*, char)
 t V_StringToIntArray(int*, int, char const*)
 t AxisAngleQuaternion(Vector const&, float, Quaternion&)
 t BuildTransformedBox(Vector*, Vector const&, Vector const&, matrix3x4_t const&)
@@ -922,10 +1020,15 @@ t QuaternionAxisAngle(Quaternion const&, Vector&, float&)
 t QuaternionConjugate(Quaternion const&, Quaternion&)
 t QuaternionionGetYaw(Quaternion const&)
 t QuaternionNormalize(Quaternion&)
+t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t SetupMatrixIdentity()
 t SrgbGammaTo360Gamma(float)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ClipPolyToPlane_SIMD(float __vector(4)*, int, float __vector(4)*, float __vector(4) const&, float)
 t ClipPolyToPlane_SIMD(float __vector*, int, float __vector*, float __vector const&, float)
@@ -949,6 +1052,7 @@ t set_CornerCorrection(bool)
 t SetupMatrixOrgAngles(Vector const&, QAngle const&)
 t StudioChangeCallback(IConVar*, char const*, float)
 t _VectorNormalizeFast(Vector&)
+t V_StringToFloatArray(float*, int, char const*)
 t V_StripTrailingSlash(char*)
 t AngleVectorsTranspose(QAngle const&, Vector*, Vector*, Vector*)
 t CalcDistanceSqrToLine(Vector const&, Vector const&, Vector const&, float*)
@@ -960,6 +1064,7 @@ t ConnectTier3Libraries(void* (**)(char const*, int*), int)
 t DefaultCompletionFunc(char const*, char (*) [64])
 t FacesRenderedInfoSort(void const*, void const*)
 t GreatestCommonDivisor(int, int)
+t LengthOfMatchingPaths(char const*, char const*)
 t MatrixQuaternionTest2(unsigned int)
 t QuaternionionGetPitch(Quaternion const&)
 t SetupMatrixProjection(Vector const&, VPlane const&)
@@ -970,6 +1075,7 @@ t Sys_IsDebuggerPresent()
 t UnitTestRotateBetween()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t AngleNormalizePositive(float)
@@ -990,8 +1096,12 @@ t QuaternionSlerpNoAlign(Quaternion const&, Quaternion const&, float, Quaternion
 t ReleaseSIMDRandContext(int)
 t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
 t SetupMatrixTranslation(Vector const&)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
+t V_GetFileExtensionSafe(char const*)
 t V_normalizeFloatString(char*)
+t V_StringMatchesPattern(char const*, char const*, int)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ClipPolyToPlane_Precise(double*, int, double*, double const*, double, double)
@@ -1004,6 +1114,7 @@ t GenerateQuadIndexBuffer(unsigned short*, int, int)
 t Kochanek_Bartels_Spline(float, float, float, Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t MatrixBuildPerspectiveX(VMatrix&, double, double, double, double)
 t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
 t ConcatTransforms_Aligned(matrix3x4a_t const&, matrix3x4a_t const&, matrix3x4a_t&)
@@ -1022,18 +1133,24 @@ t RandomVectorOnUnitSphere(IUniformRandomStream*)
 t RandomVectorOnUnitSphere()
 t SetupMatrixAxisToAxisRot(Vector const&, Vector const&)
 t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
+t V_StripLeadingWhitespace(char*)
+t V_StripSurroundingQuotes(char*)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
 t GenerateWorldSpacePatches(float*, int, unsigned short*, float __vector(4)*, bool)
 t GenerateWorldSpacePatches(float*, int, unsigned short*, float __vector*, bool)
 t ModelFaceCountHashKeyFunc(studiohwdata_t* const&)
+t Q_RemoveAllEvilCharacters(char*)
 t Vector3DMultiplyTranspose(VMatrix const&, Vector const&, Vector&)
 t Vector4DMultiplyTranspose(VMatrix const&, Vector4D const&, Vector4D&)
+t V_StripTrailingWhitespace(char*)
 t Catmull_Rom_Spline_Tangent(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, float, Frustum_t&)
 t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, VPlane*)
 t GeneratePolygonIndexBuffer(unsigned short*, int, int)
 t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t V_TranslateLineFeedsToUnix(char*)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1056,6 +1173,8 @@ t GenerateLineStripIndexBuffer(unsigned short*, int, int)
 t MatrixBuildRotationAboutAxis(VMatrix&, Vector const&, float)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
 t QuaternionAverageExponential(Quaternion&, int, Quaternion const*, float const*)
+t V_FixupPathSpaceToUnderscore(char*)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
 t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t GeneratePerspectiveFrustumFLU(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, VPlane*)
@@ -1080,10 +1199,14 @@ t Vector3DMultiplyPositionProjective(VMatrix const&, Vector const&, Vector&)
 t CalculateSphereFromProjectionMatrix(VMatrix const&, Vector*, float*)
 t GetPrimitiveTypeForStripHeaderFlags(unsigned char)
 t Catmull_Rom_Spline_Integral_Normalize(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t Q_StripPrecedingAndTrailingWhitespace(char*)
+t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
 t CalculateAABBFromProjectionMatrixInverse(VMatrix const&, Vector*, Vector*)
 t ExtractClipPlanesFromNonTransposedMatrix(VMatrix const&, VPlane*, bool)
 t CalculateSphereFromProjectionMatrixInverse(VMatrix const&, Vector*, float*)
 t BuildFacesRenderedInfoListForMostRecentFrame(CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >&, CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>&)
+t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
 t Bias(float, float)
 t Gain(float, float)
 t Hash4(void const*)
@@ -1094,6 +1217,7 @@ t Hash12(void const*)
 t Hash16(void const*)
 t Q_log2(unsigned int)
 t _sqrtf(float)
+t V_atod(char const*)
 t V_atof(char const*)
 t V_atoi(char const*)
 t BSpline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1115,6 +1239,7 @@ t V_atoui64(char const*)
 t _V_memcmp(void const*, void const*, int)
 t _V_memcpy(void*, void const*, int)
 t _V_memset(void*, int, int)
+t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
 t _V_strcmp(char const*, char const*)
 t _V_strcpy(char*, char const*)
 t V_stristr(char*, char const*)
@@ -1127,8 +1252,11 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, char const*)
+t V_StrTrim(char*)
 t _V_strupr(char*)
 t _V_wcscmp(wchar_t const*, wchar_t const*)
+t V_wcsistr(wchar_t const*, wchar_t const*)
+t V_wcsistr(wchar_t*, wchar_t const*)
 t _V_wcslen(wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
@@ -1152,7 +1280,6 @@ b s_BreakSet
 b glintUCache
 b glintVCache
 b s_nCVarFlag
-b s_pTokenBuf
 b vec2_origin
 b vec2_origin
 b vec2_origin
@@ -1255,7 +1382,7 @@ t SortVertCount(void const*, void const*)
 b texgammatable
 b eyeOriginCache
 t GetTextureName(studiohdr_t*, OptimizedModel::FileHeader_t*, int, int)
-t IntersectPlane(DecalClipState_t&, int, int, int, float) [clone .constprop.164]
+t IntersectPlane(DecalClipState_t&, int, int, int, float) [clone .constprop.169]
 b lineartoscreen
 d s_BackSlashMap
 b s_pVertexCount
@@ -1283,13 +1410,14 @@ d g_PrintConVarFlags
 b r_glint_alwaysdraw
 b r_glint_procedural
 b r_lod_switch_scale
-t R_TransformTangent(Vector4D const*, matrix3x4_t*, Vector4DAligned&) [clone .constprop.31]
+t R_TransformTangent(Vector4D const*, matrix3x4_t*, Vector4DAligned&) [clone .constprop.35]
 b s_nConnectionCount
 d s_pAmbientLightDir
 b s_pZeroFlexWeights
 b s_SIMDRandContexts
 d sUseCornerTangents
 b Four_NegativeThirds
+d g_BasicHTMLEntities
 d g_pInterfaceGlobals
 b sCCLimitTanStencil1
 b sCCLimitTanStencil2
@@ -1298,13 +1426,15 @@ b sPosEdge1BndStencil
 b sPosEdge2BndStencil
 b sPosInteriorStencil
 t Sys_LoadLibraryGuts(char const*)
-t ComputeSkinMatrixSSE(mstudioboneweight_t&, matrix3x4_t*, matrix3x4_t&) [clone .constprop.30]
+t ComputeSkinMatrixSSE(mstudioboneweight_t&, matrix3x4_t*, matrix3x4_t&) [clone .constprop.34]
+d g_WhitespaceEntities
 b s_nRandContextsInUse
 b s_nRegistrationCount
 b sPosCornerBndStencil
 t ComputeLightingCommon(Vector const*, int, LightDesc_t*, Vector const&, Vector const&, lightpos_t*, Vector&)
 d s_LastFileLoadingFrom
 b s_StudioRenderContext
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
 b s_bPrecachesRegistered
 b sCCLimitTanBndStencil1
 b sCCLimitTanBndStencil2
@@ -1316,7 +1446,8 @@ b g_Mathlib_GammaToLinear
 b g_Mathlib_LinearToGamma
 t mat_rendered_faces_spew(CCommand const&)
 b s_bResourceFCRegistered
-t ClipTriangleAgainstPlane(DecalClipState_t&, int, int, float) [clone .constprop.165]
+t ClipTriangleAgainstPlane(DecalClipState_t&, int, int, float) [clone .constprop.170]
+d g_Tier1_FullHTMLEntities
 b mat_rendered_faces_count
 b sShowACCGeometryTangents
 t ComputeACCEdgePosStencils(unsigned char, unsigned char, int, float __vector(4)*, float __vector(4)*)
@@ -1357,10 +1488,13 @@ b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b s_bRunningWithDebugModules
 t ComputeACCInteriorPosStencil(unsigned char, int, float __vector*) [clone .isra.22]
 t ReleaseMaterialSystemObjects(int)
 t RestoreMaterialSystemObjects(int)
 b s_nTranslucentModelHullCache
+d g_pszSimpleBBCodeReplacements
 b mat_print_top_model_vert_counts
 b mat_rendered_faces_spew_command
 b mat_tessellation_cornertangents
@@ -1420,7 +1554,6 @@ t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
-t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination(int)
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
@@ -1445,13 +1578,18 @@ t CUtlBuffer::CheckGet(int)
 t CUtlBuffer::CheckPut(int)
 t CUtlBuffer::GetToken(char const*)
 t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::GetString(char*, int)
 t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::operator=(CUtlBuffer&&)
+t CUtlBuffer::operator=(CUtlBuffer const&)
 t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(CUtlBuffer&&)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(CUtlBuffer const&)
 t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(CUtlBuffer&&)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlBuffer::~CUtlBuffer()
-t CUtlBuffer::~CUtlBuffer()
+t CUtlBuffer::CUtlBuffer(CUtlBuffer const&)
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
 t CUtlMemory<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, int>::Grow(int)
@@ -1470,7 +1608,7 @@ t CUtlMemory<bool, int>::Grow(int)
 t CUtlMemory<char, int>::Grow(int)
 t CUtlMemory<float __vector(4), int>::~CUtlMemory()
 t CUtlMemory<float __vector(4), int>::~CUtlMemory()
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.32]
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.35]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
@@ -1489,29 +1627,38 @@ t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::Grow(int)
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
+t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<wchar_t*, int>::Grow(int)
 t CUtlMemory<unsigned short, int>::Grow(int)
 t CUtlMemory<unsigned short, int>::~CUtlMemory()
 t CUtlMemory<unsigned short, int>::~CUtlMemory()
 t CUtlMemory<float __vector, int>::~CUtlMemory()
 t CUtlMemory<float __vector, int>::~CUtlMemory()
+t CUtlString::GetForModify()
 t CUtlString::MatchesPattern(CUtlString const&, int)
+t CUtlString::RemoveDotSlashes(char)
 t CUtlString::StripTrailingSlash()
-t CUtlString::UnqualifiedFilename()
 t CUtlString::Get()
 t CUtlString::Set(char const*)
 t CUtlString::Left(int)
+t CUtlString::Swap(CUtlString&)
+t CUtlString::Trim(char const*)
 t CUtlString::Purge()
 t CUtlString::Right(int)
 t CUtlString::Slice(int, int)
 t CUtlString::Append(char const*)
+t CUtlString::Append(char const*, int)
 t CUtlString::Format(char const*, ...)
-t CUtlString::AbsPath(char const*)
 t CUtlString::DirName()
+t CUtlString::FormatV(char const*, char*)
 t CUtlString::Replace(char, char)
 t CUtlString::ToLower()
+t CUtlString::ToUpper()
 t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::TrimLeft(char const*)
 t CUtlString::SetDirect(char const*, int)
 t CUtlString::SetLength(int)
+t CUtlString::TrimRight(char const*)
 t CUtlString::operator=(char const*)
 t CUtlString::operator=(CUtlString const&)
 t CUtlString::CUtlString(char const*)
@@ -1524,12 +1671,14 @@ t CUtlString::CUtlString(void const*, int)
 t CUtlString::CUtlString(void*, int, int)
 t CUtlString::CUtlString(CUtlString const&)
 t CUtlString::CUtlString()
+t CUtlString::~CUtlString()
+t CUtlString::~CUtlString()
 t CUtlString::operator+=(char)
 t CUtlString::operator+=(double)
 t CUtlString::operator+=(int)
-t CUtlString::operator+(char const*)
 t CUtlString::operator+=(char const*)
 t CUtlString::operator+=(CUtlString const&)
+t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
 t CUtlVector<GetTriangles_Vertex_t, CUtlMemory<GetTriangles_Vertex_t, int> >::SetCount(int)
 t CUtlVector<GetTriangles_Vertex_t, CUtlMemory<GetTriangles_Vertex_t, int> >::~CUtlVector()
@@ -1539,6 +1688,8 @@ t CUtlVector<GetTriangles_MaterialBatch_t, CUtlMemory<GetTriangles_MaterialBatch
 t CUtlVector<bool, CUtlMemory<bool, int> >::EnsureCount(int)
 t CUtlVector<char, CUtlMemory<char, int> >::GrowVector(int)
 t CUtlVector<char, CUtlMemory<char, int> >::ShiftElementsRight(int, int)
+t CUtlVector<char, CUtlMemory<char, int> >::~CUtlVector()
+t CUtlVector<char, CUtlMemory<char, int> >::~CUtlVector()
 t CUtlVector<float __vector(4), CUtlMemoryAligned<float __vector(4), 16> >::SetCount(int)
 t CUtlVector<float __vector(4), CUtlMemoryAligned<float __vector(4), 16> >::~CUtlVector()
 t CUtlVector<float __vector(4), CUtlMemoryAligned<float __vector(4), 16> >::~CUtlVector()
@@ -1561,6 +1712,10 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::InsertBefore(int, void (* const&)(IConVar*, char const*, float))
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
+t CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >::InsertBefore(int, wchar_t* const&)
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::SetCount(int)
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
@@ -1568,10 +1723,13 @@ t CUtlVector<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRe
 t CUtlVector<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, CUtlMemory<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, CUtlMemory<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, CUtlMemory<CUtlVector<IStudioRender::FacesRenderedInfo_t, CUtlMemory<IStudioRender::FacesRenderedInfo_t, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >::EnsureCount(int)
 t CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, CUtlMemory<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, int> >::SetCount(int)
 t CUtlVector<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, CUtlMemory<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, CUtlMemory<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, CUtlMemory<CUtlVector<studiohwdata_t*, CUtlMemory<studiohwdata_t*, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, CUtlMemory<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, int> >::EnsureCount(int)
 t CUtlVector<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, CUtlMemory<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, int> >::RemoveAll()
 t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::InsertBefore(int, unsigned short const&)
 t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::~CUtlVector()
@@ -1582,16 +1740,17 @@ t CUtlVector<float __vector, CUtlMemoryAligned<float __vector, 16> >::~CUtlVecto
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
+t IAppSystem::IsSingleton()
+t IAppSystem::GetDependencies()
+t IAppSystem::GetTier()
+t IAppSystem::Reconnect(void* (*)(char const*, int*), char const*)
 t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, int, bool, int, bool>(CStudioRender*, void (CStudioRender::*)(int, bool), int const&, bool const&)
 t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int, StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int>(CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__* const&, StudioRenderContext_t const&, matrix3x4_t* const&, studiohdr_t* const&, Ray_t const&, Vector const&, IMaterial* const&, float const&, int const&, bool const&, int const&)
 t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHandle_t__*, StudioDecalHandle_t__*>(CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__* const&)
 t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, void (*)(int, IStudioRender::FacesRenderedInfo_t*, int), void (*)(int, IStudioRender::FacesRenderedInfo_t*, int)>(CStudioRender*, void (CStudioRender::*)(void (*)(int, IStudioRender::FacesRenderedInfo_t*, int)), void (* const&)(int, IStudioRender::FacesRenderedInfo_t*, int))
-t CVProfScope::~CVProfScope() [clone .isra.19]
-t CVProfScope::~CVProfScope() [clone .isra.20]
-t CVProfScope::~CVProfScope() [clone .isra.27]
-t CVProfScope::~CVProfScope() [clone .isra.48]
-t CVProfScope::~CVProfScope() [clone .isra.52]
-t CVProfScope::~CVProfScope() [clone .isra.55]
+t CVProfScope::~CVProfScope()
+t CVProfScope::~CVProfScope()
+t CVProfScope::~CVProfScope() [clone .constprop.167]
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&, FourVectors*)
 t FourVectors::CalcClosestPointOnLineSIMD(FourVectors const&, FourVectors const&, FourVectors const&, FourVectors&, float __vector(4)*)
@@ -1619,13 +1778,15 @@ t fourplanes_t::Set2Planes(VPlane const*)
 t fourplanes_t::Set4Planes(VPlane const*)
 t fourplanes_t::ComputeSignbits()
 t fourplanes_t::SetPlane(int, Vector const&, float)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.4]
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t AsianWordWrap::CanEndLine(wchar_t)
 t AsianWordWrap::CanBeginLine(wchar_t)
 t AsianWordWrap::CanBreakAfter(wchar_t const*)
 t AsianWordWrap::CanBreakRepeated(wchar_t)
-t CIndexBuilder::~CIndexBuilder() [clone .isra.36]
+t CIndexBuilder::~CIndexBuilder() [clone .isra.37]
 t CIndexBuilder::~CIndexBuilder() [clone .isra.40]
 t CStudioRender::BeginFrame()
 t CStudioRender::PopScissor(FlashlightState_t*)
@@ -1914,6 +2075,9 @@ t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__
 t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
 t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
 t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
+t CBoyerMooreSearch::Search(unsigned char const*, int)
+t CBoyerMooreSearch::CBoyerMooreSearch(unsigned char const*, int)
+t CBoyerMooreSearch::CBoyerMooreSearch(unsigned char const*, int)
 t CCachedRenderData::StartModel()
 t CCachedRenderData::SetBodyPart(int)
 t CCachedRenderData::CreateFlexVertex(int)
@@ -1943,6 +2107,19 @@ t CUtlMemoryAligned<float __vector, 16>::Grow(int)
 t CUtlMemoryAligned<float __vector, 16>::Purge()
 t CUtlMemoryAligned<float __vector, 16>::~CUtlMemoryAligned()
 t CUtlMemoryAligned<float __vector, 16>::~CUtlMemoryAligned()
+t CUtlStringBuilder::TakeOwnership(unsigned int*, unsigned int*)
+t CUtlStringBuilder::TrimWhitespace()
+t CUtlStringBuilder::ReplaceInternal(char const*, char const*, char const* (*)(char const*, char const*))
+t CUtlStringBuilder::RemoveWhitespace()
+t CUtlStringBuilder::ReplaceFastCaseless(char const*, char const*)
+t CUtlStringBuilder::InternalPrepareBuffer(unsigned int, bool, unsigned int)
+t CUtlStringBuilder::Data::ClearError()
+t CUtlStringBuilder::Data::MoveToHeap()
+t CUtlStringBuilder::Data::SetPtr(char*, unsigned int)
+t CUtlStringBuilder::Data::SetError(bool)
+t CUtlStringBuilder::Data::SetLength(unsigned int)
+t CUtlStringBuilder::Replace(char const*, char const*)
+t CUtlStringBuilder::SetLength(unsigned int)
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -2068,6 +2245,11 @@ t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
 t SplitScreenConVarRef::SplitScreenConVarRef(IConVar*)
 t SplitScreenConVarRef::SplitScreenConVarRef(char const*)
 t SplitScreenConVarRef::SplitScreenConVarRef(char const*, bool)
+b CKeyValuesTokenReader::s_pTokenBuf
+t CKeyValuesTokenReader::SeekBackOneToken()
+t CKeyValuesTokenReader::ReadToken(bool&, bool&)
+t CKeyValuesTokenReader::CKeyValuesTokenReader(KeyValues*, CUtlBuffer&)
+t CKeyValuesTokenReader::CKeyValuesTokenReader(KeyValues*, CUtlBuffer&)
 t CUtlCStringConversion::FindConversion(char const*, int*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -2659,10 +2841,10 @@ t VMatrix::Scale(Vector const&)
 t VMatrix::operator=(VMatrix const&)
 t CCommand::DefaultBreakSet()
 t CCommand::Reset()
-t CCommand::Tokenize(char const*, characterset_t*)
-t CCommand::CCommand(int, char const**)
+t CCommand::Tokenize(char const*, cmd_source_t, characterset_t*)
+t CCommand::CCommand(int, char const**, cmd_source_t)
 t CCommand::CCommand()
-t CCommand::CCommand(int, char const**)
+t CCommand::CCommand(int, char const**, cmd_source_t)
 t CCommand::CCommand()
 t CFmtStrN<256, false>::InitQuietTruncation()
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
@@ -2680,6 +2862,10 @@ t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* con
 t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>::CUtlHash(int, int, int, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&))
 t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>::~CUtlHash()
 t CUtlHash<studiohwdata_t*, bool (*)(studiohwdata_t* const&, studiohwdata_t* const&), unsigned int (*)(studiohwdata_t* const&)>::~CUtlHash()
+t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int) [clone .part.32] [clone .constprop.90]
+t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int) [clone .part.61] [clone .constprop.93]
+t void CByteswap::SwapBufferToTargetEndian<unsigned short>(unsigned short*, unsigned short*, int) [clone .part.58] [clone .constprop.92]
+t void CByteswap::SwapBufferToTargetEndian<long long>(long long*, long long*, int) [clone .part.64] [clone .constprop.89]
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
@@ -2698,9 +2884,8 @@ t Frustum_t::Frustum_t()
 t Frustum_t::Frustum_t()
 t KeyValues::deleteThis()
 t KeyValues::FromString(char const*, char const*, char const**)
-t KeyValues::GetNextKey()
 t KeyValues::GetWString(char const*, wchar_t const*)
-t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*)
+t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool)
 t KeyValues::SetNextKey(KeyValues*)
 t KeyValues::SetWString(char const*, wchar_t const*)
 t KeyValues::SwapSubKey(KeyValues*, KeyValues*)
@@ -2710,15 +2895,16 @@ t KeyValues::CreateNewKey()
 t KeyValues::GetNextValue()
 t KeyValues::InsertSubKey(int, KeyValues*)
 t KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool (*)(char const*))
-t KeyValues::ReadAsBinary(CUtlBuffer&)
+t KeyValues::ReadAsBinary(CUtlBuffer&, int)
 t KeyValues::RemoveSubKey(KeyValues*)
 t KeyValues::WriteIndents(IBaseFileSystem*, void*, CUtlBuffer*, int)
 t KeyValues::ChainKeyValue(KeyValues*)
+t KeyValues::CreatePeerKey(char const*)
 t KeyValues::GetFirstValue()
 t KeyValues::InternalWrite(IBaseFileSystem*, void*, CUtlBuffer*, void const*, int)
 t KeyValues::MergeBaseKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
 t KeyValues::ContainsSubKey(KeyValues*)
-t KeyValues::GetFirstSubKey()
+t KeyValues::FindLastSubKey()
 t KeyValues::LoadFromBuffer(char const*, CUtlBuffer&, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::LoadFromBuffer(char const*, char const*, IBaseFileSystem*, char const*, bool (*)(char const*))
 t KeyValues::SetStringValue(char const*)
@@ -2728,17 +2914,19 @@ t KeyValues::ParseIncludedKeys(char const*, char const*, IBaseFileSystem*, char 
 t KeyValues::AppendIncludedKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
 t KeyValues::GetFirstTrueSubKey()
 t KeyValues::EvaluateConditional(char const*, bool (*)(char const*))
-t KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int)
+t KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool)
 t KeyValues::RecursiveSaveToFile(CUtlBuffer&, int)
 t KeyValues::UnpackIntoStructure(KeyValuesUnpackStructure const*, void*)
 t KeyValues::UsesEscapeSequences(bool)
+t KeyValues::ReadAsBinaryFiltered(CUtlBuffer&, int)
 t KeyValues::WriteConvertedString(IBaseFileSystem*, void*, CUtlBuffer*, char const*)
 t KeyValues::ProcessResolutionKeys(char const*)
+t KeyValues::WriteAsBinaryFiltered(CUtlBuffer&)
 t KeyValues::RecursiveCopyKeyValues(KeyValues&)
 d KeyValues::s_pfGetStringForSymbol
 d KeyValues::s_pfGetSymbolForString
 b KeyValues::s_pGrowableStringTable
-t KeyValues::RecursiveLoadFromBuffer(char const*, CUtlBuffer&, bool (*)(char const*))
+t KeyValues::RecursiveLoadFromBuffer(char const*, CKeyValuesTokenReader&, bool (*)(char const*))
 t KeyValues::RecursiveMergeKeyValues(KeyValues*)
 t KeyValues::ReadAsBinaryPooledFormat(CUtlBuffer&, IBaseFileSystem*, unsigned int, bool (*)(char const*))
 t KeyValues::GetStringForSymbolClassic(int)
@@ -2746,6 +2934,8 @@ t KeyValues::GetSymbolForStringClassic(char const*, bool)
 t KeyValues::SetUseGrowableStringTable(bool)
 t KeyValues::GetStringForSymbolGrowable(int)
 t KeyValues::GetSymbolForStringGrowable(char const*, bool)
+t KeyValues::AddSubkeyUsingKnownLastChild(KeyValues*, KeyValues*)
+t KeyValues::CreateKeyUsingKnownLastChild(char const*, KeyValues*)
 t KeyValues::Dump(IKeyValuesDumpContext*, int)
 t KeyValues::Init()
 t KeyValues::Clear()
@@ -2755,6 +2945,7 @@ t KeyValues::SetInt(char const*, int)
 t KeyValues::SetPtr(char const*, void*)
 t KeyValues::FindKey(char const*, bool)
 t KeyValues::IsEmpty(char const*)
+t KeyValues::IsEqual(KeyValues*)
 t KeyValues::SetName(char const*)
 t KeyValues::GetColor(char const*, Color const&)
 t KeyValues::GetFloat(char const*, float)
@@ -2765,7 +2956,6 @@ t KeyValues::CreateKey(char const*)
 t KeyValues::GetString(char const*, char const*)
 t KeyValues::GetUint64(char const*, unsigned long long)
 t KeyValues::MergeFrom(KeyValues*, KeyValues::MergeKeyValuesOp_t)
-t KeyValues::ReadToken(CUtlBuffer&, bool&, bool&)
 t KeyValues::SetString(char const*, char const*)
 t KeyValues::SetUint64(char const*, unsigned long long)
 t KeyValues::operator=(KeyValues&)
@@ -2790,9 +2980,16 @@ t KeyValues::operator new(unsigned int, int, char const*, int)
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
+t CUtlString::GetExtension() const
+t CUtlString::StripFilename() const
+t CUtlString::StripExtension() const
+t CUtlString::GetBaseFilename() const
+t CUtlString::UnqualifiedFilename() const
 t CUtlString::Get() const
 t CUtlString::Length() const
-t CUtlString::operator char const*() const
+t CUtlString::Remove(char const*, bool) const
+t CUtlString::AbsPath(char const*) const
+t CUtlString::Replace(char const*, char const*, bool) const
 t CUtlString::operator==(char const*) const
 t CUtlString::operator==(CUtlString const&) const
 t Quaternion::GetForward() const
@@ -2815,6 +3012,7 @@ t ConCommandBase::IsFlagSet(int) const
 t CUtlBinaryBlock::Get(void*, int) const
 t CUtlBinaryBlock::operator==(CUtlBinaryBlock const&) const
 t CCachedRenderData::IsFlexComputationDone() const
+t CUtlStringBuilder::IndexOf(char const*) const
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
 t CUtlCharConversion::GetDelimiterLength() const
@@ -2878,9 +3076,12 @@ t Frustum_t::CullBox(float __vector const&, float __vector const&) const
 t Frustum_t::Contains(Vector const&, Vector const&) const
 t Frustum_t::GetPlane(int, Vector*, float*) const
 t Frustum_t::GetPlanes(VPlane*) const
+t KeyValues::GetNextKey() const
 t KeyValues::CopySubkeys(KeyValues*) const
+t KeyValues::GetDataType() const
 t KeyValues::GetNameSymbol() const
 t KeyValues::WriteAsBinary(CUtlBuffer&) const
+t KeyValues::GetFirstSubKey() const
 t KeyValues::GetNameSymbolCaseSensitive() const
 t KeyValues::FindKey(int) const
 t KeyValues::GetName() const
@@ -2895,7 +3096,7 @@ t void std::__adjust_heap<MeshRenderData_t*, int, MeshRenderData_t, bool (*)(Mes
 t void std::__adjust_heap<MeshRenderData2_t*, int, MeshRenderData2_t, bool (*)(MeshRenderData2_t const&, MeshRenderData2_t const&)>(MeshRenderData2_t*, int, int, MeshRenderData2_t, bool (*)(MeshRenderData2_t const&, MeshRenderData2_t const&))
 t void std::__adjust_heap<ShadowMeshRenderData_t*, int, ShadowMeshRenderData_t, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&)>(ShadowMeshRenderData_t*, int, int, ShadowMeshRenderData_t, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&))
 t void std::__adjust_heap<CStudioRender::DecalRenderData_t*, int, CStudioRender::DecalRenderData_t, bool (*)(CStudioRender::DecalRenderData_t const&, CStudioRender::DecalRenderData_t const&)>(CStudioRender::DecalRenderData_t*, int, int, CStudioRender::DecalRenderData_t, bool (*)(CStudioRender::DecalRenderData_t const&, CStudioRender::DecalRenderData_t const&))
-t void std::make_heap<ShadowMeshRenderData_t*, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&)>(ShadowMeshRenderData_t*, ShadowMeshRenderData_t*, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&)) [clone .part.73] [clone .constprop.163]
+t void std::make_heap<ShadowMeshRenderData_t*, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&)>(ShadowMeshRenderData_t*, ShadowMeshRenderData_t*, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&)) [clone .part.75] [clone .constprop.165]
 t void std::sort_heap<MeshRenderData2_t*, bool (*)(MeshRenderData2_t const&, MeshRenderData2_t const&)>(MeshRenderData2_t*, MeshRenderData2_t*, bool (*)(MeshRenderData2_t const&, MeshRenderData2_t const&))
 t void std::sort_heap<ShadowMeshRenderData_t*, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&)>(ShadowMeshRenderData_t*, ShadowMeshRenderData_t*, bool (*)(ShadowMeshRenderData_t const&, ShadowMeshRenderData_t const&))
 U std::terminate()@@GLIBCXX_3.4
@@ -3097,10 +3298,13 @@ d vtable for CFunctor
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+b V_ParseToken(char const*, char*, int, bool*, characterset_t*)::s_BreakSetIncludingColons
+b V_ParseToken(char const*, char*, int, bool*, characterset_t*)::built
 b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b GetFatVertexData(mstudiomesh_t*, studiohdr_t*)::warnCount
 b ComputeACCAllPatches(float __vector(4)*, TopologyIndexStruct*, Vector4D*, Vector4D*, Vector4D*, bool)::CB_sign
 b ComputeACCAllPatches(float __vector*, TopologyIndexStruct*, Vector4D*, Vector4D*, Vector4D*, bool)::CB_sign
@@ -3147,23 +3351,11 @@ b CStudioRender::SetupAlphaTestedDepthWrite(IMaterial*, IMaterial*)::originalTex
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::translucentCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::newDisplacementMap
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::originalDisplacementMap
-b CUtlLinkedList<DecalVertex_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<DecalVertex_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<DecalVertex_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<DecalVertex_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalLRU_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CStudioRender::DecalLRU_t, int> > >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalLRU_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CStudioRender::DecalLRU_t, int> > >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalHistory_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalHistory_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalModelList_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CStudioRender::DecalModelList_t, int> > >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::DecalModelList_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CStudioRender::DecalModelList_t, int> > >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::Decal_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::Decal_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
-b CUtlLinkedList<CStudioRender::Decal_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::Decal_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
 b CStudioRenderContext::ComputeMaterialFlags(studiohdr_t*, IMaterial*)::bumpvarCache
 b CStudioRenderContext::ComputeMaterialFlags(studiohdr_t*, IMaterial*)::phongVarCache
 d SplitScreenConVarRef::Init(char const*, bool)::bFirst
 b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 d ConVarRef::Init(char const*, bool)::bFirst
-b KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int)::buf
+b KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool)::buf
 b studiohwdata_t::GetLODForMetric(float) const::r_lod_switch_scale

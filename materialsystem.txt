@@ -1,11 +1,13 @@
 U abort@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
+U AddMemoryInfoCallback
 U __asin_finite@@GLIBC_2.15
 U __atan2f_finite@@GLIBC_2.15
 U __atan2_finite@@GLIBC_2.15
 U atan@@GLIBC_2.0
 A __bss_start
+U CallAssertFailedNotifyFunc
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
 U CommandLine
@@ -16,6 +18,7 @@ U CreateNewThreadPool
 U CreateSimpleThread
 U __ctype_b_loc@@GLIBC_2.3
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -46,13 +49,20 @@ U g_pMemAlloc
 U g_pThreadPool
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
 T _init
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
 U isgraph@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U iswalnum@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 w _Jv_RegisterClasses
 U KeyValuesSystem
 U __log_finite@@GLIBC_2.15
+U LOG_GENERAL
 U LoggingSystem_AddTagToCurrentChannel
 U LoggingSystem_IsChannelEnabled
 U LoggingSystem_Log
@@ -68,6 +78,7 @@ U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
+U MemOutOfMemory
 U memset@@GLIBC_2.0
 U Msg
 U Plat_ExitProcess
@@ -88,6 +99,7 @@ U qsort@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U RandomFloat
 U RandomSeed
+U RemoveMemoryInfoCallback
 U ShouldUseNewAssertDialog
 U sincosf@@GLIBC_2.1
 U sincos@@GLIBC_2.1
@@ -103,12 +115,14 @@ U strcpy@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
+U strnlen@@GLIBC_2.0
 U strspn@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 U swprintf@@GLIBC_2.2
 U swscanf@@GLIBC_2.2
 U tanf@@GLIBC_2.0
@@ -119,15 +133,12 @@ U ThreadInterlockedAssignIf64
 U ThreadJoin
 U ThreadSetDebugName
 U ThreadSleep
-U ___tls_get_addr@@GLIBC_2.3
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
-U V_UnicodeToUTF8
-U V_UTF8ToUnicode
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -150,7 +161,11 @@ U CThreadRWLock::LockForWrite()
 U CThreadSpinRWLock::SpinLockForRead()
 U CThreadSpinRWLock::SpinLockForWrite()
 U CThreadSyncObject::~CThreadSyncObject()
+U GenericThreadLocals::CThreadLocalBase::Set(void*)
+U GenericThreadLocals::CThreadLocalBase::CThreadLocalBase()
+U GenericThreadLocals::CThreadLocalBase::~CThreadLocalBase()
 U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+U GenericThreadLocals::CThreadLocalBase::Get() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U std::terminate()@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3

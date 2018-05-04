@@ -1,9 +1,11 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 t add_fdes
+T AddMemoryInfoCallback
 d adds.7230
 U alarm@@GLIBC_2.0
 T AllocateThreadID
+T AppendMiniProfilerToList
 T ApproximateProcessMemoryUsage
 T AreAllAssertsDisabled
 U asctime@@GLIBC_2.0
@@ -12,10 +14,12 @@ T _AssertValidReadPtr
 T _AssertValidReadWritePtr
 T _AssertValidStringPtr
 T _AssertValidWritePtr
+T AssertValidWStringPtr
 t base_from_cb_data
 t base_from_object
 T BeginWatchdogTimer
 A __bss_start
+T CallAssertFailedNotifyFunc
 T CatchAndWriteMiniDump
 T _CCallStackStatsGatherer_Internal_DumpStatsToFile
 U chmod@@GLIBC_2.0
@@ -63,6 +67,7 @@ d __dso_handle
 d __DTOR_END__
 b dtor_idx.5519
 d __DTOR_LIST__
+T DumpMemoryInfoStats
 b dwarf_reg_size_table
 d DW.ref.__gxx_personality_v0
 a _DYNAMIC
@@ -83,6 +88,7 @@ U fclose@@GLIBC_2.1
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
 t fde_unencoded_compare
+U fflush@@GLIBC_2.0
 U fgetc@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 T _fini
@@ -110,15 +116,18 @@ B g_ClockSpeedMicrosecondsMultiplier
 B g_ClockSpeedMillisecondsMultiplier
 B g_ClockSpeedSecondsMultiplier
 B g_dwClockSpeed
+T GetAssertDialogParent
 T GetCallStack
 T GetCallStack_Fast
 t get_cie_encoding
+T GetCPUFrequencyResults
 T GetCPUInformation
 T GetCurrentDayOfTheWeek
 T GetCurrentDayOfTheYear
 U getenv@@GLIBC_2.0
 t get_fde_encoding
 T GetFileAndLineFromAddress
+T GetHardwareClockReliably
 T GetModuleNameFromAddress
 U getppid@@GLIBC_2.0
 T GetSymbolNameFromAddress
@@ -131,6 +140,7 @@ t _GLOBAL__sub_I.00101_memstd.cpp
 t _GLOBAL__sub_I_assert_dialog.cpp
 t _GLOBAL__sub_I_commandline.cpp
 t _GLOBAL__sub_I_cpu.cpp
+t _GLOBAL__sub_I_cpumonitoring.cpp
 t _GLOBAL__sub_I_cputopology.cpp
 t _GLOBAL__sub_I_dbg.cpp
 t _GLOBAL__sub_I_dynfunction.cpp
@@ -144,6 +154,7 @@ t _GLOBAL__sub_I_memvalidate.cpp
 t _GLOBAL__sub_I_memvirt.cpp
 t _GLOBAL__sub_I_minidump.cpp
 t _GLOBAL__sub_I_miniprofiler.cpp
+t _GLOBAL__sub_I_perfstats.cpp
 t _GLOBAL__sub_I_platform_independent.cpp
 t _GLOBAL__sub_I_platform_posix.cpp
 t _GLOBAL__sub_I_platwindow.cpp
@@ -159,21 +170,30 @@ t _GLOBAL__sub_I_tslist.cpp
 t _GLOBAL__sub_I_unitlib.cpp
 t _GLOBAL__sub_I_vatoms.cpp
 t _GLOBAL__sub_I_vprof.cpp
+t _GLOBAL__sub_I_vtuneinterface.cpp
+t _GLOBAL__sub_I_win32consoleio.cpp
+b g_MemStats
 w __gmon_start__
 U gmtime@@GLIBC_2.0
 U gmtime_r@@GLIBC_2.0
+b g_nMemStats
 B g_nMiniProfilerFrame
 B g_nThreadID
 b g_nThreadLocalStateIndex
+B g_pAssertMiniProfilers
 b g_pCurThread
+B g_PerfStats
 b g_pGlobalLoggingSystem
+B g_pGlobalMiniProfilers
 D g_pLastMiniProfiler
 D g_pMemAlloc
-B g_pOtherMiniProfilers
-B g_pPhysicsMiniProfilers
+b g_ProfilerListMutex
+D g_pRootMiniProfiler
 b g_pStartNode
+d g_pszModule
 b g_pszSumNode
 b g_rootMiniProfiler
+b g_SDLWindow
 b g_ThreadMainThreadID
 b g_TimesLessChildren
 b g_TimeSums
@@ -187,8 +207,10 @@ t __i686.get_pc_thunk.cx
 T _init
 t init_dwarf_reg_size_table
 T InitPME
+T InitWin32ConsoleColorContext
 T InstallProgressReportHandler
 T Is64BitOS
+T IsAssertDialogDisabled
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
@@ -266,7 +288,7 @@ b LOG_CONSOLE
 b LOG_DEVELOPER
 b LOG_DEVELOPER_CONSOLE
 b LOG_DEVELOPER_VERBOSE
-b LOG_GENERAL
+B LOG_GENERAL
 T LoggingSystem_AddTagToCurrentChannel
 T LoggingSystem_FindChannel
 T LoggingSystem_GetChannel
@@ -292,6 +314,7 @@ T LoggingSystem_SetChannelSpewLevelByName
 T LoggingSystem_SetChannelSpewLevelByTag
 T LoggingSystem_SetGlobalSpewLevel
 T LoggingSystem_SetLoggingResponsePolicy
+T LoggingSystem_UnregisterLoggingListener
 b LOG_LOADING
 t lstat
 t __lstat
@@ -304,13 +327,16 @@ T MemAllocScratch
 U memcpy@@GLIBC_2.0
 T MemFreeScratch
 U memmove@@GLIBC_2.0
+T MemOutOfMemory
 U memset@@GLIBC_2.0
+T MicroProfilerAddTS
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
 t mknod
 t __mknod
 U mount@@GLIBC_2.0
 T Msg
+U nanosleep@@GLIBC_2.0
 b object_mutex
 b once_regsizes.7403
 U open64@@GLIBC_2.2
@@ -320,6 +346,7 @@ U pclose@@GLIBC_2.1
 T Plat_Alloc
 T Plat_ConvertToLocalTime
 T Plat_CreateWindow
+T Plat_ctime
 T Plat_daylight
 T Plat_DefaultAllocErrorFn
 T Plat_ExitProcess
@@ -330,15 +357,19 @@ T Plat_Free
 T Plat_GetClockStart
 T Plat_GetCommandLine
 T Plat_GetDesktopResolution
+T Plat_GetEnv
+T Plat_GetExecutablePath
 T Plat_GetLocalTime
 T Plat_GetMemPageSize
 T Plat_GetPagedPoolInfo
 T Plat_GetShellWindow
+T Plat_GetTime
 T Plat_GetTimeString
 T Plat_GetWindowClientSize
 T Plat_IsInBenchmarkMode
 T Plat_IsInDebugSession
 T Plat_IsWindowMinimized
+T Plat_localtime
 T Plat_MSTime
 T Plat_Realloc
 T Plat_ScreenToWindowCoords
@@ -351,11 +382,13 @@ T Plat_SetWindowTitle
 T Plat_SimpleLog
 T Plat_timegm
 T Plat_timezone
+T Plat_USTime
 T Plat_VerifyHardwareKey
 T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt
 T Plat_WindowToScreenCoords
 U popen@@GLIBC_2.1
+T PopMiniProfilerTS
 U printf@@GLIBC_2.0
 U pthread_attr_init@@GLIBC_2.1
 U pthread_attr_setstacksize@@GLIBC_2.1
@@ -381,10 +414,13 @@ U pthread_self@@GLIBC_2.0
 U pthread_yield@@GLIBC_2.2
 T PublishAll
 T PublishAllMiniProfilers
+T PushMiniProfilerTS
+U puts@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
 t read_encoded_value
 t read_encoded_value_with_base
+U readlink@@GLIBC_2.0
 t read_sleb128
 t read_sleb128
 t read_uleb128
@@ -398,28 +434,44 @@ t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
 T ReleaseThreadHandle
+T RemoveMemoryInfoCallback
+T RemoveMiniProfilerFromList
 U rename@@GLIBC_2.0
 T ReportProgress
+T RestoreWin32ConsoleColor
 U rmdir@@GLIBC_2.0
 T RunTSListTests
 T RunTSQueueTests
+b s_bCpuBrandInitialized
+b s_bCpuVendorIdInitialized
 U scandir@@GLIBC_2.0
+b s_CpuBrand
 t search_object
 b seen_objects
 T SetAllAssertsDisabled
+T SetAssertDialogDisabled
+T SetAssertDialogParent
+T SetAssertFailedNotifyFunc
+T SetCPUMonitoringInterval
 t set_fast_math
 T SetStackTranslationSymbolSearchPath
 T SetThreadedLoadLibraryFunc
+T SetupWin32ConsoleIO
+T SetWin32ConsoleColor
 T ShouldUseNewAssertDialog
 T ShutdownPME
+U signal@@GLIBC_2.0
 t size_of_encoded_value
+b s_MemoryInfoCallbacks
 U snprintf@@GLIBC_2.0
+b s_pLastMiniProfilerTS
 U srand@@GLIBC_2.0
 U sscanf@@GLIBC_2.0
 T StackToolsNotify_LoadedLibrary
 t stat
 t __stat
 U stderr@@GLIBC_2.0
+U stdout@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0
@@ -446,6 +498,7 @@ T ThreadInterlockedAssignIf64
 T ThreadInterlockedCompareExchange64
 T ThreadInterlockedExchange64
 T ThreadJoin
+T ThreadNanoSleep
 T ThreadSetAffinity
 T ThreadSetDebugName
 T ThreadSetPriority
@@ -497,7 +550,11 @@ t uw_update_context_1
 b VmmMsgFlag
 T VoidFnPtrLookup_Tier0
 U vsnprintf@@GLIBC_2.0
-t V_tier0_stricmp
+T V_tier0_snprintf
+T V_tier0_stricmp
+T V_tier0_strncat
+T V_tier0_strncpy
+T V_tier0_vsnprintf
 T vtune
 T Warning
 T _Warning_AlwaysSpewCallStack_Enable
@@ -538,22 +595,21 @@ U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
 T DevWarning(char const*, ...)
-t Plat_ctime(long const*, char*, unsigned int)
 T ConColorMsg(Color const&, char const*, ...)
 t CalcHeapUsed()
 t Plat_asctime(tm const*, char*, unsigned int)
 t InitMainThread()
-t Plat_localtime(long const*, tm*)
 t RunSharedTests(int)
 t JoinTestThreads(ThreadHandle_t__**)
 t Platform_gmtime(long const*, tm*)
 t CalculateCPUFreq()
 t CreateTestThreads(unsigned int (*)(void*), int, int)
+t GetProcessorBrand()
 T LoggingSystem_Log(int, LoggingSeverity_t, Color, char const*, ...)
 t GetCPUFreqFromPROC()
+t SetAllocatorObject(IMemAlloc*)
 t CheckSSE3Technology()
 t IgnoreAssertsNearby(int)
-t ReserveBottomMemory()
 t CheckSSE41Technology()
 t CheckSSE42Technology()
 t CheckSSE4aTechnology()
@@ -562,7 +618,7 @@ t GetProcessorVendorId()
 t CreateNewAssertDisable(char const*)
 t GetGlobalLoggingSystem()
 t PreloadStackInformation(void const**, int)
-t LogicalProcessorsPerCore()
+t ThreadIsThreadIdRunning(unsigned int)
 t ThreadInterlockedAssignIf(long volatile*, long, long)
 t ThreadInterlockedExchange(long volatile*, long)
 t GetMemorySectionForAddress(void*)
@@ -570,12 +626,12 @@ t IgnoreAssertsInCurrentFile()
 t ThreadInterlockedDecrement(long volatile*)
 t ThreadInterlockedIncrement(long volatile*)
 t AppendCallStackToLogMessage(char*, int, int)
-t DoApplyMemoryInitializations(void*, int)
+t DoApplyMemoryInitializations(void*, unsigned int)
 t ThreadInterlockedExchangeAdd(long volatile*, long)
 t VirtualMemoryManager_Shutdown()
 t GetGlobalLoggingSystem_Internal()
 t ThreadInterlockedCompareExchange(long volatile*, long, long)
-t __static_initialization_and_destruction_0(int, int) [clone .constprop.5]
+t __static_initialization_and_destruction_0(int, int) [clone .constprop.10]
 t VirtualMemoryManager_AllocateVirtualMemorySection(unsigned int)
 T ConMsg(char const*, ...)
 T DevMsg(char const*, ...)
@@ -601,10 +657,12 @@ b s_TestCount
 t TimeCompare(TimeSums_t const&, TimeSums_t const&)
 b s_bInittedWD
 r g_ColorLookup
+d s_CpuVendorID
 b s_nBufCurSize
 b s_ppTestCases
 b s_StdMemAlloc
 t DefaultWaitFunc(unsigned int, CThreadEvent**, int, unsigned int)
+b s_callbackMutex
 b s_nBufAllocSize
 b s_TestAllocated
 b s_ThreadIDMutex
@@ -619,8 +677,11 @@ t ThreadProcConvert(void*)
 t AverageTimeCompare(TimeSums_t const&, TimeSums_t const&)
 b g_FakeBenchmarkTime
 b s_bThreadIDAllocated
+d g_bAssertDialogEnabled
 t PeakOverAverageCompare(TimeSums_t const&, TimeSums_t const&)
+b s_nMemoryInfoCallbacks
 t TimeLessChildrenCompare(TimeSums_t const&, TimeSums_t const&)
+b s_AssertFailedNotifyFunc
 t Register_LOG_CONSOLE_Tags()
 b s_nWatchDogTimerTimeScale
 b s_ThreadedLoadLibraryFunc
@@ -655,8 +716,14 @@ b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
+t WatchdogCoreDumpSigHandler(int)
 t Register_LOG_DEVELOPER_Tags()
 t AverageTimeLessChildrenCompare(TimeSums_t const&, TimeSums_t const&)
+t InterpretIntelCacheDescriptors(unsigned int)
 t Register_LOG_DEVELOPER_CONSOLE_Tags()
 t Register_LOG_DEVELOPER_VERBOSE_Tags()
 b g_Info
@@ -695,6 +762,8 @@ b TSListTests::g_nThreads
 b TSListTests::g_pTestOps
 d TSListTests::g_QueueOps
 b TSListTests::g_TestList
+b TSListTests::g_TestLock
+b TSListTests::g_bUseMutex
 b TSListTests::g_pListType
 b TSListTests::g_TestQueue
 d TSListTests::MAX_THREADS
@@ -703,6 +772,7 @@ t TSListTests::MTPushSTPop(bool)
 b TSListTests::NUM_THREADS
 t TSListTests::PushPopTest()
 t TSListTests::STPushMTPop(bool)
+t TSListTests::TestThreads()
 t TSListTests::ClearBuckets()
 t TSListTests::MTPushSeqPop(bool)
 t TSListTests::SeqPushMTPop(bool)
@@ -712,7 +782,6 @@ b TSListTests::g_nPushThreads
 b TSListTests::g_pTestBuckets
 d TSListTests::NUM_PROCESSORS
 t TSListTests::PushThreadFunc(void*)
-b TSListTests::g_ThreadHandles
 t TSListTests::ValidateBuckets()
 t TSListTests::PushPopInterleavedTest()
 t TSListTests::MTPushPopPopInterleaved(bool)
@@ -757,15 +826,20 @@ t CCommandLine::~CCommandLine()
 t CStdMemAlloc::GetVersion()
 t CStdMemAlloc::CompactHeap()
 t CStdMemAlloc::IsDebugHeap()
+t CStdMemAlloc::OutOfMemory(unsigned int)
+t CStdMemAlloc::RegionAlloc(int, unsigned int)
+t CStdMemAlloc::RegionAlloc(int, unsigned int, char const*, int)
 t CStdMemAlloc::CrtDbgReport(int, char const*, int, char const*, char const*)
+t CStdMemAlloc::CompactOnFail()
 t CStdMemAlloc::CrtSetDbgFlag(int)
 t CStdMemAlloc::InitDebugInfo(void*, char const*, int)
 t CStdMemAlloc::SaveDebugInfo(void*)
 t CStdMemAlloc::CrtCheckMemory()
 t CStdMemAlloc::DumpBlockStats(void*)
+t CStdMemAlloc::InternalCompact(bool)
 t CStdMemAlloc::PopAllocDbgInfo()
 t CStdMemAlloc::CrtMemCheckpoint(_CrtMemState*)
-t CStdMemAlloc::CrtSetBreakAlloc(long)
+t CStdMemAlloc::CrtSetBreakAlloc(int)
 t CStdMemAlloc::CrtSetReportFile(int, void*)
 t CStdMemAlloc::CrtSetReportHook(void*)
 t CStdMemAlloc::CrtSetReportMode(int, int)
@@ -774,17 +848,22 @@ t CStdMemAlloc::GetDebugInfoSize()
 t CStdMemAlloc::PushAllocDbgInfo(char const*, int)
 t CStdMemAlloc::RestoreDebugInfo(void const*)
 t CStdMemAlloc::CrtIsValidPointer(void const*, unsigned int, int)
-t CStdMemAlloc::DumpStatsFileBase(char const*)
+t CStdMemAlloc::DumpStatsFileBase(char const*, IMemAlloc::DumpStatsFormat_t)
 t CStdMemAlloc::MemoryAllocFailed()
 t CStdMemAlloc::SetCRTAllocFailed(unsigned int)
+t CStdMemAlloc::SetStatsExtraInfo(char const*, char const*)
+t CStdMemAlloc::CompactIncremental()
 t CStdMemAlloc::DefaultFailHandler(unsigned int)
 t CStdMemAlloc::GlobalMemoryStatus(unsigned int*, unsigned int*)
-t CStdMemAlloc::RegisterAllocation(char const*, int, int, int, unsigned int)
+t CStdMemAlloc::RegisterAllocation(char const*, int, unsigned int, unsigned int, unsigned int)
+t CStdMemAlloc::ComputeMemoryUsedBy(char const*)
 t CStdMemAlloc::SetAllocFailHandler(unsigned int (*)(unsigned int))
-t CStdMemAlloc::RegisterDeallocation(char const*, int, int, int, unsigned int)
+t CStdMemAlloc::RegisterDeallocation(char const*, int, unsigned int, unsigned int, unsigned int)
 t CStdMemAlloc::CrtIsValidHeapPointer(void const*)
+t CStdMemAlloc::GetGenericMemoryStats(GenericMemoryStat_t**)
 t CStdMemAlloc::Expand_NoLongerSupported(void*, unsigned int)
 t CStdMemAlloc::Expand_NoLongerSupported(void*, unsigned int, char const*, int)
+t CStdMemAlloc::AllocateVirtualMemorySection(unsigned int)
 t CStdMemAlloc::Free(void*)
 t CStdMemAlloc::Free(void*, char const*, int)
 t CStdMemAlloc::Alloc(unsigned int)
@@ -794,6 +873,11 @@ t CStdMemAlloc::heapchk()
 t CStdMemAlloc::Realloc(void*, unsigned int)
 t CStdMemAlloc::Realloc(void*, unsigned int, char const*, int)
 t CStdMemAlloc::DumpStats()
+t CStdMemAlloc::CStdMemAlloc()
+t CStdMemAlloc::CStdMemAlloc()
+t CStdMemAlloc::~CStdMemAlloc()
+t CStdMemAlloc::~CStdMemAlloc()
+t CStdMemAlloc::~CStdMemAlloc()
 T CThreadEvent::WaitForMultiple(int, CThreadEvent**, bool, unsigned int)
 T CThreadEvent::WaitForMultiple(int, CThreadEvent*, bool, unsigned int)
 T CThreadEvent::Set()
@@ -845,9 +929,15 @@ t CLoggingSystem::CLoggingSystem()
 t CLoggingSystem::CLoggingSystem()
 t CLoggingSystem::~CLoggingSystem()
 t CLoggingSystem::~CLoggingSystem()
+T CPerfStatsData::Tick()
+T CPerfStatsData::Reset()
+T CPerfStatsData::CPerfStatsData()
+T CPerfStatsData::CPerfStatsData()
 t CClockSpeedInit::Init()
 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
+t CRootMiniProfiler::~CRootMiniProfiler()
+t CRootMiniProfiler::~CRootMiniProfiler()
 T CThreadSpinRWLock::SpinLockForRead()
 T CThreadSpinRWLock::SpinLockForWrite()
 T CThreadSyncObject::AssertUseable()
@@ -881,13 +971,15 @@ T CThread::ThreadProc(void*)
 T CThread::SetPriority(int)
 T CThread::GetThreadProc()
 T CThread::GetThreadHandle()
+T CThread::IsThreadRunning()
 T CThread::GetCurrentCThread()
 T CThread::WaitForCreateComplete(CThreadEvent*)
+T CThread::ThreadProcRunWithMinidumpHandler(void*)
 T CThread::Init()
 T CThread::Join(unsigned int)
 T CThread::Stop(int)
 T CThread::Sleep(unsigned int)
-T CThread::Start(unsigned int, CThread::ThreadPriorityEnum_t)
+T CThread::Start(unsigned int, ThreadPriorityEnum_t)
 T CThread::Yield()
 T CThread::OnExit()
 T CThread::Resume()
@@ -938,10 +1030,15 @@ T CVProfile::CVProfile()
 T CVProfile::CVProfile()
 T CVProfile::~CVProfile()
 T CVProfile::~CVProfile()
+t IMemAlloc::~IMemAlloc()
+t IMemAlloc::~IMemAlloc()
+t IMemAlloc::~IMemAlloc()
 U operator new[](unsigned int)@@GLIBCXX_3.4
 t CCommandLine::GetCmdLine() const
 t CCommandLine::GetParm(int) const
+t CCommandLine::HasParm(char const*) const
 t CCommandLine::FindParm(char const*) const
+t CCommandLine::GetParms() const
 t CCommandLine::CheckParm(char const*, char const**) const
 t CCommandLine::ParmCount() const
 t CCommandLine::ParmValue(char const*, float) const
@@ -962,14 +1059,10 @@ t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair
 t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
 t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
 t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
-t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
-t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
 t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_insert_aux<TimeSums_t const&>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, TimeSums_t const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::operator=(std::vector<TimeSums_t, std::allocator<TimeSums_t> > const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
-U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
-U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
 t std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> > std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_<std::pair<CVProfNode*, double> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<CVProfNode*, double>&&)
 t std::pair<std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> >, bool> std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_unique<std::pair<CVProfNode*, double> >(std::pair<CVProfNode*, double>&&)
 t std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_erase(std::_Rb_tree_node<std::pair<CVProfNode* const, double> >*)
@@ -1046,15 +1139,15 @@ U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 d vtable for TSListTests::CListOps
 d vtable for TSListTests::CQueueOps
-b Plat_MSTime::secbase
 b DoNewAssertDialog::autoMutex__
+b DoNewAssertDialog::pfnSDLShowMessageBox
+b DoNewAssertDialog::pfnSDLGetKeyboardFocus
 b COM_TimestampedLog::s_bChecked
 b COM_TimestampedLog::s_LastStamp
 b COM_TimestampedLog::s_bShouldLog
 b COM_TimestampedLog::s_bFirstWrite
 b COM_TimestampedLog::s_bShouldLogToETW
 b COM_TimestampedLog::s_bShouldLogToConsole
-b GetProcessorVendorId()::VendorID
 b ShouldUseNewAssertDialog::bMPIWorker
 b GetGlobalLoggingSystem_Internal()::globalLoggingSystem
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
