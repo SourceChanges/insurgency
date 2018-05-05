@@ -1418,6 +1418,7 @@ t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vecto
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
 t DefaultConditionalErrorProc(char const*)
 t FileSystem_GetExecutableDir(char*, int)
+t FileSystem_GetExecutableDir(char*, int) [clone .part.11]
 t Parabolic_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Sys_RunningWithDebugModules()
 t TransformAnglesToLocalSpace(QAngle const&, matrix3x4_t const&)

@@ -3657,6 +3657,7 @@ t DefaultConditionalErrorProc(char const*)
 t DispCommon_GetNumTriIndices(int)
 t DrawSavedModelDebugOverlays()
 t FileSystem_GetExecutableDir(char*, int)
+t FileSystem_GetExecutableDir(char*, int) [clone .part.11]
 t Filter_Steam64bitIdToUserID(unsigned long long)
 t FindFlagsCompletionCallback(char const*, char (*) [64])
 t GenerateLineLoopIndexBuffer(unsigned short*, int, int)
