@@ -195,7 +195,6 @@ U utimes@@GLIBC_2.0
 U vsnprintf@@GLIBC_2.0
 U VStdLib_GetICVarFactory
 U vswprintf@@GLIBC_2.2
-U V_UTF8ToUnicode
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
