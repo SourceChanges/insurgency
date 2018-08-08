@@ -865,6 +865,7 @@ t _GLOBAL__sub_I_item_flag.cpp
 t _GLOBAL__sub_I_item_world.cpp
 t _GLOBAL__sub_I_keyframe.cpp
 t _GLOBAL__sub_I_keyvalues.cpp
+t _GLOBAL__sub_I_keyvaluesjson.cpp
 t _GLOBAL__sub_I_lightglow.cpp
 t _GLOBAL__sub_I_lights.cpp
 t _GLOBAL__sub_I_logic_achievement.cpp
@@ -1158,6 +1159,7 @@ t _GLOBAL__sub_I_utlbufferutil.cpp
 t _GLOBAL__sub_I_utlstreambuffer.cpp
 t _GLOBAL__sub_I_utlstring.cpp
 t _GLOBAL__sub_I_utlsymbol.cpp
+t _GLOBAL__sub_I_valve_server_relay.cpp
 t _GLOBAL__sub_I_variant_t.cpp
 t _GLOBAL__sub_I_vehicle_base.cpp
 t _GLOBAL__sub_I_vehicle_baseserver.cpp
@@ -1366,6 +1368,7 @@ b g_TextStatsMgr
 d g_ThinkContextsSaveDataOps
 d g_TimeModifiers
 b g_TokenProcessor
+b g_ValveServerRelay
 d g_VariantSaveDataOps
 b g_VBAllocTracker
 b g_vecAttackDir
@@ -1844,10 +1847,12 @@ t .L1598
 t .L1599
 t .L16
 t .L16
+t .L160
 t .L1600
 t .L1601
 t .L1602
 t .L1603
+t .L161
 t .L161
 t .L1612
 t .L1613
@@ -1857,16 +1862,24 @@ t .L1616
 t .L1617
 t .L1618
 t .L162
+t .L162
+t .L163
 t .L163
 t .L164
+t .L164
+t .L165
 t .L165
 t .L166
 t .L166
+t .L166
+t .L167
 t .L167
 t .L167
 t .L167
 t .L168
 t .L168
+t .L168
+t .L169
 t .L169
 t .L169
 t .L17
@@ -2193,6 +2206,7 @@ t .L2999
 t .L30
 t .L30
 t .L30
+t .L30
 t .L300
 t .L3000
 t .L3001
@@ -2223,6 +2237,7 @@ t .L306
 t .L307
 t .L308
 t .L309
+t .L31
 t .L31
 t .L31
 t .L311
@@ -2260,16 +2275,23 @@ t .L329
 t .L329
 t .L33
 t .L33
+t .L33
 t .L330
 t .L331
 t .L332
 t .L333
 t .L34
 t .L34
+t .L34
+t .L35
 t .L35
 t .L36
+t .L36
+t .L37
 t .L37
 t .L38
+t .L38
+t .L39
 t .L39
 t .L39
 t .L394
@@ -2281,6 +2303,7 @@ t .L399
 t .L4
 t .L40
 t .L40
+t .L40
 t .L400
 t .L400
 t .L401
@@ -2312,6 +2335,7 @@ t .L409
 t .L409
 t .L409
 t .L409
+t .L41
 t .L41
 t .L41
 t .L410
@@ -2319,6 +2343,7 @@ t .L410
 t .L411
 t .L412
 t .L417
+t .L42
 t .L42
 t .L42
 t .L421
@@ -2344,6 +2369,7 @@ t .L436
 t .L438
 t .L438
 t .L439
+t .L44
 t .L44
 t .L44
 t .L441
@@ -2552,23 +2578,23 @@ t .L620
 t .L620
 t .L621
 t .L621
-t .L6214
-t .L6215
-t .L6216
-t .L6217
-t .L6218
-t .L6219
 t .L622
-t .L6220
-t .L6221
-t .L6222
-t .L6223
-t .L6224
-t .L6225
-t .L6226
-t .L6227
+t .L6228
+t .L6229
 t .L623
+t .L6230
+t .L6231
+t .L6232
+t .L6233
+t .L6234
+t .L6235
+t .L6236
+t .L6237
+t .L6238
+t .L6239
 t .L624
+t .L6240
+t .L6241
 t .L625
 t .L626
 t .L627
@@ -3763,6 +3789,7 @@ b sv_noclipaccelerate
 b sv_noclipduringpause
 b sv_noclipspeed
 b sv_nwi_backend
+b sv_nwi_backend_submit
 b sv_player_stuck_tolerance
 b sv_playlist
 b sv_pushaway_clientside
@@ -5161,7 +5188,9 @@ t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const* const*, int, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, bool)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_SplitWString(wchar_t const*, wchar_t const*, CUtlVector<wchar_t*, CUtlMemory<wchar_t*, int> >&)
+t int V_sprintf_safe<1024u>(char (&) [1024u], char const*, ...)
 t int V_sprintf_safe<25u>(char (&) [25u], char const*, ...)
+t int V_sprintf_safe<32u>(char (&) [32u], char const*, ...)
 t V_StripLastDir(char*, int)
 t V_TokenWaiting(char const*)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
@@ -5681,6 +5710,7 @@ t UTIL_TraceEntity(CBaseEntity*, Vector const&, Vector const&, unsigned int, IHa
 t UTIL_YawToVector(float)
 t ValidateGameMode(IConVar*, char const*, float)
 t ValidatePlaylist(IConVar*, char const*, float)
+t ValveServerRelay()
 t Vector3DMultiply(VMatrix const&, Vector const&, Vector&)
 t Vector4DMultiply(VMatrix const&, Vector4D const&, Vector4D&)
 t VectorITransform(float const*, matrix3x4_t const&, float*)
@@ -5866,7 +5896,6 @@ t MessageWriteEntity(int)
 t MessageWriteString(char const*)
 t NameToINSAttribute(char const*)
 t NameToNavAttribute(char const*)
-t nexttoken_explicit(char*, char const*, char, unsigned int)
 t void ParseCostModifiers<teamSquad_t>(teamSquad_t&, KeyValues*)
 t void ParseCostModifiers<teamDefinition_t>(teamDefinition_t&, KeyValues*)
 t void ParseCostModifiers<playerClassTemplate_t>(playerClassTemplate_t&, KeyValues*)
@@ -7095,6 +7124,7 @@ t void ListItems<CTheaterPlayerGearDefinitions>(char const*, CTheaterPlayerGearD
 t void ListItems<CTheaterWeaponUpgradeDefinitions>(char const*, CTheaterWeaponUpgradeDefinitions*)
 t MD5_Print(unsigned char*, int)
 t MD5Update(MD5Context_t*, unsigned char const*, unsigned int)
+t nexttoken(char*, unsigned int, char const*, char)
 t PropIsGib(CBaseEntity*)
 t bool Serialize<CUtlString>(CUtlBuffer&, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> > const&)
 t bool Serialize<Quaternion>(CUtlBuffer&, CUtlVector<Quaternion, CUtlMemory<Quaternion, int> > const&)
@@ -8959,6 +8989,9 @@ b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec4_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
@@ -10349,6 +10382,9 @@ b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec4_invalid
 b vec4_invalid
 b vec4_invalid
 b vec4_invalid
@@ -12008,6 +12044,8 @@ t SortBotHidingSpotsTeamTwo(HidingSpot const* const*, HidingSpot const* const*)
 b s_pConnectionRegistration
 b sv_playerperfhistorycount
 t sv_soundemitter_filecheck(CCommand const&)
+b UNSPECIFIED_LOGGING_COLOR
+b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
 b UNSPECIFIED_LOGGING_COLOR
@@ -16517,6 +16555,9 @@ t CUtlVector<char, CUtlMemory<char, int> >::ShiftElementsRight(int, int)
 t CUtlVector<char, CUtlMemory<char, int> >::SetCount(int)
 t CUtlVector<char, CUtlMemory<char, int> >::~CUtlVector()
 t CUtlVector<char, CUtlMemory<char, int> >::~CUtlVector()
+t CUtlVector<char, CUtlMemoryFixedGrowable<char, 1024u, int> >::GrowVector(int)
+t CUtlVector<char, CUtlMemoryFixedGrowable<char, 1024u, int> >::ShiftElementsRight(int, int)
+t CUtlVector<char, CUtlMemoryFixedGrowable<char, 1024u, int> >::SetCount(int)
 t CUtlVector<double, CUtlMemory<double, int> >::SetCount(int)
 t CUtlVector<float, CUtlMemory<float, int> >::GrowVector(int)
 t CUtlVector<float, CUtlMemory<float, int> >::InsertBefore(int, float const&)
@@ -18134,6 +18175,9 @@ t CCallResult<CWorkshopItem, SteamUGCQueryCompleted_t>::~CCallResult()
 t CCallResult<CBaseStatsRequest, HTTPRequestCompleted_t>::GetCallbackSizeBytes()
 t CCallResult<CBaseStatsRequest, HTTPRequestCompleted_t>::Run(void*)
 t CCallResult<CBaseStatsRequest, HTTPRequestCompleted_t>::Run(void*, bool, unsigned long long)
+t CCallResult<CValveServerRelay, HTTPRequestCompleted_t>::GetCallbackSizeBytes()
+t CCallResult<CValveServerRelay, HTTPRequestCompleted_t>::Run(void*)
+t CCallResult<CValveServerRelay, HTTPRequestCompleted_t>::Run(void*, bool, unsigned long long)
 t CCallResult<CINSCompetitiveStats, HTTPRequestCompleted_t>::GetCallbackSizeBytes()
 t CCallResult<CINSCompetitiveStats, HTTPRequestCompleted_t>::Run(void*)
 t CCallResult<CINSCompetitiveStats, HTTPRequestCompleted_t>::Run(void*, bool, unsigned long long)
@@ -28408,6 +28452,14 @@ t CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12
 t CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12>::IsEmpty(SaveRestoreFieldInfo_t const&)
 t CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12>::Restore(SaveRestoreFieldInfo_t const&, IRestore*)
 t CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12>::MakeEmpty(SaveRestoreFieldInfo_t const&)
+t CValveServerRelay::ExecuteConfig()
+t CValveServerRelay::OnFetchConfig(HTTPRequestCompleted_t*, bool)
+t CValveServerRelay::Init()
+t CValveServerRelay::CValveServerRelay()
+t CValveServerRelay::CValveServerRelay()
+t CValveServerRelay::~CValveServerRelay()
+t CValveServerRelay::~CValveServerRelay()
+t CValveServerRelay::~CValveServerRelay()
 t CWaterTraceFilter::ShouldHitEntity(IHandleEntity*, int)
 b DT_Animationlayer::g_SendTable
 b DT_Animationlayer::g_SendTableInit
@@ -30292,6 +30344,21 @@ t INSBotSafeCoverTest::Inspect(CKnownEntity const&)
 t IVoiceGameMgrHelper::~IVoiceGameMgrHelper()
 t IVoiceGameMgrHelper::~IVoiceGameMgrHelper()
 t IVoiceGameMgrHelper::~IVoiceGameMgrHelper()
+t KeyValuesJSONParser::ParseArray(KeyValues*)
+t KeyValuesJSONParser::ParseValue(KeyValues*)
+t KeyValuesJSONParser::ParseObject(KeyValues*)
+t KeyValuesJSONParser::ParseNumberToken()
+t KeyValuesJSONParser::ParseStringToken()
+t KeyValuesJSONParser::GetTokenDebugText()
+t KeyValuesJSONParser::Init(char const*, int)
+t KeyValuesJSONParser::NextToken()
+t KeyValuesJSONParser::ParseFile()
+t KeyValuesJSONParser::KeyValuesJSONParser(char const*, int)
+t KeyValuesJSONParser::KeyValuesJSONParser(CUtlBuffer const&)
+t KeyValuesJSONParser::KeyValuesJSONParser(char const*, int)
+t KeyValuesJSONParser::KeyValuesJSONParser(CUtlBuffer const&)
+t KeyValuesJSONParser::~KeyValuesJSONParser()
+t KeyValuesJSONParser::~KeyValuesJSONParser()
 t magnetted_objects_t::GetBaseMap()
 d magnetted_objects_t::m_DataMap
 t NavAttributeToggler::operator()(CNavArea*)
@@ -32796,6 +32863,8 @@ t CUtlFilenameSymbolTable::FindOrAddFileName(char const*)
 t CUtlFilenameSymbolTable::RestoreFromBuffer(CUtlBuffer&)
 t CUtlFilenameSymbolTable::String(void* const&, char*, int)
 t CUtlFilenameSymbolTable::RemoveAll()
+t CUtlVectorFixedGrowable<char, 1024u>::~CUtlVectorFixedGrowable()
+t CUtlVectorFixedGrowable<char, 1024u>::~CUtlVectorFixedGrowable()
 b CViewPoint_DataDescInit::g_DataMapHolder
 b CWorldItem_DataDescInit::g_DataMapHolder
 b DT_BaseAnimatingOverlay::g_SendTable
@@ -40414,6 +40483,7 @@ d typeinfo for CBloodSplat
 d typeinfo for CCallResult<CWorkshopItem, HTTPRequestCompleted_t>
 d typeinfo for CCallResult<CWorkshopItem, SteamUGCQueryCompleted_t>
 d typeinfo for CCallResult<CBaseStatsRequest, HTTPRequestCompleted_t>
+d typeinfo for CCallResult<CValveServerRelay, HTTPRequestCompleted_t>
 d typeinfo for CCallResult<CINSCompetitiveStats, HTTPRequestCompleted_t>
 d typeinfo for CCallResult<CINSCompetitiveManager, HTTPRequestCompleted_t>
 d typeinfo for CEnvGunfire
@@ -41357,6 +41427,7 @@ d typeinfo for CUtlVectorDataOps<CUtlVector<CHandle<CFish>, CUtlMemory<CHandle<C
 d typeinfo for CUtlVectorDataOps<CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> >, 13>
 d typeinfo for CUtlVectorDataOps<CUtlVector<int, CUtlMemory<int, int> >, 5>
 d typeinfo for CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12>
+d typeinfo for CValveServerRelay
 d typeinfo for CWaterTraceFilter
 d typeinfo for fogplayerparams_t
 d typeinfo for IChoreoStringPool
@@ -42077,6 +42148,7 @@ r typeinfo name for CBloodSplat
 r typeinfo name for CCallResult<CWorkshopItem, HTTPRequestCompleted_t>
 r typeinfo name for CCallResult<CWorkshopItem, SteamUGCQueryCompleted_t>
 r typeinfo name for CCallResult<CBaseStatsRequest, HTTPRequestCompleted_t>
+r typeinfo name for CCallResult<CValveServerRelay, HTTPRequestCompleted_t>
 r typeinfo name for CCallResult<CINSCompetitiveStats, HTTPRequestCompleted_t>
 r typeinfo name for CCallResult<CINSCompetitiveManager, HTTPRequestCompleted_t>
 r typeinfo name for CEnvGunfire
@@ -43020,6 +43092,7 @@ r typeinfo name for CUtlVectorDataOps<CUtlVector<CHandle<CFish>, CUtlMemory<CHan
 r typeinfo name for CUtlVectorDataOps<CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> >, 13>
 r typeinfo name for CUtlVectorDataOps<CUtlVector<int, CUtlMemory<int, int> >, 5>
 r typeinfo name for CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12>
+r typeinfo name for CValveServerRelay
 r typeinfo name for CWaterTraceFilter
 r typeinfo name for fogplayerparams_t
 r typeinfo name for IChoreoStringPool
@@ -43740,6 +43813,7 @@ d vtable for CBloodSplat
 d vtable for CCallResult<CWorkshopItem, HTTPRequestCompleted_t>
 d vtable for CCallResult<CWorkshopItem, SteamUGCQueryCompleted_t>
 d vtable for CCallResult<CBaseStatsRequest, HTTPRequestCompleted_t>
+d vtable for CCallResult<CValveServerRelay, HTTPRequestCompleted_t>
 d vtable for CCallResult<CINSCompetitiveStats, HTTPRequestCompleted_t>
 d vtable for CCallResult<CINSCompetitiveManager, HTTPRequestCompleted_t>
 d vtable for CEnvGunfire
@@ -44673,6 +44747,7 @@ d vtable for CUtlVectorDataOps<CUtlVector<CHandle<CFish>, CUtlMemory<CHandle<CFi
 d vtable for CUtlVectorDataOps<CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> >, 13>
 d vtable for CUtlVectorDataOps<CUtlVector<int, CUtlMemory<int, int> >, 5>
 d vtable for CUtlVectorDataOps<CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >, 12>
+d vtable for CValveServerRelay
 d vtable for CWaterTraceFilter
 d vtable for fogplayerparams_t
 d vtable for IEntityEnumerator
